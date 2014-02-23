@@ -1,0 +1,21 @@
+.errormsg {
+	font-family:"Century Gothic";
+	display:none;
+	color:red;
+	font-size:12pt;
+}
+.content {
+	text-align:center;
+}
+#contactform table {
+	margin-left:75px;
+	text-align:left;
+}
+#contactform td {
+	padding:10px 5px;
+}
+.formlabel {
+	text-align:right;
+	white-space:nowrap;
+}
+
