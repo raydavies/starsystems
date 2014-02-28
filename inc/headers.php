@@ -4,7 +4,6 @@
 <link rel="stylesheet" type="text/css" href="/styles/main.css"/>
 <style type="text/css">@import "/styles/starlogo.css" screen;</style>
 
-
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script type="text/javascript" src="/cgi/menu.js"></script>
 <script type="text/javascript" src="/cgi/titleScroll.js"></script>

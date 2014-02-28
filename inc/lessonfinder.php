@@ -1,23 +1,28 @@
 <?php
-
-if (isset($_GET['level']) && isset($_GET['subject']) && ($_GET['level'] == 1 || $_GET['level'] == 2 || $_GET['level']== 3 || $_GET['level'] == 4) && ($_GET['subject'] == 1 || $_GET['subject'] == 2 || $_GET['subject'] == 3 || $_GET['subject'] == 4 || $_GET['subject'] == 5 || $_GET['subject'] == 6)){
+if (isset($_GET['level'], $_GET['subject']) && ($_GET['level'] > 0 && $_GET['level'] < 5) && ($_GET['subject'] > 0 && $_GET['subject'] < 7)) {
 	
 	$level = strval(trim($_GET['level']));
 	$subject = strval(trim($_GET['subject']));
 
 	$id = intval($level.$subject);
 	getLessons($id);
-}
-else {
+} else {
 	getLessons(11);
 }
 
-function getLessons($id) {
+function getLessons($id)
+{
 	@$link = mysqli_connect('localhost','starlea_james','starone45') or die("Couldn't connect! ".mysqli_connect_errno().": ".mysqli_connect_errno());
 
 	@mysqli_select_db($link, 'starlea_hippo') or die ("Couldn't access database! ".mysqli_errno($link).": ".mysqli_error($link));
 
-	@$result = mysqli_query($link, "Select levelname,levelgrades,subjectname,lessonname from levels,subjects,lessons where lessons.subjectid = ".$id." and lessons.subjectid = subjects.subjectid and subjects.levelid = levels.levelid") or die("Cannot retrieve data! ".mysqli_errno($link).": ".mysqli_error($link));
+	$sql = "SELECT levelname, levelgrades, subjectname, lessonname 
+			FROM levels, subjects, lessons 
+			WHERE lessons.subjectid = ".$id." 
+			AND lessons.subjectid = subjects.subjectid
+			AND subjects.levelid = levels.levelid";
+
+	@$result = mysqli_query($link, $sql) or die("Cannot retrieve data! ".mysqli_errno($link).": ".mysqli_error($link));
 
 	$numrows = mysqli_num_rows($result);
 	$remainder = $numrows % 3;
@@ -28,7 +33,7 @@ function getLessons($id) {
 	echo "<h2>".$row[0].": ".$row[2]."</h2>";
 	mysqli_data_seek($result, 0);
 
-	for ($i=0;$i< (($numrows-$remainder) / 3) + $remainder;$i++){
+	for ($i = 0; $i < (($numrows-$remainder) / 3) + $remainder; $i++) {
 		$row = mysqli_fetch_row($result);
 		echo "<tr>";
 		echo "<td class='firstrow'>".$row[3]."</td>";
@@ -44,4 +49,3 @@ function getLessons($id) {
 	mysqli_free_result($result);
 	mysqli_close($link);
 }
-?>

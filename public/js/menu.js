@@ -1,10 +1,10 @@
 <!--
 
-$(document).ready(function(){
-	$('#submenu').hover(function(){
+$(document).ready(function() {
+	$('#submenu').hover(function() {
 		$('#bubble').stop(true,true).fadeIn(200);
 		$('#navbar li ul').stop(true,true).fadeIn(200);
-	}, function(){
+	}, function() {
 		$('#bubble').stop(true,true).fadeOut(200);
 		$('#navbar li ul').stop(true,true).fadeOut(200);
 	});
@@ -13,7 +13,7 @@ $(document).ready(function(){
 	menuSelector(title);
 });
 
-var menuSelector = function(title){
+var menuSelector = function(title) {
 	if (title === "The Interactive Curriculum" ||
 		title === "Sample Lessons" ||
 		title === "Benefits" ||
@@ -22,23 +22,22 @@ var menuSelector = function(title){
 		$('.menulinks:nth-child(3)').css('background-color','#c5b358');
 		$('.menulinks:nth-child(3) > a:first').css('color','white');
 		highlightMenu('.sublinks', title);
-	}
-	else{
+	} else{
 		highlightMenu('.menulinks', title);
 	}
 };
 
-var highlightMenu = function(group, title){
-	if (title === "Home of the Interactive Curriculum"){
+var highlightMenu = function(group, title) {
+	if (title === "Home of the Interactive Curriculum") {
 		title = "Home";
 	}
-	for (var i=1;i< $(group).length+1;i++){
-		var current = $(group+':nth-child('+i+') a:first');
-		if (current.html() == title){
+	for (var i = 1; i < $(group).length+1; i++) {
+		var current = $(group +':nth-child(' + i + ') a:first');
+		if (current.html() == title) {
 			current.removeAttr('href');
 			current.css('cursor','default');
-			$(group+':nth-child('+i+')').css('background-color','#c5b358');
-			current.css('color','white');
+			$(group +':nth-child(' + i + ')').css('background-color', '#c5b358');
+			current.css('color', 'white');
 		}
 	}
 };
