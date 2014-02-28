@@ -9,7 +9,11 @@ nbproject
 composer.lock
 vendor
 public/img
+public/pdf
 error_log
 .htaccess
 *~
 *.swp
+bin
+config/info.php
+
