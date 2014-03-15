@@ -1,14 +1,14 @@
-<link rel="icon" href="/images/hippoicon.ico" type="image/x-icon" />
-<link rel="shortcut icon" href="/images/hippoicon.ico" type="image/x-icon" />
+<link rel="icon" href="<?php echo constant('PUBLIC'); ?>/img/hippoicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="<?php echo constant('PUBLIC'); ?>/img/hippoicon.ico" type="image/x-icon" />
 
-<link rel="stylesheet" type="text/css" href="/styles/main.css"/>
-<style type="text/css">@import "/styles/starlogo.css" screen;</style>
+<link rel="stylesheet" type="text/css" href="<?php echo constant('PUBLIC'); ?>/css/main.css"/>
+<style type="text/css">@import "<?php echo constant('PUBLIC'); ?>/css/starlogo.css" screen;</style>
 
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-<script type="text/javascript" src="/cgi/menu.js"></script>
-<script type="text/javascript" src="/cgi/titleScroll.js"></script>
-<script type="text/javascript" src="/cgi/openAd.js"></script>
-<script type="text/javascript" src="/cgi/displayPhoto.js"></script>
-<script type="text/javascript" src="/cgi/formValidator.js"></script>
-<script type="text/javascript" src="/cgi/toggleHandler.js"></script>
-<script type="text/javascript" src="/cgi/timeline.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="<?php echo constant('PUBLIC'); ?>/js/menu.js"></script>
+<script type="text/javascript" src="<?php echo constant('PUBLIC'); ?>/js/titleScroll.js"></script>
+<script type="text/javascript" src="<?php echo constant('PUBLIC'); ?>/js/openAd.js"></script>
+<script type="text/javascript" src="<?php echo constant('PUBLIC'); ?>/js/displayPhoto.js"></script>
+<script type="text/javascript" src="<?php echo constant('PUBLIC'); ?>/js/formValidator.js"></script>
+<script type="text/javascript" src="<?php echo constant('PUBLIC'); ?>/js/toggleHandler.js"></script>
+<script type="text/javascript" src="<?php echo constant('PUBLIC'); ?>/js/timeline.js"></script>

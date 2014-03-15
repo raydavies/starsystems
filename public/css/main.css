@@ -9,7 +9,7 @@ body {
 	padding:0px;
 	color:black;
 	font-family:'Georgia', "Palatino Linotype", serif;
-	background:url(../images/background.png) top center fixed;
+	background:url('/starsystems/public/img/background.png') top center fixed;
 	font-size:11pt;
 	cursor:default;
 	/*#FFEAE0*/
@@ -51,7 +51,7 @@ div#head_wrapper {
 	width:100%;
 	min-width:960px;
 	height:200px;
-	background:url(../images/sky3.jpg) top center fixed;
+	background:url('/starsystems/public/img/sky3.jpg') top center fixed;
 }
 
 div#header {
@@ -119,15 +119,15 @@ div#main_wrapper {
 }
 
 #header-btn1 {
-	background: url(../images/nav/header_fb.png) 0 0 no-repeat;
+	background: url('/starsystems/public/img/nav/header_fb.png') 0 0 no-repeat;
 }
 
 #header-btn2 {
-	background: url(../images/nav/header_google.png) 0 0 no-repeat;
+	background: url('/starsystems/public/img/nav/header_google.png') 0 0 no-repeat;
 }
 
 #header-btn3 {
-	background: url(../images/nav/header_linkedin.png) 0 0 no-repeat;
+	background: url('/starsystems/public/img/nav/header_linkedin.png') 0 0 no-repeat;
 }
 
 /************* NAVIGATION BAR *************/
@@ -767,7 +767,7 @@ div#foot_wrapper {
 }
 
 #footer-btn1 {
-	background: url(../images/nav/footer_fb.png) 0 -33px no-repeat;
+	background: url('/starsystems/public/img/nav/footer_fb.png') 0 -33px no-repeat;
 }
 
 #footer-btn1:hover {
@@ -775,7 +775,7 @@ div#foot_wrapper {
 }
 
 #footer-btn2 {
-	background: url(../images/nav/footer_google.png) 0 -33px no-repeat;
+	background: url('/starsystems/public/img/nav/footer_google.png') 0 -33px no-repeat;
 }
 
 #footer-btn2:hover {
@@ -783,7 +783,7 @@ div#foot_wrapper {
 }
 
 #footer-btn3 {
-	background: url(../images/nav/footer_linkedin.png) 0 -33px no-repeat;
+	background: url('/starsystems/public/img/nav/footer_linkedin.png') 0 -33px no-repeat;
 }
 
 #footer-btn3:hover {

@@ -16,7 +16,10 @@ class DbAdapter
 	
 	public function connect(array $config)
 	{
-		$this->db = new mysqli($config['host'], $config['username'], $config['password'], $config['database']);
+		$this->db = new \mysqli($config['host'], $config['username'], $config['password'], $config['database']);
+		if ($this->db->connect_error) {
+			die($this->db->connect_errno . ': ' . $this->db->connect_error);
+		}
 	}
 	
 	public function query($sql)

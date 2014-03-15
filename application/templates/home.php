@@ -35,9 +35,9 @@
 	</div>
 	
 	<div id="pics">
-		<img id="slideshow" src="/images/slides/1.jpg" alt="Lesson example"><br>
-		<img id="nav_prev" src="/images/nav/arrow_prev.png">
-		<img id="nav_next" src="/images/nav/arrow_next.png">
+		<img id="slideshow" src="<?php echo constant('PUBLIC'); ?>/img/slides/1.jpg" alt="Lesson example"><br>
+		<img id="nav_prev" src="<?php echo constant('PUBLIC'); ?>/img/nav/arrow_prev.png">
+		<img id="nav_next" src="<?php echo constant('PUBLIC'); ?>/img/nav/arrow_next.png">
 		<p>Click the arrows to see a few examples of the hundreds of lessons available on each level.</p>
 		<br class="fl_c">
 	</div>

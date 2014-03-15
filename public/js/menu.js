@@ -1,5 +1,3 @@
-<!--
-
 $(document).ready(function() {
 	$('#submenu').hover(function() {
 		$('#bubble').stop(true,true).fadeIn(200);
@@ -41,5 +39,3 @@ var highlightMenu = function(group, title) {
 		}
 	}
 };
-
-//-->

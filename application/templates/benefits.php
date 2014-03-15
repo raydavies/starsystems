@@ -48,7 +48,7 @@
 	</ol>
 
 	<div class="tagline">
-		<img id="paperchild" src="/images/apluspaper.jpg" alt="A plus paper" title=''/>
+		<img id="paperchild" src="<?php echo constant('PUBLIC'); ?>/img/apluspaper.jpg" alt="A plus paper" title=''/>
 		<p>Further questions? Call us at <strong>(708) 675-7640</strong></p>
 	</div><!--END TAGLINE DIV-->
 

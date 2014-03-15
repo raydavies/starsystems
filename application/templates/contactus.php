@@ -2,8 +2,8 @@
 
 	<h3>For more information, or to leave us a comment, please fill out the form below!</h3>
 
-	<img id="blackboardchild" src="images/blackboard.jpg" alt="Child at blackboard" title='' />
-	<img id="computerchild" src="images/computer.jpg" alt="Child at computer" title='' />
+	<img id="blackboardchild" src="<?php echo constant('PUBLIC'); ?>/img/blackboard.jpg" alt="Child at blackboard" title='' />
+	<img id="computerchild" src="<?php echo constant('PUBLIC'); ?>/img/computer.jpg" alt="Child at computer" title='' />
 
 	<h3>Star Systems</h3>
 

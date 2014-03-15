@@ -22,7 +22,7 @@ function toggleSlide()
 {
 	var $slide = $('#slideshow');
 
-	$slide.attr('src', "/images/slides/" + t + ".jpg");
+	$slide.attr('src', "/starsystems/public/img/slides/" + t + ".jpg");
 
 	if (t<=1) {
 		$('.slidebuttons:first').attr('disabled', true);

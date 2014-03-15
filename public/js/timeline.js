@@ -10,9 +10,9 @@ $(document).ready(function() {
 	var $future = $('#timeline img:last');
 
 	$past.hover(function() {
-		$past.attr('src', "/images/nav/active_prev.png");
+		$past.attr('src', "/starsystems/public/img/nav/active_prev.png");
 	}, function() {
-		$past.attr('src', "/images/nav/arrow_l.png");
+		$past.attr('src', "/starsystems/public/img/nav/arrow_l.png");
 	});
 	
 	$past.click(function() {
@@ -20,9 +20,9 @@ $(document).ready(function() {
 	});
 
 	$future.hover(function() {
-		$future.attr('src', "/images/nav/active_next.png");
+		$future.attr('src', "/starsystems/public/img/nav/active_next.png");
 	}, function() {
-		$future.attr('src', "/images/nav/arrow_r.png");
+		$future.attr('src', "/starsystems/public/img/nav/arrow_r.png");
 	});
 	
 	$future.click(function() {
@@ -32,7 +32,7 @@ $(document).ready(function() {
 
 function toggleTimeline()
 {
-	$('#timelinepics').attr('src', "/images/history/" + h + ".jpg");
+	$('#timelinepics').attr('src', "/starsystems/public/img/history/" + h + ".jpg");
 	$('#inner_timeline div:nth-child(' + h + ')').fadeIn(600);
 
 	if (h <= 1) {

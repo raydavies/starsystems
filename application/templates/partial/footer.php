@@ -36,7 +36,7 @@
 		</div>
 		<br class="fl_c">
 		<p class="fl_l">Design by <a href="http://mumblecrumblydesign.com" target="_blank">Mumble Crumbly Design</a></p>
-		<p class="fl_r">&copy; 2013 Star Learning Systems</p>
+		<p class="fl_r">&copy; <?php echo date('Y'); ?> Star Learning Systems</p>
 		<br class="fl_c">
 	</div><!--END FOOTER DIV-->
 </div><!--END FOOT WRAPPER-->

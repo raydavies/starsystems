@@ -15,10 +15,10 @@ $(document).ready(function() {
 	$('#faq div').click(function() {
 		$(this).children('.answer').slideToggle(500);
 		var $img = $(this).find('img');
-		if ($img.attr('src') == '/images/nav/expand.png') {
-			$img.attr('src','/images/nav/collapse.png');
+		if ($img.attr('src') == '/starsystems/public/img/nav/expand.png') {
+			$img.attr('src','/starsystems/public/img/nav/collapse.png');
 		} else {
-			$img.attr('src','/images/nav/expand.png');
+			$img.attr('src','/starsystems/public/img/nav/expand.png');
 		}
 	});
 });

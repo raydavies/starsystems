@@ -9,9 +9,9 @@ $(document).ready(function() {
 	var $next = $('#nav_next');
 	
 	$previous.hover(function() {
-		$previous.attr('src', '/images/nav/active_prev.png');
+		$previous.attr('src', '/starsystems/public/img/nav/active_prev.png');
 	}, function() {
-		$previous.attr('src', '/images/nav/arrow_prev.png');
+		$previous.attr('src', '/starsystems/public/img/nav/arrow_prev.png');
 	});
 
 	$previous.click(function() {
@@ -19,9 +19,9 @@ $(document).ready(function() {
 	});
 
 	$next.hover(function() {
-		$next.attr('src', '/images/nav/active_next.png');
+		$next.attr('src', '/starsystems/public/img/nav/active_next.png');
 	}, function() {
-		$next.attr('src', '/images/nav/arrow_next.png');
+		$next.attr('src', '/starsystems/public/img/nav/arrow_next.png');
 	});
 	
 	$next.click(function() {
@@ -33,7 +33,7 @@ function toggleSlide()
 {
 	var $slide = $('#slideshow');
 
-	$slide.attr('src', "/images/slides/" + t + ".jpg");
+	$slide.attr('src', "/starsystems/public/img/slides/" + t + ".jpg");
 
 	if (t<=1) {
 		$('#nav_prev').addClass('hidden');

@@ -5,7 +5,7 @@
 	<div id="samplepics">
 
 		<div class="sample_right">
-			<img src="/images/curriculum/screen_history.jpg">
+			<img src="<?php echo constant('PUBLIC'); ?>/img/curriculum/screen_history.jpg">
 			<p><strong>Step 1: Choose your lesson</strong><br><br>
 				Log in, then select a grade level and general topic to begin.<br><br>
 				Each topic is divided into several in-depth lessons, making it easy to find exactly what you need.<br><br>
@@ -14,9 +14,9 @@
 		</div>
 		
 		<div class="sample_left">
-			<img src="/images/curriculum/study_history.jpg">
-			<img class="hidden" src="/images/curriculum/study_math.jpg">
-			<img class="hidden" src="/images/curriculum/study_math2.jpg">
+			<img src="<?php echo constant('PUBLIC'); ?>/img/curriculum/study_history.jpg">
+			<img class="hidden" src="<?php echo constant('PUBLIC'); ?>/img/curriculum/study_math.jpg">
+			<img class="hidden" src="<?php echo constant('PUBLIC'); ?>/img/curriculum/study_math2.jpg">
 			<p><strong>Step 2: Study the lesson</strong><br><br>
 				Study mode is the backbone of the program and contains everything students need to know for school and homework.<br><br>
 				There's <u>no</u> filler in the Interactive Curriculum! All lessons are short, engaging, and full of meaningful academic content.<br><br>
@@ -26,9 +26,9 @@
 		</div>
 		
 		<div class="sample_right">
-			<img src="/images/curriculum/practice_history.jpg">
-			<img class="hidden" src="/images/curriculum/practice_science.jpg">
-			<img class="hidden" src="/images/curriculum/practice_reading.jpg">
+			<img src="<?php echo constant('PUBLIC'); ?>/img/curriculum/practice_history.jpg">
+			<img class="hidden" src="<?php echo constant('PUBLIC'); ?>/img/curriculum/practice_science.jpg">
+			<img class="hidden" src="<?php echo constant('PUBLIC'); ?>/img/curriculum/practice_reading.jpg">
 			<p><strong>Step 3: Practice the lesson</strong><br><br>
 				Practice mode allows students to apply what they've learned in a quiz format.<br><br>
 				Feedback is immediate; students receive the help they need, when they need it.<br><br>
@@ -38,7 +38,7 @@
 		</div>
 		
 		<div class="sample_left">
-			<img src="/images/curriculum/test_history.jpg">
+			<img src="<?php echo constant('PUBLIC'); ?>/img/curriculum/test_history.jpg">
 			<p><strong>Step 4: Take the test</strong><br><br>
 				Test mode recreates a real testing atmosphere. Students must answer all questions before feedback is given. Any missed answers can be reviewed once the test is complete.<br><br>
 				Wrong answer? Don't worry! You can take the test again and again.<br><br>
@@ -48,9 +48,9 @@
 		</div>
 		
 		<div class="sample_right">
-			<img src="/images/curriculum/essay_history.jpg">
-			<img class="hidden" src="/images/curriculum/essay_reading.jpg">
-			<img class="hidden" src="/images/curriculum/essay_science.jpg">
+			<img src="<?php echo constant('PUBLIC'); ?>/img/curriculum/essay_history.jpg">
+			<img class="hidden" src="<?php echo constant('PUBLIC'); ?>/img/curriculum/essay_reading.jpg">
+			<img class="hidden" src="<?php echo constant('PUBLIC'); ?>/img/curriculum/essay_science.jpg">
 			<p><strong>Step 5: Get Creative</strong><br><br>
 				Essay mode encourages students to think more deeply about the material by providing open-ended questions as writing topics.<br><br>
 				There are no wrong answers in Essay mode. Students can express themselves while building strong writing skills!
@@ -58,8 +58,8 @@
 		</div>
 		
 		<div class="sample_bottom">
-			<img src="/images/curriculum/recess_geography.jpg">
-			<img src="/images/curriculum/recess_math.jpg">
+			<img src="<?php echo constant('PUBLIC'); ?>/img/curriculum/recess_geography.jpg">
+			<img src="<?php echo constant('PUBLIC'); ?>/img/curriculum/recess_math.jpg">
 			<br>
 			Take a break! Recess mode keeps students learning with interactive games.
 		</div>
