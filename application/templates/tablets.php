@@ -4,7 +4,7 @@
 	<div class="tablet">
 		<h4>ID710WTA 7" eReader/Tablet</h4>
 
-		<img class="tabletpics" src="<?php echo constant('PUBLIC'); ?>/img/tablets/ID710WTA.jpg" alt="7 Inch Tablet" title=''><br>
+		<img class="tabletpics" src="/img/tablets/ID710WTA.jpg" alt="7 Inch Tablet" title=''><br>
 
 		<h4>Features:</h4>
 
@@ -18,7 +18,7 @@
 	    		<tr>
 					<td><li>Capacitive touch panel</li></td>
 					<td><li>Supports Android Market</li></td>
-					<td><li>HDMI output</li></td>	
+					<td><li>HDMI output</li></td>
 	    		</tr>
 	    		<tr>
 					<td><li>Built-in Camera</li></td>
@@ -68,7 +68,7 @@
 	<div class="tablet">
 
 		<h4>ID1018WTA Android 4.0 Tablet with Capacitive Touch Screen</h4>
-		<img class="tabletpics" src="<?php echo constant('PUBLIC'); ?>/img/tablets/ID1018WTA.jpg" alt="10.1 Inch Tablet" title=''><br>
+		<img class="tabletpics" src="/img/tablets/ID1018WTA.jpg" alt="10.1 Inch Tablet" title=''><br>
 		Android 4.0, the latest android OS version, plus capacitive touch panel brings ultimate joyful user experience!
 
 		<h4>Features:</h4>
@@ -83,7 +83,7 @@
 			    <tr>
 					<td><li>Capacitive touch panel</li></td>
 					<td><li>Supports Android Market</li></td>
-					<td><li>HDMI output</li></td>	
+					<td><li>HDMI output</li></td>
 			    </tr>
 			    <tr>
 					<td><li>Built-in Camera</li></td>
@@ -107,7 +107,7 @@
 			    </tr>
 			</ul>
 		</table>
-		
+
 		<h4>Specifications:</h4>
 
 		<p class="specs">
@@ -130,8 +130,8 @@
 
 
 	<div class="tagline">
-		<img id="tabletware" src="<?php echo constant('PUBLIC'); ?>/img/tablets/software_suite.jpg" alt="Software Bundle" title=''/>
+		<img id="tabletware" src="/img/tablets/software_suite.jpg" alt="Software Bundle" title=''/>
 		<p><strong>Over $200 of Software included with all Tablets!</strong></p><br>
 	</div><!--END TAGLINE DIV-->
-	
+
 </div><!--END CONTENT DIV-->

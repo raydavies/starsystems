@@ -6,7 +6,7 @@ $(document).ready(function() {
 		//toggleSelect();
 		changeOptions();
 	});
-	
+
 	$('#lesson_catalog select:eq(0)').change(function() {
 		//toggleSelect();
 		changeOptions();
@@ -15,15 +15,15 @@ $(document).ready(function() {
 	$('#faq div').click(function() {
 		$(this).children('.answer').slideToggle(500);
 		var $img = $(this).find('img');
-		if ($img.attr('src') == '/starsystems/public/img/nav/expand.png') {
-			$img.attr('src','/starsystems/public/img/nav/collapse.png');
+		if ($img.attr('src') == '/img/nav/expand.png') {
+			$img.attr('src','/img/nav/collapse.png');
 		} else {
-			$img.attr('src','/starsystems/public/img/nav/expand.png');
+			$img.attr('src','/img/nav/expand.png');
 		}
 	});
 });
 
-var toggleSelect = function() {	
+var toggleSelect = function() {
 	if ($('#lesson_catalog select:eq(0) > option:selected').attr('value') === '') {
 		$('#lesson_catalog select:eq(1)').attr('disabled', true);
 	} else {

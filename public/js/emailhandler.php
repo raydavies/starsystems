@@ -27,7 +27,7 @@ if (empty($name) || empty($email) || empty($message) || (preg_match($nameregex, 
 	header("Location: ../error/");
 	die;
 } else {
-	$toaddress = "postmaster@starlearningsystems.com";	
+	$toaddress = "postmaster@starlearningsystems.com";
 
 	$mailcontent = $message."\n";
 
@@ -35,6 +35,6 @@ if (empty($name) || empty($email) || empty($message) || (preg_match($nameregex, 
 
 	mail($toaddress, $subject, $mailcontent, $fromaddress);
 
-	header("Location: ../contact/");
+	header("Location: ../contact");
 	die;
 }

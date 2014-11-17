@@ -1,8 +1,8 @@
 <?php
 $env = 'development';
-require_once(__DIR__.'/config/constants.php');
-require_once(__DIR__.'/config/info.php');
-require_once(__DIR__.'/autoloader.php');
+require_once(realpath(__DIR__.'/../config/constants.php'));
+require_once(realpath(__DIR__.'/../config/info.php'));
+require_once(realpath(__DIR__.'/../autoloader.php'));
 
 Database\DbConnection::initializeConnection($db_params[$env]);
 

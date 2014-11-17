@@ -5,26 +5,26 @@ var h = 1;
 $(document).ready(function() {
 
 	toggleTimeline();
-	
+
 	var $past = $('#timeline img:first');
 	var $future = $('#timeline img:last');
 
 	$past.hover(function() {
-		$past.attr('src', "/starsystems/public/img/nav/active_prev.png");
+		$past.attr('src', "/img/nav/active_prev.png");
 	}, function() {
-		$past.attr('src', "/starsystems/public/img/nav/arrow_l.png");
+		$past.attr('src', "/img/nav/arrow_l.png");
 	});
-	
+
 	$past.click(function() {
 		previousTime();
 	});
 
 	$future.hover(function() {
-		$future.attr('src', "/starsystems/public/img/nav/active_next.png");
+		$future.attr('src', "/img/nav/active_next.png");
 	}, function() {
-		$future.attr('src', "/starsystems/public/img/nav/arrow_r.png");
+		$future.attr('src', "/img/nav/arrow_r.png");
 	});
-	
+
 	$future.click(function() {
 		nextTime();
 	});
@@ -32,7 +32,7 @@ $(document).ready(function() {
 
 function toggleTimeline()
 {
-	$('#timelinepics').attr('src', "/starsystems/public/img/history/" + h + ".jpg");
+	$('#timelinepics').attr('src', "/img/history/" + h + ".jpg");
 	$('#inner_timeline div:nth-child(' + h + ')').fadeIn(600);
 
 	if (h <= 1) {
@@ -51,7 +51,7 @@ function nextTime()
 {
 	if (h < 3) {
 		$('#inner_timeline div:nth-child(' + h + ')').fadeOut(200);
-		h++;		
+		h++;
 		toggleTimeline();
 	}
 	return false;

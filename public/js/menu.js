@@ -1,12 +1,9 @@
 $(document).ready(function() {
-	$('#submenu').hover(function() {
-		$('#bubble').stop(true,true).fadeIn(200);
-		$('#navbar li ul').stop(true,true).fadeIn(200);
+	$('.drop-down').hover(function() {
+		$('.sub-menu').stop(true,true).removeClass('hidden');
 	}, function() {
-		$('#bubble').stop(true,true).fadeOut(200);
-		$('#navbar li ul').stop(true,true).fadeOut(200);
+		$('.sub-menu').stop(true,true).addClass('hidden');
 	});
-
 	var title = $(this).attr('title').substring(24);
 	menuSelector(title);
 });
@@ -17,8 +14,8 @@ var menuSelector = function(title) {
 		title === "Benefits" ||
 		title === "Tablet PCs"){
 
-		$('.menulinks:nth-child(3)').css('background-color','#c5b358');
-		$('.menulinks:nth-child(3) > a:first').css('color','white');
+		$('.nav-link:nth-child(3)').css('background-color', '#c5b358');
+		$('.nav-link:nth-child(3) > a:first').css('color', '#fff');
 		highlightMenu('.sublinks', title);
 	} else{
 		highlightMenu('.menulinks', title);
@@ -29,13 +26,13 @@ var highlightMenu = function(group, title) {
 	if (title === "Home of the Interactive Curriculum") {
 		title = "Home";
 	}
-	for (var i = 1; i < $(group).length+1; i++) {
+	for (var i = 1; i < $(group).length + 1; i++) {
 		var current = $(group +':nth-child(' + i + ') a:first');
 		if (current.html() == title) {
 			current.removeAttr('href');
 			current.css('cursor','default');
 			$(group +':nth-child(' + i + ')').css('background-color', '#c5b358');
-			current.css('color', 'white');
+			current.css('color', '#fff');
 		}
 	}
 };

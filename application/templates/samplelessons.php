@@ -1,12 +1,12 @@
 <div class="content">
 	<p id="lesson_text"><strong>The Interactive Curriculum</strong> has over 2700 Teaching and Study Lessons designed to help students excel. Take a peek at what your child will be learning!</p>
 
-	<img id="blackboardchild" src="<?php echo constant('PUBLIC'); ?>/img/blackboard.jpg" alt="Child at blackboard" title=''>
+	<img id="blackboardchild" src="/img/blackboard.jpg" alt="Child at blackboard" title=''>
 
 	<div id="lesson_catalog">
 		<span>Curious about the curriculum? Just pick a subject below!</span>
 		<form action='' method='get'>
-		
+
 			Choose a level:<br>
 			<select name="level">
 				<option value=1 selected="selected">Primary (K-3rd)</option>

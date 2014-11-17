@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$(window).bind('scroll',function() {
+	$(window).bind('scroll', function() {
 		parallaxScroll();
 		showScrollButton();
 	});
@@ -11,17 +11,17 @@ $(document).ready(function() {
 
 var parallaxScroll = function() {
 	var scrolled = $(window).scrollTop();
-	$('#logo').css('top',(35-(scrolled*0.75))+'px');
+	$('.star_logo').css('top', (0 - (scrolled * 0.75)) + 'px');
 };
 
 var topScroll = function() {
-	$('html, body').animate({scrollTop:0}, 1000);
+	$('html, body').animate({scrollTop: 0}, 1000);
 };
 
 var showScrollButton = function() {
-	$('#scrollbutton').hide();
+	$('.scroll-btn').hide();
 	var halfway = ($('body').height()) / 2;
 	if ($(document).scrollTop() >= halfway) {
-		$('#scrollbutton').show();
-	}		
+		$('.scroll-btn').show();
+	}
 };

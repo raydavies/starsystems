@@ -7,13 +7,11 @@ nbproject
 .project
 .settings
 composer.lock
-vendor
-public/img
-public/pdf
+**/vendor/**
+public/img/**
+public/pdf/**
 error_log
 .htaccess
 *~
 *.swp
-bin
 config/info.php
-
