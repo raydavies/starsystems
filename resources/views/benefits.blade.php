@@ -1,3 +1,5 @@
+@extends('layout.master')
+
 @section('content')
 	<h2>Seven Reasons Why Your Child<br>Will Benefit From This Program</h2>
 
@@ -47,7 +49,7 @@
 	</ol>
 
 	<div class="tagline">
-		<img id="paperchild" src="/img/apluspaper.jpg" alt="A plus paper" title=''/>
+		<img id="paperchild" src="{{ asset('/img/apluspaper.jpg') }}" alt="A plus paper" title=''>
 		<p>Further questions? Call us at <strong>(708) 675-7640</strong></p>
 	</div><!--END TAGLINE DIV-->
 

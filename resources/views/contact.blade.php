@@ -1,3 +1,10 @@
+@extends('layout.master')
+
+@section('headscripts')
+	@parent
+	<script src="{{ asset('/js/formValidator.js') }}" async></script>
+@stop
+
 @section('content')
 	<h4>For more information, or to leave us a comment,<br> please fill out the form below!</h4>
 

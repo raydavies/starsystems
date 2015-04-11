@@ -3,11 +3,11 @@
 		<div class="row clearfix">
 			<div id="footer_col_1" class="footer_col col-md-3">
 				<ul class="footer-nav">
-					<li><a href="/">Home</a></li>
-					<li><a href="/about">About Us</a></li>
-					<li><a href="/curriculum">Our Product</a></li>
-					<li><a href="/faq">FAQ</a></li>
-					<li><a href="/contact">Contact Us</a></li>
+					<li><a href="{{ route('home') }}">Home</a></li>
+					<li><a href="{{ route('about') }}">About Us</a></li>
+					<li><a href="{{ route('curriculum') }}">Our Product</a></li>
+					<li><a href="{{ route('faq') }}">FAQ</a></li>
+					<li><a href="{{ route('contact') }}">Contact Us</a></li>
 				</ul>
 			</div>
 			<div id="footer_col_2" class="footer_col col-md-3">
@@ -21,9 +21,15 @@
 			<div id="footer_col_3" class="footer_col col-md-3">
 				<h3>Follow Us</h3>
 				<ul>
-					<li id="footer-btn1" class="footer-btn"><a href="https://www.facebook.com/pages/Star-Learning-Systems/412104522208607?ref=ts&fref=ts" target="_blank"></a></li>
-					<li id="footer-btn2" class="footer-btn"><a href="https://plus.google.com/110787110884089656450/about?hl=en" target="_blank"></a></li>
-					<li id="footer-btn3" class="footer-btn"><a href="" target="_blank"></a></li>
+					<li id="footer-btn1" class="footer-btn">
+						<a href="https://www.facebook.com/pages/Star-Learning-Systems/412104522208607?ref=ts&fref=ts" target="_blank"></a>
+					</li>
+					<li id="footer-btn2" class="footer-btn">
+						<a href="https://plus.google.com/110787110884089656450/about?hl=en" target="_blank"></a>
+					</li>
+					<li id="footer-btn3" class="footer-btn">
+						<a href="#" target="_blank"></a>
+					</li>
 				</ul>
 			</div>
 			<div id="footer_col_4" class="footer_col col-md-3">

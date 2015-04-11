@@ -1,3 +1,10 @@
+@extends('layout.master')
+
+@section('headscripts')
+	@parent
+	<script src="{{ asset('/js/displayPhoto.js') }}" async></script>
+@stop
+
 @section('content')
 	<div id="intro">
 		<h1>The Interactive Curriculum</h1>
