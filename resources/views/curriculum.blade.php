@@ -1,5 +1,4 @@
-<div class="content">
-
+@section('content')
 	<h2>Take a tour of the Interactive Curriculum!</h2>
 
 	<div id="samplepics">
@@ -67,4 +66,4 @@
 
 	<p id="bottom_text">Don't leave your child's education to chance. Build success with <strong>The Interactive Curriculum!</strong></p>
 
-</div><!--END CONTENT DIV-->
+@stop

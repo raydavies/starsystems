@@ -1,4 +1,4 @@
-<div class="content">
+@section('content')
 	<p id="lesson_text"><strong>The Interactive Curriculum</strong> has over 2700 Teaching and Study Lessons designed to help students excel. Take a peek at what your child will be learning!</p>
 
 	<img id="blackboardchild" src="/img/blackboard.jpg" alt="Child at blackboard" title=''>
@@ -29,5 +29,4 @@
 	</div>
 
 	<?php //require(constant('APP_PATH').'/inc/lessonfinder.php'); ?>
-
-</div><!--END CONTENT DIV-->
+@stop

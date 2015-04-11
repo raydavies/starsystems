@@ -1,4 +1,4 @@
-<div class="content">
+@section('content')
 	<h1>Frequently Asked Questions</h1>
 	<h5 class="subtitle">(Click on a question to show or hide the answer)</h5>
 
@@ -46,4 +46,4 @@
 			</div>
 		</div>
 	</div><!--END FAQ DIV-->
-</div><!--END CONTENT DIV-->
+@stop

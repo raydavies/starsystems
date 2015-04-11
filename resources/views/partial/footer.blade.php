@@ -40,5 +40,5 @@
 			<p class="col-md-6">Design by <a href="http://mumblecrumblydesign.com" target="_blank">Mumble Crumbly Design</a></p>
 			<p class="col-md-6 copyright">&copy; <?php echo date('Y'); ?> Star Learning Systems</p>
 		</div>
-	</div><!--END FOOTER DIV-->
-</div><!--END FOOT WRAPPER-->
+	</div>
+</div>

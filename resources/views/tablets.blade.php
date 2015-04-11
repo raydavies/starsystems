@@ -1,4 +1,4 @@
-<div class="content">
+@section('content')
 	<h1>Tablet PCs</h1>
 
 	<div class="tablet">
@@ -133,5 +133,4 @@
 		<img id="tabletware" src="/img/tablets/software_suite.jpg" alt="Software Bundle" title=''/>
 		<p><strong>Over $200 of Software included with all Tablets!</strong></p><br>
 	</div><!--END TAGLINE DIV-->
-
-</div><!--END CONTENT DIV-->
+@stop

@@ -10,4 +10,5 @@ Thumbs.db
 *.swp
 error_log
 .htaccess
+.project
 
