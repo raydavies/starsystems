@@ -6,9 +6,9 @@ require_once(realpath(__DIR__.'/../autoloader.php'));
 
 Database\DbConnection::initializeConnection($db_params[$env]);
 
-$request = $_SERVER['REQUEST_URI'];
+$uri = $_SERVER['REQUEST_URI'];
 if ($env == 'development') {
-	$uri = str_ireplace('/starsystems', '', $request);
+	$uri = str_ireplace('/starsystems', '', $uri);
 }
 
 $page = new Page\PageLoader($uri);

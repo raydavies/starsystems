@@ -7,9 +7,9 @@ use Page\Page;
 class PageLoader
 {
 	protected $page;
-	
+
 	private $file;
-	
+
 	public function __construct($uri)
 	{
 		if ($uri == '/') {
@@ -18,9 +18,9 @@ class PageLoader
 			$segments = explode('/', trim($uri, '/'));
 			$this->file = $segments[0];
 		}
-		$page = new Page(VIEW_PATH . '/' . str_replace(array('-', '_'), '', $this->file) . '.php');	
-		
-		$sql = 'SELECT title FROM pages WHERE url = "'.$uri.'" LIMIT 1';
+		$page = new Page(VIEW_PATH . '/' . str_replace(array('-', '_'), '', $this->file) . '.php');
+
+		$sql = "SELECT `title` FROM `pages` WHERE `url` = '{$uri}' LIMIT 1";
 		$result = Db::getConn()->query($sql);
 		if ($result->getAffectedRows()) {
 			$row = $result->fetchAssoc();
@@ -28,7 +28,7 @@ class PageLoader
 		}
 		$this->page = $page;
 	}
-	
+
 	public function loadPage()
 	{
 		ob_start();
