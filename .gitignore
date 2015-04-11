@@ -1,0 +1,15 @@
+**vendor
+/node_modules
+.env
+/bootstrap/compiled.php
+/public/img
+/public/font
+composer.phar
+composer.lock
+.DS_Store
+Thumbs.db
+*~
+*.swp
+error_log
+.htaccess
+
