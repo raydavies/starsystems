@@ -5,7 +5,7 @@
 		<ul class="sub-menu hidden">
 			<img class="nav-arrow" src="{{ asset('/img/nav/nav-arrow.png') }}">
 			<li class="sub-link"><a href="{{ route('curriculum') }}">The Interactive Curriculum</a></li>
-			<li class="sub-link"><a href="{{ route('lessons') }}">Sample Lessons</a></li>
+			<li class="sub-link"><a href="{{ route('lessons') }}">Lessons Taught</a></li>
 			<li class="sub-link"><a href="{{ route('benefits') }}">Benefits</a></li>
 		</ul>
 	</li>

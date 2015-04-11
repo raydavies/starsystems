@@ -1,34 +1,43 @@
 @extends('layout.master')
 
+@section('title', 'Lessons Taught')
+
 @section('content')
 	<p id="lesson_text"><strong>The Interactive Curriculum</strong> has over 2700 Teaching and Study Lessons designed to help students excel. Take a peek at what your child will be learning!</p>
 
-	<img id="blackboardchild" src="{{ asset('/img/blackboard.jpg') }}" alt="Child at blackboard" title=''>
+	<img id="blackboardchild" src="{{ asset('/img/blackboard.jpg') }}" alt="Child at blackboard" title="">
 
 	<div id="lesson_catalog">
 		<span>Curious about the curriculum? Just pick a subject below!</span>
-		<form action='' method='get'>
+		<form action="{{ URL::current() }}" method="get">
 
-			Choose a level:<br>
-			<select name="level">
-				<option value=1 selected="selected">Primary (K-3rd)</option>
-				<option value=2>Intermediate (4th-6th)</option>
-				<option value=3>Advanced (7th-9th)</option>
-				<option value=4>Pre-College (10th-12th)</option>
-			</select><br>
+			<label for="level_select">Choose a level:</label>
+			<select id="level_select" name="level">
+				@foreach ($levels as $level)
+					<option value="{{ $level->level_id}}">{{ $level->name }} ({{ $level->grade_range }})</option>
+				@endforeach
+			</select>
 
-			Choose a subject:<br>
-			<select name="subject">
-				<option value=1 selected="selected">Grammar</option>
-				<option value=2>Reading</option>
-				<option value=3>Vocabulary</option>
-				<option value=4>Math</option>
-				<option value=5>Science</option>
-				<option value=6>Social Studies</option>
-			</select><br>
+			<label for="subject_select">Choose a subject:</label>
+			<select id="subject_select" name="subject">
+				@foreach ($subjects as $subject)
+					<option value="{{ $subject->subject_id }}">{{ $subject->subject }}</option>
+				@endforeach
+			</select>
 			<input type="submit" value="Go!">
 		</form>
 	</div>
 
-	<?php //require(constant('APP_PATH').'/inc/lessonfinder.php'); ?>
+	<div id="lesson_library">
+		<h2>{{ $current_level->name }}: {{ $current_subject->name }}</h2>
+		@if (count($lessons))
+			<div class="row clearfix">
+				@foreach ($lessons as $lesson)
+					<div class="col-md-4">{{ $lesson->title }}</div>
+				@endforeach
+			</div>
+		@else
+			<div class="empty_list">No Lessons Found</div>
+		@endif
+	</div>
 @stop

@@ -23,9 +23,7 @@ Route::get('/curriculum', ['as' => 'curriculum', function() {
 	return view('curriculum');
 }]);
 
-Route::get('/sample-lessons', ['as' => 'lessons', function() {
-	return view('samplelessons');
-}]);
+Route::get('/sample-lessons', ['as' => 'lessons', 'uses' => 'LessonController@index']);
 
 Route::get('/benefits', ['as' => 'benefits', function() {
 	return view('benefits');
