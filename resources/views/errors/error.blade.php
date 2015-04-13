@@ -1,3 +1,7 @@
+@extends('layout.master')
+
+@section('title', 'Error!')
+
 @section('content')
 	<p>
 		Looks like there was a problem with your form submission. Please make sure all fields are filled out properly before hitting send. Enable Javascript for the best experience.

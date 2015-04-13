@@ -1,51 +1,64 @@
 @extends('layout.master')
 
+@section('title', 'Frequently Asked Questions')
+
+@section('headscripts')
+	@parent
+	<script src="{{ asset('/js/faq.js') }}"></script>
+@stop
+
 @section('content')
 	<h1>Frequently Asked Questions</h1>
-	<h5 class="subtitle">(Click on a question to show or hide the answer)</h5>
 
-	<div id="faq">
-		<div class="question">
-			<p>What are the computer requirements?
-				<img src="{{ asset('/img/nav/expand.png') }}" alt="expand" title='' />
-			</p>
-			<div class="answer">The Hippo Interactive Curriculum will work on any version of Windows.</div>
+	<div id="faq" class="text-left">
+		<div class="question panel">
+			<div class="panel-heading panel-info" data-toggle="collapse" data-target="#answer-1">
+				<h3 class="panel-title text-left">What are the computer requirements?</h3>
+				<span class="caret active"></span>
+			</div>
+			<div id="answer-1" class="answer panel-body panel-collapse in">The Hippo Interactive Curriculum will work on any version of Windows, including Windows installations running via Boot Camp on a Mac.</div>
 		</div>
 
-		<div class="question">
-			<p>If my child wants to take a practice or test again, will it be the same questions?
-				<img src="{{ asset('/img/nav/expand.png') }}" alt="expand" title='' />
-			</p>
-			<div class="answer">Each time your child clicks on the practice or test button, the software changes the order of some questions and always adds new ones. We call this the 'Teacher Feature'.</div>
+		<div class="question panel">
+			<div class="panel-heading panel-info" data-toggle="collapse" data-target="#answer-2">
+				<h3 class="panel-title text-left">If my child wants to take a practice or test again, will it be the same questions?</h3>
+				<span class="caret active"></span>
+			</div>
+			<div id="answer-2" class="answer panel-body panel-collapse in">Each time your child clicks on the practice or test button, the software changes the order of some questions and always adds new ones. We call this the 'Teacher Feature'.</div>
 		</div>
 
-		<div class="question">
-			<p>My child previously attended a tutoring center, can he use your software program instead of enrolling again at the tutor?
-				<img src="{{ asset('/img/nav/expand.png') }}" alt="expand" title='' />
-			</p>
-			<div class="answer">Yes, approx. 50% of our customers previously had children going to tutors. However, they now use our program and are amazed at the results. Also, many school teachers see the benefits and are using our software for their own children at home.</div>
+		<div class="question panel">
+			<div class="panel-heading panel-info" data-toggle="collapse" data-target="#answer-3">
+				<h3 class="panel-title text-left">My child previously attended a tutoring center. Can he use your software program instead of enrolling again at the tutor?</h3>
+				<span class="caret active"></span>
+			</div>
+			<div id="answer-3" class="answer panel-body panel-collapse in">Yes, approx. 50% of our customers previously had children going to tutors. However, they now use our program and are amazed at the results. Also, many school teachers see the benefits and are using our software for their own children at home.</div>
 		</div>
 
-		<div class="question">
-			<p>How much does the program cost?
-				<img src="{{ asset('/img/nav/expand.png') }}" alt="expand" title='' />
-			</p>
-			<div class="answer">Call (708) 675-7640 for pricing information.</div>
+		<div class="question panel">
+			<div class="panel-heading panel-info" data-toggle="collapse" data-target="#answer-4">
+				<h3 class="panel-title text-left">How much does the program cost?</h3>
+				<span class="caret active"></span>
+			</div>
+			<div id="answer-4" class="answer panel-body panel-collapse in">Call (708) 675-7640 for pricing information.</div>
 		</div>
 
-		<div class="question">
-			<p>How do I contact the company?
-				<img src="{{ asset('/img/nav/expand.png') }}" alt="expand" title='' />
-			</p>
-			<div class="answer">Star Learning Systems<br />
-				14007 S. Bell Road<br />
-				Homer Glen, IL 60491<br />
-				(708) 675-7640<br />
-				Fax: (866) 591-1721<br />
-				Email: startutor@starlearningsystems.com<br />
-				<br />
+		<div class="question panel">
+			<div class="panel-heading panel-info" data-toggle="collapse" data-target="#answer-5">
+				<h3 class="panel-title text-left">How do I contact the company?</h3>
+				<span class="caret active"></span>
+			</div>
+			<div id="answer-5" class="answer panel-body panel-collapse in">
+				<address>
+					<strong>Star Learning Systems</strong><br>
+					14007 S. Bell Road<br>
+					Homer Glen, IL 60491<br>
+					(708) 675-7640<br>
+					Fax: (866) 591-1721<br>
+					Email: startutor@starlearningsystems.com<br>
+				</address>
 				Or click <a href="{{ route('contact') }}">here</a> to go to our contact page!
 			</div>
 		</div>
-	</div><!--END FAQ DIV-->
+	</div>
 @stop

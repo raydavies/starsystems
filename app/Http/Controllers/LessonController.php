@@ -1,19 +1,24 @@
 <?php
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use App\Models\Lesson;
 use App\Models\Level;
 use App\Models\Subject;
-use DB;
-use Request;
+use Illuminate\Http\Request;
 
 class LessonController extends Controller
 {
+	protected $request;
+
+	public function __construct(Request $request)
+	{
+		$this->request = $request;
+	}
+
 	public function index()
 	{
-		$level_id = (int) Request::input('level', 1);
-		$subject_id = (int) Request::input('subject', 1);
+		$level_id = (int) $this->request->input('level', 1);
+		$subject_id = (int) $this->request->input('subject', 1);
 
 		$levels = Level::all();
 		$level = Level::find($level_id);
@@ -27,5 +32,13 @@ class LessonController extends Controller
 			'current_level' => $level,
 			'current_subject' => $subject
 		]);
+	}
+
+	public function fetchSubjects($level_id)
+	{
+		if (!$this->request->isXmlHttpRequest()) {
+			abort(404);
+		}
+		return response()->json(['subjects' => Level::find($level_id)->subjects]);
 	}
 }

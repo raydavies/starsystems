@@ -13,6 +13,5 @@
 	<script src="{{ asset('/js/vendor/bootstrap.min.js') }}" async></script>
 	<script src="{{ asset('/js/analyticstracking.js') }}" async></script>
 	<script src="{{ asset('/js/menu.js') }}" async></script>
-	<script src="{{ asset('/js/titleScroll.js') }}" async></script>
-	<script src="{{ asset('/js/toggleHandler.js') }}" async></script>
+	<script src="{{ asset('/js/scroll.js') }}" async></script>
 @show

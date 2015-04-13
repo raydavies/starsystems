@@ -1,12 +1,12 @@
 @extends('layout.master')
 
+@section('title', 'Benefits')
+
 @section('content')
 	<h2>Seven Reasons Why Your Child<br>Will Benefit From This Program</h2>
 
+	<p>The Interactive Curriculum Software Program is designed to function as the essential centerpiece of your home educational endeavor. The curriculum is comprehensive, clearly presented, highly visual, and appropriately challenging. By bringing the material into your home, you will have taken a big step towards helping your child receive a first-rate education. Here's why:</p>
 	<ol>
-
-		<p>The Interactive Curriculum Software Program is designed to function as the essential centerpiece of your home educational endeavor. The curriculum is comprehensive, clearly presented, highly visual, and appropriately challenging. By bringing the material into your home, you will have taken a big step towards helping your child receive a first-rate education. Here's why:</p>
-
 		<li>One-on-One Tutoring Addresses Specific Needs</li>
 
 		<p>Children are individuals; each child develops and learns differently. Some children have the ability to understand and process information more quickly, whereas other children require a bit longer and more individual attention to get to the same point.</p>
@@ -49,8 +49,7 @@
 	</ol>
 
 	<div class="tagline">
-		<img id="paperchild" src="{{ asset('/img/apluspaper.jpg') }}" alt="A plus paper" title=''>
+		<img id="paperchild" src="{{ asset('/img/apluspaper.jpg') }}" alt="A plus paper" title="">
 		<p>Further questions? Call us at <strong>(708) 675-7640</strong></p>
-	</div><!--END TAGLINE DIV-->
-
+	</div>
 @stop

@@ -4,9 +4,9 @@
 	<li class="nav-link drop-down"><a href="{{ route('curriculum') }}">Our Product</a>
 		<ul class="sub-menu hidden">
 			<img class="nav-arrow" src="{{ asset('/img/nav/nav-arrow.png') }}">
-			<li class="sub-link"><a href="{{ route('curriculum') }}">The Interactive Curriculum</a></li>
-			<li class="sub-link"><a href="{{ route('lessons') }}">Lessons Taught</a></li>
-			<li class="sub-link"><a href="{{ route('benefits') }}">Benefits</a></li>
+			<li class="sub-link nav-link"><a href="{{ route('curriculum') }}">The Interactive Curriculum</a></li>
+			<li class="sub-link nav-link"><a href="{{ route('lessons') }}">Lessons Taught</a></li>
+			<li class="sub-link nav-link"><a href="{{ route('benefits') }}">Benefits</a></li>
 		</ul>
 	</li>
 	<li class="nav-link"><a href="{{ route('faq') }}">FAQ</a></li>

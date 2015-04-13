@@ -23,7 +23,10 @@ Route::get('/curriculum', ['as' => 'curriculum', function() {
 	return view('curriculum');
 }]);
 
-Route::get('/sample-lessons', ['as' => 'lessons', 'uses' => 'LessonController@index']);
+Route::group(['prefix' => 'sample-lessons'], function() {
+	Route::get('/', ['as' => 'lessons', 'uses' => 'LessonController@index']);
+	Route::get('/{level_id}', 'LessonController@fetchSubjects');
+});
 
 Route::get('/benefits', ['as' => 'benefits', function() {
 	return view('benefits');
