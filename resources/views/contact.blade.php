@@ -1,51 +1,87 @@
 @extends('layout.master')
 
+@section('title', 'Contact Us')
+
 @section('headscripts')
 	@parent
-	<script src="{{ asset('/js/formValidator.js') }}" async></script>
+	<script src="{{ asset('/js/form-validator.js') }}" async></script>
 @stop
 
 @section('content')
-	<h4>For more information, or to leave us a comment,<br> please fill out the form below!</h4>
+	<h4>For more information, or to leave us a comment, please fill out the form below!</h4>
 
-	<h3>Star Learning Systems</h3>
-
-	<p><strong>14007 S Bell Rd &bull; Homer Glen, IL 60491<br>
+	<address class="contact_address">
+		<strong>Star Learning Systems</strong><br>
+		14007 S Bell Rd &bull; Homer Glen, IL 60491<br>
 		(708) 675-7640<br>
-		or Toll Free<br>
-		1 (866) 923-6729</strong>
-	</p>
+		Toll Free (866) 923-6729
+	</address>
 
-	<p><em>All fields marked with an asterisk (*) are required.</em></p>
+	<p><em>All fields are required.</em></p>
 
 	<div id="form_wrapper">
-		<form id="contact_form" method="post" action='/cgi/emailhandler.php'>
-			<table>
-				<tr>
-					<td class="formlabel">Your Name*</td>
-					<td><input type="text" size="35" maxlength="50" name="name" id="name"></td>
-					<td><span class="errormsg" id="nameerror">Please enter your name</span></td>
-				</tr>
+		{!! Form::open(array('route' => 'contact', 'method' => 'post', 'id' => 'contact_form', 'class' => 'form-horizontal', 'novalidate' => 'novalidate')) !!}
+			<div class="form-group has-feedback">
+				{!! Form::label('firstname', 'First Name', array('class' => 'col-md-3 control-label')) !!}
+				<div class="col-md-6">
+					{!! Form::text('first_name', null, array('required', 'id' => 'firstname', 'class' => 'form-control', 'aria-describedby' => 'firstname_status')) !!}
+					<i class="fa form-control-feedback hidden" aria-hidden="true"></i>
+					<span id="firstname_status" class="sr-only hidden"></span>
+				</div>
+				<div class="col-md-3">
+					<span class="errormsg">{{ $errors->first('first_name') }}</span>
+				</div>
+			</div>
 
-				<tr>
-					<td class="formlabel">Your E-mail Address*</td>
-					<td><input type="text" size="35" maxlength="50" name="email" id="email"></td>
-					<td rowspan="2" valign="top"><span class="errormsg" id="emailerror">Please enter a valid e-mail address</span></td>
-				</tr>
+			<div class="form-group has-feedback">
+				{!! Form::label('lastname', 'Last Name', array('class' => 'col-md-3 control-label')) !!}
+				<div class="col-md-6">
+					{!! Form::text('last_name', null, array('required', 'id' => 'lastname', 'class' => 'form-control', 'aria-describedby' => 'lastname_status')) !!}
+					<i class="fa form-control-feedback hidden" aria-hidden="true"></i>
+					<span id="lastname_status" class="sr-only hidden"></span>
+				</div>
+				<div class="col-md-3">
+					<span class="errormsg">{{ $errors->first('last_name') }}</span>
+				</div>
+			</div>
 
-				<tr>
-					<td class="formlabel">Subject</td>
-					<td valign="middle"><input type="text" size="30" name="subject" id="subject"></td>
-				</tr>
+			<div class="form-group has-feedback">
+				{!! Form::label('email', 'Email', array('class' => 'col-md-3 control-label')) !!}
+				<div class="col-md-6">
+					{!! Form::email('email', null, array('required', 'id' => 'email', 'class' => 'form-control', 'placeholder' => 'e.g. john.smith@example.com', 'aria-describedby' => 'email_status')) !!}
+					<i class="fa form-control-feedback hidden" aria-hidden="true"></i>
+					<span id="email_status" class="sr-only hidden"></span>
+				</div>
+				<div class="col-md-3">
+					<span class="errormsg">{{ $errors->first('email') }}</span>
+				</div>
+			</div>
 
-				<tr>
-					<td class="formlabel">Your Message*</td>
-					<td><textarea cols="35" rows="7" name="message" id="message"></textarea></td>
-					<td><span class="errormsg" id="msgerror">Please enter some text</span></td>
-				</tr>
-			</table>
+			<div class="form-group has-feedback">
+				{!! Form::label('subject', 'Subject', array('class' => 'col-md-3 control-label')) !!}
+				<div class="col-md-6">
+					{!! Form::text('subject', null, array('required', 'id' => 'subject', 'class' => 'form-control', 'aria-describedby' => 'subject_status')) !!}
+					<i class="fa form-control-feedback hidden" aria-hidden="true"></i>
+					<span id="subject_status" class="sr-only hidden"></span>
+				</div>
+				<div class="col-md-3">
+					<span class="errormsg">{{ $errors->first('subject') }}</span>
+				</div>
+			</div>
 
-			<p><input type="submit" id="submit" value="Send" /></p>
-		</form>
+			<div class="form-group has-feedback">
+				{!! Form::label('message', 'Message', array('class' => 'col-md-3 control-label')) !!}
+				<div class="col-md-6">
+					{!! Form::textarea('message', null, array('required', 'id' => 'message', 'class' => 'form-control', 'aria-describedby' => 'message_status')) !!}
+					<i class="fa form-control-feedback hidden" aria-hidden="true"></i>
+					<span id="message_status" class="sr-only hidden"></span>
+				</div>
+				<div class="col-md-3">
+					<span class="errormsg">{{ $errors->first('message') }}</span>
+				</div>
+			</div>
+
+			<button type="submit" class="btn btn-success btn-lg">Send</button>
+		{!! Form::close() !!}
 	</div>
 @stop

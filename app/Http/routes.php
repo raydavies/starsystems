@@ -36,6 +36,5 @@ Route::get('/faq', ['as' => 'faq', function() {
 	return view('faq');
 }]);
 
-Route::get('/contact', ['as' => 'contact', function() {
-	return view('contact');
-}]);
+Route::get('contact', ['as' => 'contact', 'uses' => 'ContactController@create']);
+Route::post('contact', ['as' => 'contact', 'uses' => 'ContactController@store']);

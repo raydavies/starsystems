@@ -28,5 +28,5 @@
 		</div>
 		<img id="timelinepics" src="{{ asset('/img/history/1.jpg') }}" alt="">
 	</div>
-	<h3>Star Learning Systems<br>Celebrating 30 years in Education!</h3>
+	<h3>Star Learning Systems<br>Celebrating more than 30 years in Education!</h3>
 @stop

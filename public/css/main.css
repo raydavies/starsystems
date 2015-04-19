@@ -60,6 +60,11 @@ h6 {
 	background-color: white;
 	background: rgba(255,255,255,0.5);
 }
+.alert-box > .alert {
+	border-left: 0 none;
+	border-right: 0 none;
+	font-weight: bold;
+}
 .content {
 	position: relative;
 	padding: 15px 40px 50px;
@@ -475,53 +480,24 @@ ol p {
 }
 
 /***** ~ CONTACT US ~ *****/
-input[type=text], textarea {
-	font-size: 16pt;
-	font-family: "Verdana";
-	padding: 0px 5px;
-	border: 3px solid rgba(130,174,248,0.4);
-	border-radius: 8px;
+.contact_address {
+	margin-top: 15px;
 }
-input[type=text]:focus, textarea:focus {
-	-webkit-box-shadow: 0px 0px 5px 3px #82AEF8;
-	-moz-box-shadow: 0px 0px 5px 3px #82AEF8;
-	box-shadow: 0px 0px 5px 3px #82AEF8;
-}
-input[type=button] {
-	font-family: 'Georgia';
-	font-size: 14pt;
-	margin: 0 10px;
-	-webkit-box-shadow: 0 0 5px 3px #ffeae0;
-	-moz-box-shadow: 0 0 5px 3px #ffeae0;
-	box-shadow: 0 0 5px 3px #ffeae0;
-}
-input[type=submit] {
-	font-family:'Georgia';
-	font-size: 18pt;
-}
-.errormsg {
-	font-family: "Century Gothic";
-	display: none;
-	color: red;
-	font-size: 12pt;
-}
-#nameerror, #msgerror {
-	white-space: nowrap;
+.contact_address > strong {
+	font-size: 1.3em;
 }
 #form_wrapper {
-	width: 880px;
-	overflow: hidden;
+	margin-top: 20px;
 }
-#contact_form table {
-	margin-left: 75px;
-	text-align: left;
+textarea.form-control {
+	height: 100px;
 }
-#contact_form td {
-	padding: 10px 5px;
-}
-.formlabel {
-	text-align: right;
-	white-space: nowrap;
+.errormsg {
+	vertical-align: middle;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 0.9em;
+	color: #c00;
 }
 
 /***** ~ SCROLL TO TOP ~ *****/

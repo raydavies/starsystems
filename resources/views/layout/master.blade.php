@@ -40,6 +40,13 @@
 	<div class="main_wrapper">
 		<div class="page_wrapper">
 			<div class="page">
+				@if (Session::has('alert'))
+				<div class="alert-box">
+					<div class="alert alert-{{ Session::get('alert')['status'] }}">
+						{{ Session::get('alert')['message'] }}
+					</div>
+				</div>
+				@endif
 				<div id="primary-content" class="content center-block">@yield('content')</div>
 				<a href="#top" class="text-center">
 					<img class="scroll-btn hidden" alt="scroll to top button" title="Back to Top" src="{{ asset('/img/nav/scrollbutton.png') }}">
