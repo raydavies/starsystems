@@ -1,3 +1,25 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 200px;
+  padding: 50px 0 70px;
+  font-family: 'dustismoregular', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+.alert-box > .alert {
+  border-left: 0 none;
+  border-right: 0 none;
+  font-weight: bold;
+}
 .navbar {
   margin-bottom: 0;
 }
@@ -17,10 +39,149 @@
   font-family: 'Corben', Georgia, Times, serif;
   font-size: 2.5em;
 }
-.navbar .navbar-brand:hover,
-.navbar .navbar-brand:active {
+.navbar .navbar-brand {
   color: #000;
 }
 .navbar-nav > li > a {
   color: #333;
+}
+/***** ~ HOMEPAGE ~ *****/
+.content .billboard {
+  min-height: 550px;
+  padding: 20px 0;
+  background-image: url('/img/bg/girl-taking-test.jpg');
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content .billboard .tagline {
+  background-color: #333;
+  border-radius: 8px;
+  padding: 20px;
+  font-size: 4em;
+  font-family: 'tizaregular', serif;
+  color: #fff;
+}
+.content .billboard .tagline > small {
+  font-size: .5em;
+  color: #fff;
+  font-weight: normal;
+  font-family: 'dustismoregular', sans-serif;
+}
+.content .features {
+  padding: 15px 15px 50px;
+}
+.content .features header {
+  font-size: 2.5em;
+  font-weight: bold;
+  font-family: 'dustismoregular', sans-serif;
+}
+.content .features .feature {
+  font-size: 1.2em;
+}
+.content .features .feature span {
+  margin-left: 5px;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'dustismo_romanregular', sans-serif;
+}
+.content .features .feature button {
+  margin-top: 20px;
+  border-radius: 4px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 1px -1px 1px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+}
+.content .features .feature button > i {
+  margin-left: 7px;
+  vertical-align: middle;
+}
+.content .features .feature a:hover {
+  text-decoration: none;
+}
+.content .slideshow {
+  min-height: 550px;
+  padding: 20px 0;
+  background-image: url('/img/bg/students-playing-reverse.jpg');
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content .information {
+  min-height: 250px;
+  background-color: #f6dab1;
+}
+/***** ~ FOOTER ~ *****/
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 200px;
+  padding: 20px 0 0;
+  color: #fff;
+  background-color: #000;
+  font-size: 1em;
+  font-family: 'Futura', "Century Gothic", 'Arial', sans-serif;
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+.footer a:hover,
+.footer a:focus {
+  color: #82AEF8;
+}
+.footer ul {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6em;
+  font-size: .85em;
+}
+.footer ul.footer-nav {
+  font-size: 1.25em;
+}
+.footer_col {
+  padding-bottom: 50px;
+}
+.footer_col > h3 {
+  font-size: 1.3em;
+  line-height: 1.3em;
+  margin: 0;
+}
+.footer-btn {
+  width: 33px;
+  height: 32px;
+  margin: 15px 5px 0 !important;
+  display: inline-block;
+  cursor: pointer;
+}
+.footer-legal {
+  padding-bottom: 10px;
+  font-size: .825em;
+}
+#facebook-btn.footer-btn {
+  background: url('/img/nav/footer_fb.png') 0 -33px no-repeat;
+}
+#facebook-btn.footer-btn:hover {
+  background-position: 0 0;
+}
+#google-btn.footer-btn {
+  background: url('/img/nav/footer_google.png') 0 -33px no-repeat;
+}
+#google-btn.footer-btn:hover {
+  background-position: 0 0;
+}
+#linkedin-btn.footer-btn {
+  background: url('/img/nav/footer_linkedin.png') 0 -33px no-repeat;
+}
+#linkedin-btn.footer-btn:hover {
+  background-position: 0 0;
 }

@@ -1,0 +1,76 @@
+@import "variables.less";
+
+/***** ~ FOOTER ~ *****/
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	//Set minimum height of footer
+	min-height: 200px;
+	padding: 20px 0 0;
+	color: #fff;
+	background-color: #000;
+	font-size: 1em;
+	font-family: @font3;
+
+	a {
+		color: #fff;
+		text-decoration: none;
+		-webkit-transition: color 0.2s ease-in-out;
+		-moz-transition: color 0.2s ease-in-out;
+		-o-transition: color 0.2s ease-in-out;
+		-ms-transition: color 0.2s ease-in-out;
+		transition: color 0.2s ease-in-out;
+
+		&:hover, &:focus {
+			color: #82AEF8;
+		}
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		line-height: 1.6em;
+		font-size: .85em;
+
+		&.footer-nav {
+			font-size: 1.25em;
+		}
+	}
+	&_col {
+		padding-bottom: 50px;
+		> h3 {
+			font-size: 1.3em;
+			line-height: 1.3em;
+			margin: 0;
+		}
+	}
+	&-btn {
+		width: 33px;
+		height: 32px;
+		margin: 15px 5px 0 !important;
+		display: inline-block;
+		cursor: pointer;
+	}
+	&-legal {
+		padding-bottom: 10px;
+		font-size: .825em;
+	}
+}
+#facebook-btn.footer-btn {
+	background: url('@{imgdir}/nav/footer_fb.png') 0 -33px no-repeat;
+	&:hover {
+		background-position: 0 0;
+	}
+}
+#google-btn.footer-btn {
+	background: url('@{imgdir}/nav/footer_google.png') 0 -33px no-repeat;
+	&:hover {
+		background-position: 0 0;
+	}
+}
+#linkedin-btn.footer-btn {
+	background: url('@{imgdir}/nav/footer_linkedin.png') 0 -33px no-repeat;
+	&:hover {
+		background-position: 0 0;
+	}
+}
