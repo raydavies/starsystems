@@ -1,4 +1,4 @@
-@extends('layout.master')
+@extends('layout.reskin')
 
 @section('title', 'Frequently Asked Questions')
 
@@ -55,9 +55,9 @@
 					Homer Glen, IL 60491<br>
 					(708) 675-7640<br>
 					Fax: (866) 591-1721<br>
-					Email: startutor@starlearningsystems.com<br>
+					Email: postmaster@starlearningsystems.com<br>
 				</address>
-				Or click <a href="{{ route('contact') }}">here</a> to go to our contact page!
+				<a href="{{ route('contact') }}">Or click here to go to our contact page!</a>
 			</div>
 		</div>
 	</div>

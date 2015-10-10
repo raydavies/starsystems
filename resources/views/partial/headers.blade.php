@@ -4,14 +4,17 @@
 @section('headstyles')
 	<link rel="stylesheet" href="{{ asset('/css/vendor/bootstrap.min.css') }}">
 	<link rel="stylesheet" href="{{ asset('/css/vendor/normalize.css') }}">
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="{{ asset('/css/main.css') }}">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<!--<link rel="stylesheet" href="{{ asset('/css/main.css') }}">-->
+	<link rel="stylesheet" href="{{ asset('/css/reskin.css') }}">
+	<link rel="stylesheet" href="{{ asset('/css/font.css') }}">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Corben:bold">
 @show
 
 @section('headscripts')
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="{{ asset('/js/vendor/bootstrap.min.js') }}" async></script>
 	<script src="{{ asset('/js/analyticstracking.js') }}" async></script>
-	<script src="{{ asset('/js/menu.js') }}" async></script>
-	<script src="{{ asset('/js/scroll.js') }}" async></script>
+	<!--<script src="{{ asset('/js/menu.js') }}" async></script>-->
+	<!--<script src="{{ asset('/js/scroll.js') }}" async></script>-->
 @show

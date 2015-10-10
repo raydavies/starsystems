@@ -1,0 +1,26 @@
+.navbar {
+  margin-bottom: 0;
+}
+.navbar.navbar-gold {
+  background-color: #f6dab1;
+  border-color: #f1c87a;
+}
+.navbar-clouds {
+  background-color: #9bc5dd;
+  background-image: url('/img/bg/sky3.jpg');
+  background-position: center top;
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+  border-color: #9bc5dd;
+}
+.navbar-brand {
+  font-family: 'Corben', Georgia, Times, serif;
+  font-size: 2.5em;
+}
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:active {
+  color: #000;
+}
+.navbar-nav > li > a {
+  color: #333;
+}

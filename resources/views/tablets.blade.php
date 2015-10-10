@@ -1,4 +1,4 @@
-@extends('layout.master')
+@extends('layout.reskin')
 
 @section('content')
 	<h1>Tablet PCs</h1>

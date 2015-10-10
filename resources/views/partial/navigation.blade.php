@@ -1,14 +1,19 @@
-<ul class="nav-bar">
-	<li class="nav-link"><a href="{{ route('home') }}">Home</a></li>
-	<li class="nav-link"><a href="{{ route('about') }}">About Us</a></li>
-	<li class="nav-link drop-down"><a href="{{ route('curriculum') }}">Our Product</a>
-		<ul class="sub-menu hidden">
-			<img class="nav-arrow" src="{{ asset('/img/nav/nav-arrow.png') }}">
-			<li class="sub-link nav-link"><a href="{{ route('curriculum') }}">The Interactive Curriculum</a></li>
-			<li class="sub-link nav-link"><a href="{{ route('lessons') }}">Lessons Taught</a></li>
-			<li class="sub-link nav-link"><a href="{{ route('benefits') }}">Benefits</a></li>
+<ul class="nav navbar-nav navbar-right collapse navbar-collapse">
+	<li class="dropdown">
+		<a href="{{ route('about') }}" class="dropdown-toggle" data-toggle="dropdown">About Us <span class="caret"></span></a>
+		<ul class="dropdown-menu" role="menu">
+			<li><a href="{{ route('about') }}">About Us</a></li>
+			<li><a href="{{ route('contact') }}">Contact Us</a></li>
 		</ul>
 	</li>
-	<li class="nav-link"><a href="{{ route('faq') }}">FAQ</a></li>
-	<li class="nav-link"><a href="{{ route('contact') }}">Contact Us</a></li>
+	<li class="dropdown">
+		<a href="{{ route('curriculum') }}" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Our Product <span class="caret"></span></a>
+		<ul class="dropdown-menu" role="menu">
+			<li><a href="{{ route('curriculum') }}">The Interactive Curriculum</a></li>
+			<li class="divider"></li>
+			<li><a href="{{ route('lessons') }}">Lessons Taught</a></li>
+			<li><a href="{{ route('benefits') }}">Benefits</a></li>
+		</ul>
+	</li>
+	<li><a href="{{ route('faq') }}">FAQ</a></li>
 </ul>

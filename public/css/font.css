@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'hvd_bodedomedium';
+    src: url('../fonts/hvdbodedo/HVD_Bodedo-webfont.eot');
+    src: url('../fonts/hvdbodedo/HVD_Bodedo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/hvdbodedo/HVD_Bodedo-webfont.woff') format('woff'),
+         url('../fonts/hvdbodedo/HVD_Bodedo-webfont.ttf') format('truetype'),
+         url('../fonts/hvdbodedo/HVD_Bodedo-webfont.svg#hvd_bodedomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'tizaregular';
+    src: url('../fonts/tiza/tiza-webfont.eot');
+    src: url('../fonts/tiza/tiza-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/tiza/tiza-webfont.woff') format('woff'),
+         url('../fonts/tiza/tiza-webfont.ttf') format('truetype'),
+         url('../fonts/tiza/tiza-webfont.svg#tizaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'print_clearlyregular';
+    src: url('../fonts/printclearly/PrintClearly-webfont.eot');
+    src: url('../fonts/printclearly/PrintClearly-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/printclearly/PrintClearly-webfont.woff') format('woff'),
+         url('../fonts/printclearly/PrintClearly-webfont.ttf') format('truetype'),
+         url('../fonts/printclearly/PrintClearly-webfont.svg#print_clearlyregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'print_boldregular';
+    src: url('../fonts/printbold/PrintBold-webfont.eot');
+    src: url('../fonts/printbold/PrintBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/printbold/PrintBold-webfont.woff') format('woff'),
+         url('../fonts/printbold/PrintBold-webfont.ttf') format('truetype'),
+         url('../fonts/printbold/PrintBold-webfont.svg#print_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'tuffyregular';
+    src: url('../fonts/tuffy_regular_macroman/Tuffy-webfont.eot');
+    src: url('../fonts/tuffy_regular_macroman/Tuffy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/tuffy_regular_macroman/Tuffy-webfont.woff') format('woff'),
+         url('../fonts/tuffy_regular_macroman/Tuffy-webfont.ttf') format('truetype'),
+         url('../fonts/tuffy_regular_macroman/Tuffy-webfont.svg#tuffyregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'dustismoregular';
+    src: url('../fonts/dustismo_regular_macroman/dustismo-webfont.eot');
+    src: url('../fonts/dustismo_regular_macroman/dustismo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dustismo_regular_macroman/dustismo-webfont.woff') format('woff'),
+         url('../fonts/dustismo_regular_macroman/dustismo-webfont.ttf') format('truetype'),
+         url('../fonts/dustismo_regular_macroman/dustismo-webfont.svg#dustismoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'dustismo_romanregular';
+    src: url('../fonts/dustismoroman_regular_macroman/Dustismo_Roman-webfont.eot');
+    src: url('../fonts/dustismoroman_regular_macroman/Dustismo_Roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dustismoroman_regular_macroman/Dustismo_Roman-webfont.woff') format('woff'),
+         url('../fonts/dustismoroman_regular_macroman/Dustismo_Roman-webfont.ttf') format('truetype'),
+         url('../fonts/dustismoroman_regular_macroman/Dustismo_Roman-webfont.svg#dustismo_romanregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'dustismo_romanbold';
+    src: url('../fonts/dustismoroman_bold_macroman/Dustismo_Roman_Bold-webfont.eot');
+    src: url('../fonts/dustismoroman_bold_macroman/Dustismo_Roman_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dustismoroman_bold_macroman/Dustismo_Roman_Bold-webfont.woff') format('woff'),
+         url('../fonts/dustismoroman_bold_macroman/Dustismo_Roman_Bold-webfont.ttf') format('truetype'),
+         url('../fonts/dustismoroman_bold_macroman/Dustismo_Roman_Bold-webfont.svg#dustismo_romanbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

@@ -272,37 +272,30 @@ a[name='#newsclip'] {
 }
 
 /************* ABOUT US *************/
-
 #bio {
-	font-size:14pt;
-	text-align:left;
-
+	font-size: 14pt;
+	text-align: left;
 }
-
 .sls {
 	font-size:18pt;
 	font-weight:bold;
 	color:black;
 }
-
 #timeline {
 	position:relative;
 	float:left;
 	height:100%;
 	width:300px;
 }
-
 #inner_timeline {
 	color:white;
 	width:280px;
 	margin:0px auto;
 }
-
 .history {
 	position:absolute;
 	width:280px;
 }
-
 #nav_left, #nav_right {
 	cursor:pointer;
 	width:30px;
@@ -315,7 +308,6 @@ a[name='#newsclip'] {
 #nav_right {
 	right:100px;
 }
-
 #timeline_wrapper {
 	width:870px;
 	height:400px;
@@ -323,7 +315,6 @@ a[name='#newsclip'] {
 	background:rgba(0,0,0,0.7);
 	border:5px double black;
 }
-
 #timelinepics {
 	float:right;
 	height:400px;
@@ -380,25 +371,26 @@ a[name='#newsclip'] {
 }
 
 /************* BENEFITS *************/
-
-ol {
-	margin-right:25px;
-	padding-right:20px;
+.benefit_list {
+	margin-top: 20px;
 }
-
-ol li {
-	font-size:16pt;
-	text-align:left;
-	font-family:"Century Gothic";
-	font-weight:bold;
+ol > li {
+	margin: 0 25px 20px 0;
+	font-size: 1.3em;
+	text-align: left;
 }
-
-ol p {
-	text-align:justify;
+ol > li > header {
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-family: "Century Gothic";
 }
-
+ol > li > p {
+	font-size: .7em;
+	text-align: justify;
+}
 #paperchild {
-	border:5px double #000;
+	border: 5px double #000;
+	margin-bottom: 10px;
 }
 
 /***** ~ SAMPLE LESSONS ~ *****/

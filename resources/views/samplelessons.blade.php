@@ -1,4 +1,4 @@
-@extends('layout.master')
+@extends('layout.reskin')
 
 @section('title', 'Lessons Taught')
 
