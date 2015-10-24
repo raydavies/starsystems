@@ -34,7 +34,7 @@
 			</div>
 			<div id="footer_col_4" class="footer_col col-md-3 text-right">
 				<h3 class="text-right">Star Learning Systems</h3>
-				<ul class="list-unstyled">
+				<ul class="list-unstyled footer-address">
 					<li>14007 S Bell Rd</li>
 					<li>Homer Glen, IL 60491</li>
 					<li>Sales &amp; Inquiries: (708) 675-7640</li>

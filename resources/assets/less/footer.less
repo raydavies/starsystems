@@ -2,11 +2,7 @@
 
 /***** ~ FOOTER ~ *****/
 .footer {
-	position: absolute;
-	bottom: 0;
 	width: 100%;
-	//Set minimum height of footer
-	min-height: 200px;
 	padding: 20px 0 0;
 	color: #fff;
 	background-color: #000;
@@ -36,7 +32,7 @@
 			font-size: 1.25em;
 		}
 	}
-	&_col {
+	& &_col {
 		padding-bottom: 50px;
 		> h3 {
 			font-size: 1.3em;
@@ -44,16 +40,19 @@
 			margin: 0;
 		}
 	}
-	&-btn {
+	& &-btn {
 		width: 33px;
 		height: 32px;
 		margin: 15px 5px 0 !important;
 		display: inline-block;
 		cursor: pointer;
 	}
-	&-legal {
+	& &-legal {
 		padding-bottom: 10px;
 		font-size: .825em;
+	}
+	& &-address {
+		margin-top: 7px;
 	}
 }
 #facebook-btn.footer-btn {

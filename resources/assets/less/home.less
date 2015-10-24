@@ -11,19 +11,28 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 
-		.tagline {
-			background-color: #333;
+		.blackboard {
+			background-color: rgba(30, 30, 30, 0.6);
 			border-radius: 8px;
 			padding: 20px;
-			font-size: 4em;
-			font-family: @font4;
+			margin-top: 20px;
 			color: #fff;
-
-			> small {
-				font-size: .5em;
-				color: #fff;
-				font-weight: normal;
-				font-family: @font1;
+			.tagline {
+				font-size: 4em;
+				font-family: @font4;
+				> small {
+					display: block;
+					margin: 7px 0 15px;
+					font-size: .5em;
+					color: #fff;
+					font-weight: normal;
+					font-family: @font1;
+				}
+			}
+			button {
+				margin: 15px 0 0;
+				font-size: 1.5em;
+				font-weight: bold;
 			}
 		}
 	}
@@ -63,13 +72,38 @@
 		min-height: 550px;
 		padding: 20px 0;
 		background-image: url('@{imgdir}/bg/students-playing-reverse.jpg');
-		background-attachment: fixed;
+		//background-attachment: fixed;
 		background-position: center top;
 		background-repeat: no-repeat;
 		background-size: cover;
+
+		.levels {
+			margin-top: 50px;
+			padding: 10px;
+			background-color: rgba(30, 30, 30, 0.6);
+			border-radius: 8px;
+			font-size: 2em;
+			font-weight: bold;
+			font-family: @font3;
+			color: #fff;
+			text-align: center;
+		}
 	}
 	.information {
-		min-height: 250px;
-		background-color: #f6dab1;
+		padding: 20px 0;
+		background-color: @brandGold;
+
+		article {
+			header {
+				font-weight: bold;
+				font-size: 1.5em;
+			}
+		}
+	}
+	.circle-text {
+		background-color: @brandBlue;
+		border-radius: 50%;
+		padding: 50px;
+		text-align: center;
 	}
 }

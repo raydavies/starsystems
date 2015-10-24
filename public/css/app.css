@@ -3,9 +3,8 @@ html {
   min-height: 100%;
 }
 body {
-  margin-bottom: 200px;
-  padding: 50px 0 70px;
-  font-family: 'dustismoregular', sans-serif;
+  padding: 50px 0 0;
+  font-family: 'DustismoRegular', sans-serif;
 }
 h1,
 h2,
@@ -15,6 +14,10 @@ h5,
 h6 {
   margin: 0;
 }
+.main_wrapper {
+  margin-bottom: -50px;
+  padding-bottom: 50px;
+}
 .alert-box > .alert {
   border-left: 0 none;
   border-right: 0 none;
@@ -22,6 +25,7 @@ h6 {
 }
 .navbar {
   margin-bottom: 0;
+  font-family: 'LillyRegular', 'Arial', sans-serif;
 }
 .navbar.navbar-gold {
   background-color: #f6dab1;
@@ -29,7 +33,7 @@ h6 {
 }
 .navbar-clouds {
   background-color: #9bc5dd;
-  background-image: url('/img/bg/sky3.jpg');
+  background-image: url('/img/bg/sky-header.jpg');
   background-position: center top;
   background-repeat: repeat-x;
   background-attachment: fixed;
@@ -55,19 +59,29 @@ h6 {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.content .billboard .tagline {
-  background-color: #333;
+.content .billboard .blackboard {
+  background-color: rgba(30, 30, 30, 0.6);
   border-radius: 8px;
   padding: 20px;
-  font-size: 4em;
-  font-family: 'tizaregular', serif;
+  margin-top: 20px;
   color: #fff;
 }
-.content .billboard .tagline > small {
+.content .billboard .blackboard .tagline {
+  font-size: 4em;
+  font-family: 'NexaRustSansBlack', sans-serif;
+}
+.content .billboard .blackboard .tagline > small {
+  display: block;
+  margin: 7px 0 15px;
   font-size: .5em;
   color: #fff;
   font-weight: normal;
-  font-family: 'dustismoregular', sans-serif;
+  font-family: 'DustismoRegular', sans-serif;
+}
+.content .billboard .blackboard button {
+  margin: 15px 0 0;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 .content .features {
   padding: 15px 15px 50px;
@@ -75,7 +89,7 @@ h6 {
 .content .features header {
   font-size: 2.5em;
   font-weight: bold;
-  font-family: 'dustismoregular', sans-serif;
+  font-family: 'DustismoRegular', sans-serif;
 }
 .content .features .feature {
   font-size: 1.2em;
@@ -84,7 +98,7 @@ h6 {
   margin-left: 5px;
   font-size: 1.5em;
   font-weight: bold;
-  font-family: 'dustismo_romanregular', sans-serif;
+  font-family: 'DustismoRomanRegular', sans-serif;
 }
 .content .features .feature button {
   margin-top: 20px;
@@ -105,26 +119,43 @@ h6 {
   min-height: 550px;
   padding: 20px 0;
   background-image: url('/img/bg/students-playing-reverse.jpg');
-  background-attachment: fixed;
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
 }
+.content .slideshow .levels {
+  margin-top: 50px;
+  padding: 10px;
+  background-color: rgba(30, 30, 30, 0.6);
+  border-radius: 8px;
+  font-size: 2em;
+  font-weight: bold;
+  font-family: 'LillyRegular', 'Arial', sans-serif;
+  color: #fff;
+  text-align: center;
+}
 .content .information {
-  min-height: 250px;
+  padding: 20px 0;
   background-color: #f6dab1;
+}
+.content .information article header {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.content .circle-text {
+  background-color: #9cc9e0;
+  border-radius: 50%;
+  padding: 50px;
+  text-align: center;
 }
 /***** ~ FOOTER ~ *****/
 .footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
-  min-height: 200px;
   padding: 20px 0 0;
   color: #fff;
   background-color: #000;
   font-size: 1em;
-  font-family: 'Futura', "Century Gothic", 'Arial', sans-serif;
+  font-family: 'LillyRegular', 'Arial', sans-serif;
 }
 .footer a {
   color: #fff;
@@ -148,24 +179,27 @@ h6 {
 .footer ul.footer-nav {
   font-size: 1.25em;
 }
-.footer_col {
+.footer .footer_col {
   padding-bottom: 50px;
 }
-.footer_col > h3 {
+.footer .footer_col > h3 {
   font-size: 1.3em;
   line-height: 1.3em;
   margin: 0;
 }
-.footer-btn {
+.footer .footer-btn {
   width: 33px;
   height: 32px;
   margin: 15px 5px 0 !important;
   display: inline-block;
   cursor: pointer;
 }
-.footer-legal {
+.footer .footer-legal {
   padding-bottom: 10px;
   font-size: .825em;
+}
+.footer .footer-address {
+  margin-top: 7px;
 }
 #facebook-btn.footer-btn {
   background: url('/img/nav/footer_fb.png') 0 -33px no-repeat;
@@ -184,4 +218,124 @@ h6 {
 }
 #linkedin-btn.footer-btn:hover {
   background-position: 0 0;
+}
+/***** ~ FONTFACE STYLES ~ *****/
+@font-face {
+  font-family: 'DustismoRegular';
+  src: url('../fonts/DustismoRegular/dustismo-webfont.eot');
+  src: url('../fonts/DustismoRegular/dustismo-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/DustismoRegular/dustismo-webfont.woff') format('woff'), url('../fonts/DustismoRegular/dustismo-webfont.ttf') format('truetype'), url('../fonts/DustismoRegular/dustismo-webfont.svg#dustismoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DustismoRomanRegular';
+  src: url('../fonts/DustismoRomanRegular/Dustismo_Roman-webfont.eot');
+  src: url('../fonts/DustismoRomanRegular/Dustismo_Roman-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/DustismoRomanRegular/Dustismo_Roman-webfont.woff') format('woff'), url('../fonts/DustismoRomanRegular/Dustismo_Roman-webfont.ttf') format('truetype'), url('../fonts/DustismoRomanRegular/Dustismo_Roman-webfont.svg#dustismo_romanregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DustismoRomanBold';
+  src: url('../fonts/DustismoRomanBold/Dustismo_Roman_Bold-webfont.eot');
+  src: url('../fonts/DustismoRomanBold/Dustismo_Roman_Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/DustismoRomanBold/Dustismo_Roman_Bold-webfont.woff') format('woff'), url('../fonts/DustismoRomanBold/Dustismo_Roman_Bold-webfont.ttf') format('truetype'), url('../fonts/DustismoRomanBold/Dustismo_Roman_Bold-webfont.svg#dustismo_romanbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HVDBodedo';
+  src: url('../fonts/HVDBodedo/HVD_Bodedo-webfont.eot');
+  src: url('../fonts/HVDBodedo/HVD_Bodedo-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/HVDBodedo/HVD_Bodedo-webfont.woff') format('woff'), url('../fonts/HVDBodedo/HVD_Bodedo-webfont.ttf') format('truetype'), url('../fonts/HVDBodedo/HVD_Bodedo-webfont.svg#hvd_bodedomedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LillyRegular';
+  src: url('../fonts/LillyRegular/Lilly__-webfont.eot');
+  src: url('../fonts/LillyRegular/Lilly__-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/LillyRegular/Lilly__-webfont.woff') format('woff'), url('../fonts/LillyRegular/Lilly__-webfont.ttf') format('truetype'), url('../fonts/LillyRegular/Lilly__-webfont.svg#lillyregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NexaRustHandmade';
+  src: url('../fonts/NexaRustHandmade/NexaRustHandmade-Extended-Free-webfont.eot');
+  src: url('../fonts/NexaRustHandmade/NexaRustHandmade-Extended-Free-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/NexaRustHandmade/NexaRustHandmade-Extended-Free-webfont.woff2') format('woff2'), url('../fonts/NexaRustHandmade/NexaRustHandmade-Extended-Free-webfont.woff') format('woff'), url('../fonts/NexaRustHandmade/NexaRustHandmade-Extended-Free-webfont.ttf') format('truetype'), url('../fonts/NexaRustHandmade/NexaRustHandmade-Extended-Free-webfont.svg#nexa_rust_handmadeextended') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NexaRustSansBlack';
+  src: url('../fonts/NexaRustSansBlack/NexaRustSans-Black-Free-webfont.eot');
+  src: url('../fonts/NexaRustSansBlack/NexaRustSans-Black-Free-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/NexaRustSansBlack/NexaRustSans-Black-Free-webfont.woff2') format('woff2'), url('../fonts/NexaRustSansBlack/NexaRustSans-Black-Free-webfont.woff') format('woff'), url('../fonts/NexaRustSansBlack/NexaRustSans-Black-Free-webfont.ttf') format('truetype'), url('../fonts/NexaRustSansBlack/NexaRustSans-Black-Free-webfont.svg#nexa_rust_sansblack') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NexaRustScriptLight';
+  src: url('../fonts/NexaRustScriptLight/NexaRustScriptL-0-Free-webfont.eot');
+  src: url('../fonts/NexaRustScriptLight/NexaRustScriptL-0-Free-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/NexaRustScriptLight/NexaRustScriptL-0-Free-webfont.woff2') format('woff2'), url('../fonts/NexaRustScriptLight/NexaRustScriptL-0-Free-webfont.woff') format('woff'), url('../fonts/NexaRustScriptLight/NexaRustScriptL-0-Free-webfont.ttf') format('truetype'), url('../fonts/NexaRustScriptLight/NexaRustScriptL-0-Free-webfont.svg#nexa_rust_script_l0regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NexaRustSlabBlack';
+  src: url('../fonts/NexaRustSlabBlack/NexaRustSlab-BlackShadow01-Free-webfont.eot');
+  src: url('../fonts/NexaRustSlabBlack/NexaRustSlab-BlackShadow01-Free-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/NexaRustSlabBlack/NexaRustSlab-BlackShadow01-Free-webfont.woff2') format('woff2'), url('../fonts/NexaRustSlabBlack/NexaRustSlab-BlackShadow01-Free-webfont.woff') format('woff'), url('../fonts/NexaRustSlabBlack/NexaRustSlab-BlackShadow01-Free-webfont.ttf') format('truetype'), url('../fonts/NexaRustSlabBlack/NexaRustSlab-BlackShadow01-Free-webfont.svg#nexa_rust_slabblack_shadow_01') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NexaRustExtras';
+  src: url('../fonts/NexaRustExtras/NexaRustExtras-Free-webfont.eot');
+  src: url('../fonts/NexaRustExtras/NexaRustExtras-Free-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/NexaRustExtras/NexaRustExtras-Free-webfont.woff2') format('woff2'), url('../fonts/NexaRustExtras/NexaRustExtras-Free-webfont.woff') format('woff'), url('../fonts/NexaRustExtras/NexaRustExtras-Free-webfont.ttf') format('truetype'), url('../fonts/NexaRustExtras/NexaRustExtras-Free-webfont.svg#nexa_rust_extrasfree') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Playtime3D';
+  src: url('../fonts/Playtime3D/PlaytimeWithHotToddies3D-webfont.eot');
+  src: url('../fonts/Playtime3D/PlaytimeWithHotToddies3D-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Playtime3D/PlaytimeWithHotToddies3D-webfont.woff') format('woff'), url('../fonts/Playtime3D/PlaytimeWithHotToddies3D-webfont.ttf') format('truetype'), url('../fonts/Playtime3D/PlaytimeWithHotToddies3D-webfont.svg#playtimewithhottoddies3dRg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PlaytimeRegular';
+  src: url('../fonts/PlaytimeRegular/PlaytimeOblique-webfont.eot');
+  src: url('../fonts/PlaytimeRegular/PlaytimeOblique-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/PlaytimeRegular/PlaytimeOblique-webfont.woff') format('woff'), url('../fonts/PlaytimeRegular/PlaytimeOblique-webfont.ttf') format('truetype'), url('../fonts/PlaytimeRegular/PlaytimeOblique-webfont.svg#playtimewithhottoddiesobliqRg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PrintClearly';
+  src: url('../fonts/PrintClearly/PrintClearly-webfont.eot');
+  src: url('../fonts/PrintClearly/PrintClearly-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/PrintClearly/PrintClearly-webfont.woff') format('woff'), url('../fonts/PrintClearly/PrintClearly-webfont.ttf') format('truetype'), url('../fonts/PrintClearly/PrintClearly-webfont.svg#print_clearlyregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PrintBold';
+  src: url('../fonts/PrintBold/PrintBold-webfont.eot');
+  src: url('../fonts/PrintBold/PrintBold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/PrintBold/PrintBold-webfont.woff') format('woff'), url('../fonts/PrintBold/PrintBold-webfont.ttf') format('truetype'), url('../fonts/PrintBold/PrintBold-webfont.svg#print_boldregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TizaRegular';
+  src: url('../fonts/TizaRegular/tiza-webfont.eot');
+  src: url('../fonts/TizaRegular/tiza-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/TizaRegular/tiza-webfont.woff') format('woff'), url('../fonts/TizaRegular/tiza-webfont.ttf') format('truetype'), url('../fonts/TizaRegular/tiza-webfont.svg#tizaregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TuffyRegular';
+  src: url('../fonts/TuffyRegular/Tuffy-webfont.eot');
+  src: url('../fonts/TuffyRegular/Tuffy-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/TuffyRegular/Tuffy-webfont.woff') format('woff'), url('../fonts/TuffyRegular/Tuffy-webfont.ttf') format('truetype'), url('../fonts/TuffyRegular/Tuffy-webfont.svg#tuffyregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'YellowtailRegular';
+  src: url('../fonts/YellowtailRegular/Yellowtail-Regular-webfont.eot');
+  src: url('../fonts/YellowtailRegular/Yellowtail-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/YellowtailRegular/Yellowtail-Regular-webfont.woff') format('woff'), url('../fonts/YellowtailRegular/Yellowtail-Regular-webfont.ttf') format('truetype'), url('../fonts/YellowtailRegular/Yellowtail-Regular-webfont.svg#yellowtailregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
