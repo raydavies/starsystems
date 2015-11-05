@@ -1,4 +1,4 @@
-@extends('layout.reskin')
+@extends('layout.master')
 
 @section('headscripts')
 	@parent
@@ -11,7 +11,7 @@
 			<div class="row">
 				<div class="blackboard col-md-7 text-center">
 					<h1 class="tagline">The Interactive Curriculum<small>Preparing Students for the Future</small></h1>
-					<button class="btn btn-lg btn-default">View Demo</button>
+					<button class="btn btn-lg btn-default">Take The Tour</button>
 				</div>
 			</div>
 		</div>
@@ -43,15 +43,16 @@
 	</section>
 	<section class="slideshow">
 		<div class="container">
-			<div id="slideshow" class="col-md-7 col-md-offset-5">
+			<div id="slideshow" class="col-md-6 col-md-offset-6">
 				<div class="levels">
-					<p>The program is available in 4 levels:<br>
-						Kindergarten - 3rd Grade<br>
-						4th - 6th Grade<br>
-						7th - 9th Grade<br>
-						10th - 12th Grade<br>
+					<p>Available in 4 levels:</p>
+					<p class="levels-grades">
+						K - 3<sup>rd</sup> grade<br>
+						4<sup>th</sup> - 6<sup>th</sup> grade<br>
+						7<sup>th</sup> - 9<sup>th</sup> grade<br>
+						10<sup>th</sup> - 12<sup>th</sup> grade<br>
 					</p>
-					<p>Each level contains more than <strong>800 lessons</strong> on 6 CDs!</p>
+					<p>Each level contains more than <em>800 lessons</em> on 6 CDs!</p>
 				</div>
 				<!--
 				<iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PL09vPPCUB2vCqsPuGIBbHwgw8p7OO_mKA" frameborder="0" allowfullscreen></iframe>

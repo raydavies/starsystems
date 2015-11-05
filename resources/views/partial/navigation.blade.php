@@ -3,6 +3,7 @@
 		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Company <span class="caret"></span></a>
 		<ul class="dropdown-menu" role="menu">
 			<li><a href="{{ route('about') }}">About Us</a></li>
+			<li><a href="{{ route('testimonials') }}">Testimonials</a></li>
 			<li><a href="{{ route('contact') }}">Contact Us</a></li>
 		</ul>
 	</li>

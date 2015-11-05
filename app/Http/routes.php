@@ -19,6 +19,10 @@ Route::get('/about', ['as' => 'about', function() {
 	return view('about');
 }]);
 
+Route::get('/testimonials', ['as' => 'testimonials', function() {
+	return view('testimonials');
+}]);
+
 Route::get('/curriculum', ['as' => 'curriculum', function() {
 	return view('curriculum');
 }]);

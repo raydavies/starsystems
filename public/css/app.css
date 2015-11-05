@@ -43,6 +43,12 @@ h6 {
   font-family: 'Corben', Georgia, Times, serif;
   font-size: 2.5em;
 }
+.navbar .star_logo {
+  width: 500px;
+  background-image: url('/img/starlogo-small.png');
+  background-position: 0 10px;
+  background-repeat: no-repeat;
+}
 .navbar .navbar-brand {
   color: #000;
 }
@@ -125,14 +131,19 @@ h6 {
 }
 .content .slideshow .levels {
   margin-top: 50px;
-  padding: 10px;
+  padding: 15px;
   background-color: rgba(30, 30, 30, 0.6);
   border-radius: 8px;
   font-size: 2em;
-  font-weight: bold;
   font-family: 'LillyRegular', 'Arial', sans-serif;
   color: #fff;
   text-align: center;
+}
+.content .slideshow .levels-grades {
+  font-size: 0.9em;
+}
+.content .slideshow .levels em {
+  font-weight: bold;
 }
 .content .information {
   padding: 20px 0;
