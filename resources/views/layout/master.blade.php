@@ -46,7 +46,7 @@
 	@endif
 	<div id="primary-content" class="content center-block">@yield('content')</div>
 	<a href="#top" class="text-center">
-		<img class="scroll-btn hidden" alt="scroll to top button" title="Back to Top" src="{{ asset('/img/nav/scrollbutton.png') }}">
+		<img class="scroll-btn hidden" alt="scroll to top button" title="Back to Top" src="{{ asset('/img/nav/scrollbutton-small.png') }}">
 	</a>
 </div>
 @include('partial.footer')

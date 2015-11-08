@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	$(window).bind('scroll', function() {
-		parallaxScroll();
+		//parallaxScroll();
 		showScrollButton();
 	});
 
@@ -27,9 +27,9 @@ function parallaxScroll()
  */
 function showScrollButton()
 {
-	var halfway = ($('body').height()) / 2;
+	var breakpoint = ($('body').height()) / 4;
 
-	if ($(document).scrollTop() >= halfway) {
+	if ($(document).scrollTop() >= breakpoint) {
 		$('.scroll-btn').removeClass('hidden');
 	} else {
 		$('.scroll-btn').addClass('hidden');
@@ -42,6 +42,6 @@ function showScrollButton()
  */
 function scrollToTop(time)
 {
-	time = parseInt(time, 10);
+	var time = parseInt(time, 10);
 	$('html, body').animate({scrollTop: 0}, time);
 }
