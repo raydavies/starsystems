@@ -2,6 +2,7 @@
 
 @section('headscripts')
 	@parent
+	<script src="{{ asset('/js/squareSpin.js') }}" async></script>
 @stop
 
 @section('content')
@@ -62,17 +63,23 @@
 	<section class="information">
 		<div class="container">
 			<div class="row">
-				<article class="col-md-4 circle-text">
-					<header>One-On-One Interaction</header>
-					<p class="hidden">Owning the Interactive Curriculum Program is like having a full-time teacher working with your child! The program uses a combination of graphics, audio, and animation to <strong>make schoolwork fun and easy</strong>. The interactive lessons engage and guide your child while dynamic quizzes and a variety of writing exercises reinforce what she is learning.</p>
+				<article class="col-md-4 outer-square-text">
+					<div class="inner-square-text">
+						<header>One-On-One Interaction</header>
+						<p class="info-text hidden">Owning the Interactive Curriculum Program is like having a full-time teacher working with your child! The program uses a combination of graphics, audio, and animation to <strong>make schoolwork fun and easy</strong>. The interactive lessons engage and guide your child while dynamic quizzes and a variety of writing exercises reinforce what she is learning.</p>
+					</div>
 				</article>
-				<article class="col-md-4 circle-text">
-					<header>Succeed At Home</header>
-					<p class="hidden">Studies show that children succeed in school when learning takes place at home. <strong>The Home makes a difference</strong>. The Interactive Curriculum was designed by educators to teach and review everything students are learning in the classroom. Your child will find the tools he needs to master the school curriculum, improve test scores, develop strong study skills, and help with homework!</p>
+				<article class="col-md-4 outer-square-text">
+					<div class="inner-square-text">
+						<header>Succeed At Home</header>
+						<p class="info-text hidden">Studies show that children succeed in school when learning takes place at home. <strong>The Home makes a difference</strong>. The Interactive Curriculum was designed by educators to teach and review everything students are learning in the classroom. Your child will find the tools he needs to master the school curriculum, improve test scores, develop strong study skills, and help with homework!</p>
+					</div>
 				</article>
-				<article class="col-md-4 circle-text">
-					<header>Comprehensive Coverage</header>
-					<p class="hidden">The Interactive Curriculum Software Program covers everything your child needs to know for success in school: <strong><em>Reading, Vocabulary, Grammar and Writing, Math, Science, and Social Studies</em></strong>. Lessons, examples, and exercises build a solid foundation for students and allow them to develop at an accelerated pace.</p>
+				<article class="col-md-4 outer-square-text">
+					<div class="inner-square-text">
+						<header>Comprehensive Coverage</header>
+						<p class="info-text hidden">The Interactive Curriculum Software Program covers everything your child needs to know for success in school: <strong><em>Reading, Vocabulary, Grammar and Writing, Math, Science, and Social Studies</em></strong>. Lessons, examples, and exercises build a solid foundation for students and allow them to develop at an accelerated pace.</p>
+					</div>
 				</article>
 			</div>
 		</div>
