@@ -4,7 +4,9 @@ define('APP_PATH', BASE_PATH . '/application');
 define('VIEW_PATH', APP_PATH . '/templates');
 define('NS_SEPARATOR', '\\');
 
-function qe($output)
+function devPrint($output)
 {
-	echo '<pre>'.print_r($output, true).'</pre>';
+	if (env('APP_DEBUG')) {
+		echo '<pre>' . print_r($output, true) . '</pre>';
+	}
 }

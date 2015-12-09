@@ -19,9 +19,11 @@ Route::get('/about', ['as' => 'about', function() {
 	return view('about');
 }]);
 
-Route::get('/testimonials', ['as' => 'testimonials', function() {
-	return view('testimonials');
-}]);
+Route::group(['prefix' => 'testimonials'], function() {
+	Route::get('/', ['as' => 'testimonials', 'uses' => 'TestimonialController@get']);
+	Route::get('/create', ['as' => 'create-testimonial', 'uses' => 'TestimonialController@create']);
+	Route::post('/create', ['as' => 'create-testimonial', 'uses' => 'TestimonialController@store']);
+});
 
 Route::get('/curriculum', ['as' => 'curriculum', function() {
 	return view('curriculum');

@@ -36,7 +36,7 @@ class LessonController extends Controller
 
 	public function fetchSubjects($level_id)
 	{
-		if (!$this->request->isXmlHttpRequest()) {
+		if (!$this->request->ajax()) {
 			abort(404);
 		}
 		return response()->json(['subjects' => Level::find($level_id)->subjects]);
