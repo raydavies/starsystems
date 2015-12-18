@@ -1,8 +1,8 @@
-@extends('layout.master')
+@extends('layout.page')
 
 @section('title', 'Benefits')
 
-@section('content')
+@section('page_content')
 	<h2>Seven Reasons Why Your Child<br>Will Benefit From This Program</h2>
 
 	<div class="benefit_list">

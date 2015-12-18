@@ -44,6 +44,18 @@ h6 {
   border-radius: 8px;
   opacity: 0.4;
 }
+.caret.caret-large {
+  border-top: 8px solid;
+  border-right: 8px solid transparent;
+  border-bottom: 0 none;
+  border-left: 8px solid transparent;
+}
+.caret.caret-large.active {
+  border-top: 0 none;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid;
+  border-left: 8px solid transparent;
+}
 .navbar {
   margin-bottom: 0;
   font-family: 'LillyRegular', 'Arial', sans-serif;

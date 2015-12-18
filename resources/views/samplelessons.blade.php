@@ -1,4 +1,4 @@
-@extends('layout.master')
+@extends('layout.page')
 
 @section('title', 'Lessons Taught')
 
@@ -7,7 +7,7 @@
 	<script src="{{ asset('/js/lesson-picker.js') }}" async></script>
 @stop
 
-@section('content')
+@section('page_content')
 	<p class="lesson_text text-left center-block"><strong>The Interactive Curriculum</strong> has over 2700 Teaching and Study Lessons designed to help students excel. Take a peek at what your child will be learning!</p>
 
 	<div class="lesson_picker_container center-block">

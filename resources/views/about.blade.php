@@ -1,4 +1,4 @@
-@extends('layout.master')
+@extends('layout.page')
 
 @section('title', 'About Us')
 
@@ -7,7 +7,7 @@
 	<script src="{{ asset('/js/timeline.js') }}" async></script>
 @stop
 
-@section('content')
+@section('page_content')
 	<p id="bio"><span class="sls">Star Learning Systems</span> has been committed to bringing parents and students the highest caliber of learning products for over 3 decades. Even before computers were commonplace in the classroom or at home, Star was at the forefront of technology in education. While our business has changed over the years, one thing has stayed the same: our dedication to your child's success in school.</p>
 	<div id="timeline_wrapper">
 		<div id="timeline">

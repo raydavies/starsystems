@@ -1,6 +1,6 @@
-@extends('layout.master')
+@extends('layout.page')
 
-@section('content')
+@section('page_content')
 	<h1>Tablet PCs</h1>
 
 	<div class="tablet">

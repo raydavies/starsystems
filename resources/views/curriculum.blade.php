@@ -1,8 +1,8 @@
-@extends('layout.master')
+@extends('layout.page')
 
 @section('title', 'The Interactive Curriculum')
 
-@section('content')
+@section('page_content')
 	<h2>Take a tour of the Interactive Curriculum!</h2>
 
 	<div id="samplepics" class="text-left clearfix">
