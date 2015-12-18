@@ -1,6 +1,12 @@
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+	min-height: 100%;
+}
 html {
 	position: relative;
-	min-height: 100%;
 }
 body {
 	padding: 50px 0 0;
@@ -10,8 +16,13 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
 .main_wrapper {
-	margin-bottom: -50px;
-	padding-bottom: 50px;
+	min-height: 100%;
+	margin: 0 auto -250px;
+
+	.page_start {
+		margin: 20px auto 10px;
+
+	}
 }
 .alert-box > .alert {
 	border-left: 0 none;

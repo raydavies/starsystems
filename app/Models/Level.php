@@ -5,7 +5,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Level extends Model
 {
-	protected $table = 'new_levels';
+	protected $table = 'levels';
 
 	protected $primaryKey = 'level_id';
 

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\CreateTestimonialRequest;
 use App\Models\Testimonial;
 use Illuminate\Http\Request;
+use DB;
 use Mail;
 
 class TestimonialController extends Controller
@@ -22,7 +23,7 @@ class TestimonialController extends Controller
 	 */
 	public function get()
 	{
-		$testimonials = Testimonial::all();
+		$testimonials = Testimonial::where('flag_active', 1)->get();
 
 		return view('testimonials', [
 			'testimonials' => $testimonials

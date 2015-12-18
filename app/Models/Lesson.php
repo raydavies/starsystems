@@ -5,7 +5,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Lesson extends Model
 {
-	protected $table = 'new_lessons';
+	protected $table = 'lessons';
 
 	protected $primaryKey = 'lesson_id';
 

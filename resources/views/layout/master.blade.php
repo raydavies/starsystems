@@ -48,6 +48,7 @@
 	<a href="#top" class="text-center">
 		<img class="scroll-btn hidden" alt="scroll to top button" title="Back to Top" src="{{ asset('/img/nav/scrollbutton-small.png') }}">
 	</a>
+	<div class="footer_push"></div>
 </div>
 @include('partial.footer')
 </body>

@@ -1,4 +1,4 @@
-@extends('layout.master')
+@extends('layout.page')
 
 @section('title', 'Contact Us')
 
@@ -7,7 +7,7 @@
 	<script src="{{ asset('/js/form-validator.js') }}" async></script>
 @stop
 
-@section('content')
+@section('page_content')
 	<h4>For more information, or to leave us a comment, please fill out the form below!</h4>
 
 	<address class="contact_address">
@@ -19,7 +19,7 @@
 
 	<p><em>All fields are required.</em></p>
 
-	<div id="form_wrapper">
+	<div id="form_wrapper" class="row">
 		{!! Form::open(array('route' => 'contact', 'method' => 'post', 'id' => 'contact_form', 'class' => 'form-horizontal', 'novalidate' => 'novalidate')) !!}
 			<div class="form-group has-feedback">
 				{!! Form::label('firstname', 'First Name', array('class' => 'col-md-3 control-label')) !!}
