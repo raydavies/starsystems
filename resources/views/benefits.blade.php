@@ -52,7 +52,6 @@
 	</div>
 
 	<div class="tagline">
-		<img id="paperchild" src="{{ asset('/img/apluspaper.jpg') }}" alt="Child with an a plus paper" title="Child with an a plus paper">
 		<p>Further questions? Call us at <strong>(708) 675-7640</strong></p>
 	</div>
 @stop

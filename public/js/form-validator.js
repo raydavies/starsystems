@@ -1,10 +1,12 @@
+"use strict";
+
 var FormManager = function(form, validationMap) {
 	var self = this,
 		validationMap = validationMap || {
 			'first_name': 'validName',
 			'last_name': 'validName',
 			'email': 'validEmail',
-			'subject': 'validSubject',
+			'subject': 'validAlphaNum',
 			'message': 'validInput'
 		};
 
@@ -75,7 +77,8 @@ var FormManager = function(form, validationMap) {
 		return false;
 	};
 
-	this.validSubject = function(value) {
+	this.validAlphaNum = function(value)
+	{
 		var alphaDash = /^[a-zA-Z0-9\-\_]+$/;
 
 		if (self.validInput(value)) {
@@ -98,13 +101,20 @@ var FormManager = function(form, validationMap) {
 		return false;
 	};
 
+	this.validStateAbbr = function(value)
+	{
+		var stateAbbrExp = /^[a-zA-Z]{2}$/;
+
+		if (self.validInput(value)) {
+			if (value.match(stateAbbrExp)) {
+				return true;
+			}
+		}
+		return false;
+	};
+
 	this.trimSpace = function(string)
 	{
 		return string.replace(/^\s+|\s+$/g, '');
 	};
 };
-
-$(document).ready(function() {
-	var form = new FormManager($('#contact_form'));
-	form.init();
-});

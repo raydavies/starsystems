@@ -4,7 +4,7 @@
 
 @section('headscripts')
 	@parent
-	<script src="{{ asset('/js/timeline.js') }}" async></script>
+	<!--<script src="{{ asset('/js/timeline.js') }}" async></script>-->
 @stop
 
 @section('page_content')
@@ -22,10 +22,8 @@
 				With an endless amount of information available online, having exactly what you need in one quick, easy place becomes extremely important. This is what Star believed in 2000 when we became the exclusive distributor of the Interactive Curriculum, a program that pulls together everything students K-12 are expected to know for success in school. Star continues to look to the future, and we want to help children everywhere do the same.
 				</div>
 			</div>
-			<img id="nav_left" src="{{ asset('/img/nav/arrow_l.png') }}">
-			<img id="nav_right" src="{{ asset('/img/nav/arrow_r.png') }}">
 		</div>
-		<img id="timelinepics" src="{{ asset('/img/history/1.jpg') }}" alt="">
+		<img id="timelinepics" src="{{ asset('/img/history/3.jpg') }}" alt="">
 	</div>
-	<h3>Star Learning Systems<br>Celebrating more than 30 years in Education!</h3>
+	<!--<h3>Star Learning Systems<br>Celebrating more than 30 years in Education!</h3>-->
 @stop

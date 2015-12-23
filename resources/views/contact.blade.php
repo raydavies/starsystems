@@ -4,7 +4,13 @@
 
 @section('headscripts')
 	@parent
-	<script src="{{ asset('/js/form-validator.js') }}" async></script>
+    <script src="{{ asset('/js/form-validator.js') }}"></script>
+	<script>
+        $(document).ready(function() {
+            var form = new FormManager($('#contact_form'));
+            form.init();
+        });
+    </script>
 @stop
 
 @section('page_content')

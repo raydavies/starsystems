@@ -40,7 +40,9 @@
 	@if (Session::has('alert'))
 		<div class="alert-box">
 			<div class="alert alert-{{ Session::get('alert')['status'] }}">
-				{{ Session::get('alert')['message'] }}
+				<div class="container">
+					{{ Session::get('alert')['message'] }}
+				</div>
 			</div>
 		</div>
 	@endif

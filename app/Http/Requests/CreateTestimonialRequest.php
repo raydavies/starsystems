@@ -14,6 +14,13 @@ class CreateTestimonialRequest extends Request {
 		return true;
 	}
 
+	public function messages()
+	{
+		return [
+			'state_province.required' => 'The state field is required.'
+		];
+	}
+
 	/**
 	 * Get the validation rules that apply to the request.
 	 *
@@ -26,7 +33,7 @@ class CreateTestimonialRequest extends Request {
 		return [
 			'name' => 'max:255',
 			'city' => 'required|max:255',
-			'state_providence' => 'required|max:2',
+			'state_province' => 'required|max:2',
 			'comment' => 'required'
 		];
 	}

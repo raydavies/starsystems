@@ -3,6 +3,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\CreateTestimonialRequest;
 use App\Models\Testimonial;
+use App\Models\State;
 use Illuminate\Http\Request;
 use DB;
 use Mail;
@@ -37,7 +38,17 @@ class TestimonialController extends Controller
 	 */
 	public function create()
 	{
-		return view('create-testimonial');
+		$states = State::all();
+		$stateList = [];
+
+		foreach ($states as $state) {
+			$stateList[$state->abbreviation] = $state->name;
+		}
+
+		return view('testimonials_create', [
+			'testimonial' => new Testimonial(),
+			'stateList' => $stateList
+		]);
 	}
 
 	/**
@@ -48,9 +59,25 @@ class TestimonialController extends Controller
 	 */
 	public function store(CreateTestimonialRequest $request)
 	{
-		if (!$this->request->ajax()) {
-			abort(404);
+		$testimonial = new Testimonial($request->all());
+
+		if ($testimonial->save()) {
+			/*
+			Mail::send('email.testimonial', array(
+				'testimonial' => $testimonial
+			), function($message) {
+				$message->from('automailer@starlearningsystems.com');
+				$message->to('postmaster@starlearningsystems.com', 'James Anderson')->subject('New Customer Testimonial');
+			});
+			*/
+
+			return redirect('testimonials')->with('alert',
+				['status' => 'success', 'message' => 'Thank you for submitting your testimonial!']
+			);
+		} else {
+			return back()->withInput()->with('alert',
+				['status' => 'danger', 'message' => 'There was an error saving your testimonial. Please try again later.']
+			);
 		}
-		return redirect('testimonials')->with('alert', array('status' => 'success', 'message' => 'Thank you for your feedback!'));
 	}
 }

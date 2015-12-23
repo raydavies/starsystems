@@ -10,3 +10,11 @@ function devPrint($output)
 		echo '<pre>' . print_r($output, true) . '</pre>';
 	}
 }
+
+function devDie($output)
+{
+	if (env('APP_DEBUG')) {
+		echo '<pre>' . print_r($output, true) . '</pre>';
+		die();
+	}
+}

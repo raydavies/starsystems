@@ -21,8 +21,8 @@ Route::get('/about', ['as' => 'about', function() {
 
 Route::group(['prefix' => 'testimonials'], function() {
 	Route::get('/', ['as' => 'testimonials', 'uses' => 'TestimonialController@get']);
-	Route::get('/create', ['as' => 'create-testimonial', 'uses' => 'TestimonialController@create']);
-	Route::post('/create', ['as' => 'create-testimonial', 'uses' => 'TestimonialController@store']);
+	Route::get('/create', ['as' => 'testimonials.create', 'uses' => 'TestimonialController@create']);
+	Route::post('/create', ['as' => 'testimonials.create', 'uses' => 'TestimonialController@store']);
 });
 
 Route::get('/curriculum', ['as' => 'curriculum', function() {
