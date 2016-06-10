@@ -50,8 +50,4 @@
 			</li>
 		</ol>
 	</div>
-
-	<div class="tagline">
-		<p>Further questions? Call us at <strong>(708) 675-7640</strong></p>
-	</div>
 @stop

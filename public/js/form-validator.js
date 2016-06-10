@@ -59,12 +59,9 @@ var FormManager = function(form, validationMap) {
 
 	this.validInput = function(value)
 	{
-		var value = self.trimSpace(value);
+		var cleanValue = self.trimSpace(value);
 
-		if (value != '') {
-			return true;
-		}
-		return false;
+		return cleanValue != '';
 	};
 
 	this.validName = function(value)
@@ -111,6 +108,11 @@ var FormManager = function(form, validationMap) {
 			}
 		}
 		return false;
+	};
+	
+	this.noValidate = function(value)
+	{
+		return true;
 	};
 
 	this.trimSpace = function(string)

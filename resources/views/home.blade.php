@@ -10,7 +10,12 @@
 		<div class="container">
 			<div class="row">
 				<div class="blackboard col-md-7 text-center">
-					<h1 class="tagline">The Interactive Curriculum<small>Preparing Students for the Future</small></h1>
+					<h1 class="tagline">The Most Comprehensive Educational System Available <small>See how The Interactive Curriculum can help your child</small></h1>
+					<ul class="list-inline">
+						<li><i class="fa fa-fw fa-check"></i> Excel In School</li>
+						<li><i class="fa fa-fw fa-check"></i> Study More Effectively</li>
+						<li><i class="fa fa-fw fa-check"></i> Prepare For The Future</li>
+					</ul>
 					<button class="btn btn-lg btn-default">Take The Tour</button>
 				</div>
 			</div>
@@ -23,7 +28,7 @@
 				<i class="fa fa-fw fa-lg fa-book"></i><span>Study</span> Interactive lessons are your child's first step toward mastering the curriculum and improving in school. Use the study mode for homework help any time, day or night.
 			</article>
 			<article class="feature col-md-3">
-				<i class="fa fa-fw fa-lg fa-lightbulb-o"></i><span>Practice</span> Just like with a "live" teacher, your child is given instant feedback. Get hands-on with the same material needed for school and standardized tests.
+				<i class="fa fa-fw fa-lg fa-lightbulb-o"></i><span>Practice</span> Just like with a live teacher, your child is given instant feedback. Get hands-on with the same material needed for school and standardized tests.
 			</article>
 			<article class="feature col-md-3">
 				<i class="fa fa-fw fa-lg fa-graduation-cap"></i><span>Test</span> Prepare your child <strong><em>before</em></strong> she takes the test in school! Grades are written to the Progress Report for you to review.
@@ -31,14 +36,14 @@
 			<article class="feature col-md-3">
 				<i class="fa fa-fw fa-lg fa-pencil"></i><span>Essay</span> Help develop writing ability and research skills while your student exercises his creativity.
 			</article>
-			<article class="feature col-md-12 text-center">
-				<a href="{{ route('curriculum') }}">
-					<button class="btn btn-info btn-lg" type="button">Learn More<i class="fa fa-long-arrow-right fa-fw"></i></button>
+			<div class="feature cta-buttons col-md-12 text-center">
+				<a class="button-link" href="{{ route('curriculum') }}">
+					<button class="btn btn-info btn-lg" type="button">Learn More</button>
 				</a>
-				<a href="{{ route('lessons') }}">
-					<button class="btn btn-primary btn-lg" type="button">View Sample Lessons<i class="fa fa-long-arrow-right fa-fw"></i></button>
+				<a class="button-link" href="{{ route('lessons') }}">
+					<button class="btn btn-primary btn-lg" type="button">View Sample Lessons</button>
 				</a>
-			</article>
+			</div>
 		</div>
 	</section>
 	<section class="slideshow">
@@ -60,6 +65,7 @@
 			</div>
 		</div>
 	</section>
+	<!--
 	<section class="information">
 		<div class="container">
 			<div class="row">
@@ -84,4 +90,5 @@
 			</div>
 		</div>
 	</section>
+	-->
 @stop

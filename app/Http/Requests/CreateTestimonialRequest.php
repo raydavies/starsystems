@@ -31,8 +31,8 @@ class CreateTestimonialRequest extends Request {
 		$this->sanitize();
 
 		return [
-			'name' => 'max:255',
-			'city' => 'required|max:255',
+			'name' => 'required|max:255',
+			'city' => 'max:255',
 			'state_province' => 'required|max:2',
 			'comment' => 'required'
 		];

@@ -110,6 +110,10 @@ h6 {
   border-bottom: 8px solid;
   border-left: 8px solid transparent;
 }
+/* Links */
+a.button-link {
+  display: inline-block;
+}
 .navbar {
   margin-bottom: 0;
   font-family: 'LillyRegular', 'Arial', sans-serif;
@@ -160,21 +164,25 @@ h6 {
   color: #fff;
 }
 .content .billboard .blackboard .tagline {
-  font-size: 4em;
-  font-family: 'NexaRustSansBlack', sans-serif;
+  font-size: 3em;
+  font-family: 'Futura', "Century Gothic", sans-serif;
 }
 .content .billboard .blackboard .tagline > small {
   display: block;
-  margin: 7px 0 15px;
+  margin: 15px 0;
   font-size: .5em;
   color: #fff;
   font-weight: normal;
   font-family: 'DustismoRegular', sans-serif;
 }
+.content .billboard .blackboard ul {
+  font-size: 1.25em;
+}
 .content .billboard .blackboard button {
   margin: 15px 0 0;
   font-size: 1.5em;
   font-weight: bold;
+  font-family: 'Futura', "Century Gothic", sans-serif;
 }
 .content .features {
   padding: 15px 15px 50px;
@@ -187,6 +195,9 @@ h6 {
 .content .features .feature {
   font-size: 1.2em;
 }
+.content .features .feature.cta-buttons {
+  margin-top: 15px;
+}
 .content .features .feature span {
   margin-left: 5px;
   font-size: 1.5em;
@@ -194,7 +205,6 @@ h6 {
   font-family: 'DustismoRomanRegular', sans-serif;
 }
 .content .features .feature button {
-  margin-top: 20px;
   border-radius: 4px;
   font-size: 1.5em;
   font-weight: bold;
@@ -207,6 +217,9 @@ h6 {
 }
 .content .features .feature a:hover {
   text-decoration: none;
+}
+.content .features .feature a.button-link + a.button-link {
+  margin-left: 15px;
 }
 .content .slideshow {
   min-height: 550px;
