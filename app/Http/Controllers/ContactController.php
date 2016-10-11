@@ -34,7 +34,7 @@ class ContactController extends Controller
 			'user_message' => $request->get('message')
 		), function($message) use ($name, $email, $subject) {
 			$message->from($email, $name);
-			$message->to('postmaster@starlearningsystems.com', 'James Anderson')->subject($subject);
+			$message->to('jordanmand@gmail.com', 'Jordan Anderson')->subject($subject);
 		});
 
 		return redirect('contact')->with('alert', array('status' => 'success', 'message' => 'Thank you for your feedback!'));

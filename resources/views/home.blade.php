@@ -16,7 +16,9 @@
 						<li><i class="fa fa-fw fa-check"></i> Study More Effectively</li>
 						<li><i class="fa fa-fw fa-check"></i> Prepare For The Future</li>
 					</ul>
-					<button class="btn btn-lg btn-default">Take The Tour</button>
+					<a class="button-link" href="{{ route('curriculum') }}">
+						<button class="btn btn-lg btn-default">Take The Tour</button>
+					</a>
 				</div>
 			</div>
 		</div>

@@ -114,6 +114,15 @@ h6 {
 a.button-link {
   display: inline-block;
 }
+/* Panels */
+.panel .panel-heading {
+  position: relative;
+}
+.panel .panel-heading .caret {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
 .navbar {
   margin-bottom: 0;
   font-family: 'LillyRegular', 'Arial', sans-serif;
@@ -178,8 +187,10 @@ a.button-link {
 .content .billboard .blackboard ul {
   font-size: 1.25em;
 }
-.content .billboard .blackboard button {
+.content .billboard .blackboard .button-link {
   margin: 15px 0 0;
+}
+.content .billboard .blackboard button {
   font-size: 1.5em;
   font-weight: bold;
   font-family: 'CooperHewittBold', 'Futura', sans-serif;
@@ -509,4 +520,7 @@ a.button-link {
   src: url('../fonts/CooperHewitt/CooperHewitt-Thin.otf') format("opentype");
   font-weight: normal;
   font-style: normal;
+}
+.margin-top-15 {
+  margin-top: 15px;
 }
