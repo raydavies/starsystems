@@ -15,7 +15,7 @@
             <article class="col-md-6">
                 <div class="testimonial panel panel-info">
                     <div class="panel-heading">
-                        <h3 class="panel-title text-left">{{ $testimonial->name or 'Anonymous' }} in {{ $testimonial->city }}, {{ $testimonial->state_province }}</h3>
+                        <h3 class="panel-title text-left">{{ $testimonial->name or 'Anonymous' }} in @if ($testimonial->city){{ $testimonial->city }}, @endif{{ $testimonial->state_province }}</h3>
                     </div>
                     <div id="answer-{{ $testimonial->id  }}" class="comment panel-body">{{ $testimonial->comment }}</div>
                 </div>
