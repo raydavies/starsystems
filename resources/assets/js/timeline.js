@@ -1,5 +1,3 @@
-<!--
-
 var h = 1;
 
 $(document).ready(function() {
@@ -66,6 +64,3 @@ function previousTime()
 	}
 	return false;
 }
-
-//-->
-

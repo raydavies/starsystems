@@ -2,7 +2,6 @@
 
 @section('headscripts')
 	@parent
-	<script src="{{ asset('/js/squareSpin.js') }}" async></script>
 @stop
 
 @section('content')

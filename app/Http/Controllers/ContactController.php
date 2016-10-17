@@ -6,6 +6,9 @@ use Mail;
 
 class ContactController extends Controller
 {
+    const POSTMASTER_EMAIL = 'postmaster@starlearningsystems.com';
+    const POSTMASTER_NAME = 'James Anderson';
+        
 	/**
 	 * Loads the contact us form.
 	 *
@@ -34,7 +37,7 @@ class ContactController extends Controller
 			'user_message' => $request->get('message')
 		), function($message) use ($name, $email, $subject) {
 			$message->from($email, $name);
-			$message->to('jordanmand@gmail.com', 'Jordan Anderson')->subject($subject);
+			$message->to(self::POSTMASTER_EMAIL, self::POSTMASTER_NAME)->subject($subject);
 		});
 
 		return redirect('contact')->with('alert', array('status' => 'success', 'message' => 'Thank you for your feedback!'));

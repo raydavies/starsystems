@@ -1,6 +1,5 @@
 $(document).ready(function() {
 	$(window).bind('scroll', function() {
-		//parallaxScroll();
 		showScrollButton();
 	});
 
