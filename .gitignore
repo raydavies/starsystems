@@ -11,3 +11,8 @@ Thumbs.db
 /public/files
 /public/img
 /public/fonts
+.idea/
+database/migrations/archive/
+npm-debug.log
+public/phpmyadmin/
+_ide_helper.php
