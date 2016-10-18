@@ -4,7 +4,6 @@
 
 @section('headscripts')
 	@parent
-	<script src="{{ asset('/js/lesson-picker.js') }}" async></script>
 @stop
 
 @section('page_content')

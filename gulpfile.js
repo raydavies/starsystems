@@ -18,6 +18,9 @@ elixir(function(mix) {
 elixir(function(mix) {
    mix.scripts([
        'analytics-tracking.js',
+       'faq.js',
+       'form-validator.js',
+       'lesson-picker.js',
        'scroll.js'
    ], 'public/js/app.js');
 });

@@ -8,10 +8,15 @@ var FormManager = function(form, validationMap) {
 			'email': 'validEmail',
 			'subject': 'validAlphaNum',
 			'message': 'validInput'
+		},
+		errorMsgMap = {
+			'email:validEmail': 'The email field must contain a valid email address'
 		};
 
 	this.init = function() {
-		self.validateForm();
+		if (form.data('validateOnStart')) {
+			self.validateForm();
+		}
 
 		form.on('change', '.form-control', function() {
 			self.validateInput($(this));
@@ -20,27 +25,39 @@ var FormManager = function(form, validationMap) {
 
 	this.validateForm = function()
 	{
+		var isValid = true;
+		
 		form.find('.form-group').each(function() {
-			if ($(this).find('.errormsg').text().length) {
-				self.validateInput($(this).find('.form-control'));
+			if (!self.validateInput($(this).find('.form-control'))) {
+				isValid = false;
 			}
 		});
+		
+		return isValid;
 	};
 
 	this.validateInput = function(input)
 	{
-		var callback;
+		var inputName = input.attr('name'), callback, isValid, errorMsg;
 
-		if (validationMap[input.attr('name')]) {
-			callback = 	validationMap[input.attr('name')];
+		if (validationMap[inputName]) {
+			callback = 	validationMap[inputName];
 		} else {
 			callback = 'validInput';
 		}
 		if (self[callback](input.val())) {
 			self.setSuccessStatus(input);
+			isValid = true;
 		} else {
-			self.setErrorStatus(input);
+			if (errorMsgMap[inputName + ':' + callback]) {
+				errorMsg = errorMsgMap[inputName + ':' + callback];
+			}
+			
+			self.setErrorStatus(input, errorMsg);
+			isValid = false;
 		}
+		
+		return isValid;
 	};
 
 	this.setSuccessStatus = function(input)
@@ -50,11 +67,14 @@ var FormManager = function(form, validationMap) {
 		input.closest('.form-group').removeClass('has-error').addClass('has-success').find('.errormsg').empty();
 	};
 
-	this.setErrorStatus = function(input)
+	this.setErrorStatus = function(input, errorMsg)
 	{
+		var fieldName = input.attr('name').replace(/[-_]+/, ' ');
+		var errorMsg = errorMsg || 'The ' + fieldName + ' field is required';
+		
 		input.siblings('.form-control-feedback').removeClass('fa-check hidden').addClass('fa-close');
 		input.siblings('span.sr-only').removeClass('hidden').text('(error)');
-		input.closest('.form-group').removeClass('has-success').addClass('has-error');
+		input.closest('.form-group').removeClass('has-success').addClass('has-error').find('.errormsg').text(errorMsg);
 	};
 
 	this.validInput = function(value)

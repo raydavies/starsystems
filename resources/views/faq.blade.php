@@ -4,7 +4,6 @@
 
 @section('headscripts')
 	@parent
-	<script src="{{ asset('/js/faq.js') }}"></script>
 @stop
 
 @section('page_content')

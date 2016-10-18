@@ -4,7 +4,6 @@
 
 @section('headscripts')
 	@parent
-    <script src="{{ asset('/js/form-validator.js') }}"></script>
 	<script>
         $(document).ready(function() {
             var form = new FormManager($('#contact_form'));
@@ -26,7 +25,8 @@
 	<p><em>All fields are required.</em></p>
 
 	<div id="form_wrapper" class="row">
-		{!! Form::open(array('route' => 'contact', 'method' => 'post', 'id' => 'contact_form', 'class' => 'form-horizontal', 'novalidate' => 'novalidate')) !!}
+
+		{!! Form::open(array('route' => 'contact', 'method' => 'post', 'id' => 'contact_form', 'class' => 'form-horizontal', 'data-validate-on-start' => !empty($errors->all()), 'novalidate' => 'novalidate')) !!}
 			<div class="form-group has-feedback">
 				{!! Form::label('firstname', 'First Name', array('class' => 'col-md-3 control-label')) !!}
 				<div class="col-md-6">

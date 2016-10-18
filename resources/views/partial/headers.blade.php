@@ -12,5 +12,5 @@
 @section('headscripts')
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="{{ asset('/js/vendor/bootstrap.min.js') }}" async></script>
-	<script src="{{ elixir('js/app.js') }}" async></script>
+	<script src="{{ elixir('js/app.js') }}"></script>
 @show

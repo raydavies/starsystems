@@ -47,5 +47,14 @@ class ContactFormRequest extends Request {
 
 		$this->replace($inputs);
 	}
-
+    
+    /**
+     * Adds custom error messages to validator.
+     *
+     * @return array
+     */
+	public function messages()
+    {
+        return ['email' => 'The email field must contain a valid email address'];
+    }
 }

@@ -1,5 +1,4 @@
-function parseQueryString()
-{
+function parseQueryString() {
 	var match,
 		urlParams = {},
 		pl = /\+/g,
@@ -14,3 +13,11 @@ function parseQueryString()
 	}
 	return urlParams;
 }
+
+String.prototype.ucwords = function() {
+	var str = this.toLowerCase();
+	
+	return str.replace(/(^([a-zA-Z]))|(\b([a-zA-Z]))/g, function($1) {
+		return $1.toUpperCase();
+	});
+};
