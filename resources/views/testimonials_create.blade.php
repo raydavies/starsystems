@@ -4,7 +4,6 @@
 
 @section('headscripts')
     @parent
-    <script src="{{ asset('/js/form-validator.js') }}"></script>
     <script>
         $(document).ready(function() {
             var form = new FormManager($('#testimonial_form'), {
@@ -22,7 +21,7 @@
     <section id="testimonial_creator" class="row">
         <div class="info-text text-center"><span class="lead">Submit a testimonial to let us know what you think of the Interactive Curriculum. We love to hear your thoughts!</span></div>
 
-        {!! Form::model($testimonial, array('route' => 'testimonials.create', 'method' => 'post', 'id' => 'testimonial_form', 'novalidate' => 'novalidate')) !!}
+        {!! Form::model($testimonial, array('route' => 'testimonials.create', 'method' => 'post', 'id' => 'testimonial_form', 'data-validate-on-start' => !empty($errors->all()), 'novalidate' => 'novalidate')) !!}
         <div class="row clearfix">
             <div class="form-group col-md-6 col-md-offset-3 has-feedback">
                 {!! Form::label('name', 'Name', array('class' => 'control-label')) !!}

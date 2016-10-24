@@ -5,12 +5,12 @@
 	<link rel="stylesheet" href="{{ asset('/css/vendor/bootstrap.min.css') }}">
 	<link rel="stylesheet" href="{{ asset('/css/vendor/normalize.css') }}">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="{{ elixir('css/app.css') }}">
+	<link rel="stylesheet" href="{{ asset('/css/app.css') }}">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Corben:bold">
 @show
 
 @section('headscripts')
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="{{ asset('/js/vendor/bootstrap.min.js') }}" async></script>
-	<script src="{{ elixir('js/app.js') }}"></script>
+	<script src="{{ asset('/js/app.js') }}"></script>
 @show

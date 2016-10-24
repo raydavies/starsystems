@@ -11,7 +11,8 @@ var FormManager = function(form, validationMap) {
 		},
 		errorMsgMap = {
 			'email:validEmail': 'The email field must contain a valid email address'
-		};
+		},
+		errors = {};
 
 	this.init = function() {
 		if (form.data('validateOnStart')) {
@@ -38,19 +39,25 @@ var FormManager = function(form, validationMap) {
 
 	this.validateInput = function(input)
 	{
-		var inputName = input.attr('name'), callback, isValid, errorMsg;
+		var inputName = input.attr('name'), callback, isValid, errorMsg, method;
 
+		//clear error for this input
+		errors[inputName] = '';
+		
 		if (validationMap[inputName]) {
 			callback = 	validationMap[inputName];
 		} else {
 			callback = 'validInput';
 		}
-		if (self[callback](input.val())) {
+		if (self[callback](inputName, input.val())) {
 			self.setSuccessStatus(input);
 			isValid = true;
 		} else {
-			if (errorMsgMap[inputName + ':' + callback]) {
-				errorMsg = errorMsgMap[inputName + ':' + callback];
+			if (errors[inputName]) {
+				method = errors[inputName];
+				if (errorMsgMap[inputName + ':' + method]) {
+					errorMsg = errorMsgMap[inputName + ':' + method];
+				}
 			}
 			
 			self.setErrorStatus(input, errorMsg);
@@ -77,60 +84,68 @@ var FormManager = function(form, validationMap) {
 		input.closest('.form-group').removeClass('has-success').addClass('has-error').find('.errormsg').text(errorMsg);
 	};
 
-	this.validInput = function(value)
+	this.validInput = function(inputName, value)
 	{
 		var cleanValue = self.trimSpace(value);
 
 		return cleanValue != '';
 	};
 
-	this.validName = function(value)
+	this.validName = function(inputName, value)
 	{
-		if (self.validInput(value)) {
+		if (self.validInput(inputName, value)) {
 			if (value.length <= 255) {
 				return true;
+			} else {
+				errors[inputName] = 'validName';
 			}
 		}
 		return false;
 	};
 
-	this.validAlphaNum = function(value)
+	this.validAlphaNum = function(inputName, value)
 	{
 		var alphaDash = /^[a-zA-Z0-9\-\_]+$/;
 
-		if (self.validInput(value)) {
+		if (self.validInput(inputName, value)) {
 			if (value.match(alphaDash)) {
 				return true;
+			} else {
+				errors[inputName] = 'validAlphaNum';
 			}
 		}
 		return false;
 	};
 
-	this.validEmail = function(value)
+	this.validEmail = function(inputName, value)
 	{
 		var emailExp = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
 
-		if (self.validInput(value)) {
+		if (self.validInput(inputName, value)) {
 			if (value.match(emailExp)) {
 				return true;
+			} else {
+				errors[inputName] = 'validEmail';
 			}
 		}
 		return false;
 	};
 
-	this.validStateAbbr = function(value)
+	this.validStateAbbr = function(inputName, value)
 	{
 		var stateAbbrExp = /^[a-zA-Z]{2}$/;
 
-		if (self.validInput(value)) {
+		if (self.validInput(inputName, value)) {
 			if (value.match(stateAbbrExp)) {
 				return true;
+			} else {
+				errors[inputName] = 'validStateAbbr';
 			}
 		}
 		return false;
 	};
 	
-	this.noValidate = function(value)
+	this.noValidate = function(inputName, value)
 	{
 		return true;
 	};

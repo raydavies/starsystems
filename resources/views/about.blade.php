@@ -4,11 +4,10 @@
 
 @section('headscripts')
 	@parent
-	<!--<script src="{{ asset('/js/timeline.js') }}" async></script>-->
 @stop
 
 @section('page_content')
-	<p id="bio"><span class="sls">Star Learning Systems</span> has been committed to bringing parents and students the highest caliber of learning products for over 3 decades. Even before computers were commonplace in the classroom or at home, Star was at the forefront of technology in education. While our business has changed over the years, one thing has stayed the same: our dedication to your child's success in school.</p>
+	<p id="bio"><span class="font-plus font-bold">Star Learning Systems</span> has been committed to bringing parents and students the highest caliber of learning products for over three decades. Even before computers were commonplace in the classroom or at home, Star was at the forefront of technology in education. While our business has changed over the years, one thing has stayed the same: our dedication to your child's success in school.</p>
 	<div id="timeline_wrapper">
 		<div id="timeline">
 			<div id="inner_timeline">
@@ -25,5 +24,4 @@
 		</div>
 		<img id="timelinepics" src="{{ asset('/img/history/3.jpg') }}" alt="">
 	</div>
-	<!--<h3>Star Learning Systems<br>Celebrating more than 30 years in Education!</h3>-->
 @stop
