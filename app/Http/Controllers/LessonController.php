@@ -21,16 +21,24 @@ class LessonController extends Controller
 		$subject_id = (int) $this->request->input('subject', 1);
 
 		$levels = Level::all();
-		$level = Level::find($level_id);
-		$subject = Subject::find($subject_id);
+		$currentLevel = Level::find($level_id);
+		$currentSubject = Subject::find($subject_id);
 		$lessons = Lesson::whereRaw('level_id = ? AND subject_id = ?', [$level_id, $subject_id])->get();
 
+        $levelOptions = $subjectOptions = [];
+        foreach ($levels as $level) {
+            $levelOptions[$level->level_id] = $level->name . ' (' . $level->grade_range . ')';
+        }
+        foreach ($currentLevel->subjects as $subject) {
+            $subjectOptions[$subject->subject_id] = $subject->name;
+        }
+        
 		return view('samplelessons', [
-			'levels' => $levels,
-			'subjects' => $level->subjects,
+			'levelOptions' => $levelOptions,
+			'subjectOptions' => $subjectOptions,
 			'lessons' => $lessons,
-			'current_level' => $level,
-			'current_subject' => $subject
+			'current_level' => $currentLevel,
+			'current_subject' => $currentSubject
 		]);
 	}
 

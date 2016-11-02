@@ -7,49 +7,43 @@
 @stop
 
 @section('page_content')
-	<p class="lesson_text text-left center-block"><strong>The Interactive Curriculum</strong> has over 2700 Teaching and Study Lessons designed to help students excel. Take a peek at what your child will be learning!</p>
+	<div class="row clearfix">
+        <div class="lesson_picker_container col-md-8">
+            <p class="lesson_text"><span class="font-bold font-plus">The Interactive Curriculum</span> has over 2700 Teaching and Study Lessons designed to help students excel. Take a peek at what your child will be learning!</p>
+            <img id="blackboard_child" class="img-responsive center-block" src="{{ asset('/img/blackboard.jpg') }}" alt="Child at blackboard" title="">
 
-	<div class="lesson_picker_container center-block">
-		<img id="blackboard_child" class="img-responsive center-block" src="{{ asset('/img/blackboard.jpg') }}" alt="Child at blackboard" title="">
+            <div class="lesson_picker bg-info">
+                <header class="text-info font-plus font-bold">Curious about the curriculum?</header>
+                {!! Form::open(array('route' => 'lessons', 'method' => 'get', 'id' => 'lesson_select_form')) !!}
+                    <div class="form-group">
+                        {!! Form::label('level_select', 'Choose a level', array('class' => 'control-label')) !!}
+                        {!! Form::select('level', $levelOptions, $current_level->level_id, array('required', 'id' => 'level_select', 'class' => 'form-control', 'aria-describedby' => 'level_select_status')) !!}
+                        <span id="level_select_status" class="sr-only hidden"></span>
+                    </div>
 
-		<div class="lesson_picker">
-			<header>Curious about the curriculum?<br>Select a level and subject below!</header>
-			<form id="lesson_select_form" action="{{ URL::current() }}" method="get">
+                    <div class="form-group">
+                        {!! Form::label('subject_select', 'Choose a subject', array('class' => 'control-label')) !!}
+                        {!! Form::select('subject', $subjectOptions, $current_subject->subject_id, array('required', 'id' => 'subject_select', 'class' => 'form-control', 'aria-describedby' => 'subject_select_status')) !!}
+                        <span id="subject_select_status" class="sr-only hidden"></span>
+                    </div>
+                    <button class="btn btn-primary btn-lg" type="submit">View Lessons</button>
+                {!! Form::close() !!}
+            </div>
+        </div>
 
-				<div class="form-group">
-					<label for="level_select">Choose a level</label>
-					<select id="level_select" name="level">
-						@foreach ($levels as $level)
-							<option value="{{ $level->level_id}}">{{ $level->name }} ({{ $level->grade_range }})</option>
-						@endforeach
-					</select>
-				</div>
-
-				<div class="form-group">
-					<label for="subject_select">Choose a subject</label>
-					<select id="subject_select" name="subject">
-						@foreach ($subjects as $subject)
-							<option value="{{ $subject->subject_id }}">{{ $subject->name }}</option>
-						@endforeach
-					</select>
-				</div>
-				<button class="btn btn-success btn-lg" type="submit">View Lessons</button>
-			</form>
-		</div>
-	</div>
-
-	<div class="lesson_catalog center-block">
-		@if (isset($current_level, $current_subject))
-			<h2>{{ $current_level->name }}: {{ $current_subject->name }}</h2>
-			@if (count($lessons))
-				<div class="lesson_list row clearfix text-left">
-					@foreach ($lessons as $lesson)
-						<div class="lesson-title col-md-4">{{ $lesson->title }}</div>
-					@endforeach
-				</div>
-			@else
-				<div class="empty_list">No lessons found for this subject</div>
-			@endif
-		@endif
+        <div class="lesson_catalog text-center col-md-4 bg-info">
+            @if (isset($current_level, $current_subject))
+                <h2>{{ $current_level->name }}: {{ $current_subject->name }}</h2>
+                @if (count($lessons))
+                    <ul class="lesson_list text-left list-group">
+                        @foreach ($lessons as $lesson)
+                            <li class="lesson-title list-group-item">{{ $lesson->title }}</li>
+                        @endforeach
+                    </ul>
+                @else
+                    <div class="empty_list">No lessons found for this subject</div>
+                @endif
+            @endif
+        </div>
 	</div>
 @stop
