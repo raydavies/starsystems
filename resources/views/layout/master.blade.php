@@ -24,7 +24,7 @@
 		<div class="navbar-header">
 			<a href="/" class="star_logo navbar-brand">
 				<span class="text-hide">Star Learning Systems</span>
-				<!--<img style="max-height: 50px;" src="{{ asset('/img/hippo-logo-transparent.png') }}">-->
+				{{-- <img style="max-height: 50px;" src="{{ asset('/img/hippo-logo-transparent.png') }}"> --}}
 			</a>
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
 				<span class="sr-only">Toggle Navigation</span>

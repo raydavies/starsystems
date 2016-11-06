@@ -3,88 +3,84 @@
 @section('title', 'The Interactive Curriculum')
 
 @section('page_content')
-	<h2>Take a tour of the Interactive Curriculum!</h2>
+	<h2 class="text-center">Take a tour of the Interactive Curriculum!</h2>
 
-	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-		<!-- Indicators -->
+	<div id="curriculum-tour" class="carousel slide margin-top-15" data-interval="false">
 		<ol class="carousel-indicators">
-			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-			<li data-target="#carousel-example-generic" data-slide-to="3"></li>
-			<li data-target="#carousel-example-generic" data-slide-to="4"></li>
-			<li data-target="#carousel-example-generic" data-slide-to="5"></li>
+			<li data-target="#curriculum-tour" data-slide-to="0" class="active"></li>
+			<li data-target="#curriculum-tour" data-slide-to="1"></li>
+			<li data-target="#curriculum-tour" data-slide-to="2"></li>
+			<li data-target="#curriculum-tour" data-slide-to="3"></li>
+			<li data-target="#curriculum-tour" data-slide-to="4"></li>
+			<li data-target="#curriculum-tour" data-slide-to="5"></li>
 		</ol>
 
-		<!-- Wrapper for slides -->
 		<div class="carousel-inner" role="listbox">
-			<div class="item active">
-				<img src="{{ asset('/img/curriculum/screen_history.jpg') }}" alt="...">
-				<div class="carousel-caption">
-					<header><strong>Step 1: Choose your lesson</strong></header>
+			<div class="item row clearfix active">
+				<img src="{{ asset('/img/curriculum/screen_history_sm.jpg') }}" alt="..." class="col-md-6">
+				<div class="col-md-6 caption">
+					<header><strong>Choose your lesson</strong></header>
 					<p>Log in, then select a grade level and general topic to begin.</p>
 					<p>Each topic is divided into several in-depth lessons, making it easy to find exactly what you need.</p>
-					<p>Clicking on a lesson allows you to choose from four modes: Study, Practice, Test, and Essay. Let's take a look at each.</p>
+					<p>Clicking on a lesson allows you to choose from four modes: Study, Practice, Essay, and Test. Let's take a look at each.</p>
 				</div>
 			</div>
-			<div class="item">
-				<img src="{{ asset('/img/curriculum/study_history.jpg') }}" alt="...">
-				<div class="carousel-caption">
-					<header><strong>Step 2: Study the lesson</strong></header>
+			<div class="item row clearfix">
+				<img src="{{ asset('/img/curriculum/study_history_sm.jpg') }}" alt="..." class="col-md-6">
+				<div class="col-md-6 caption">
+					<header><strong>Study the lesson</strong></header>
 					<p>Study mode is the backbone of the program and contains everything students need to know for school and homework.</p>
 					<p>There's <u>no</u> filler in the Interactive Curriculum! All lessons are short, engaging, and full of meaningful academic content.</p>
 					<p>Students can control the pace with an easy-to-use page turner, and can click any hyperlinks in the text to trigger pop-up boxes filled with additional information.</p>
 					<p>Graphics and teacher narration accompany many of the lessons, providing further clarification of the material.</p>
 				</div>
 			</div>
-			<div class="item">
-				<img src="{{ asset('/img/curriculum/practice_history.jpg') }}" alt="...">
-				<div class="carousel-caption">
-					<header><strong>Step 3: Practice the lesson</strong></header>
-					<p>Practice mode allows students to apply what they've learned in a quiz format.</p>
-					<p>Feedback is immediate; students receive the help they need, when they need it.</p>
+			<div class="item row clearfix">
+				<img src="{{ asset('/img/curriculum/practice_history_sm.jpg') }}" alt="..." class="col-md-6">
+				<div class="col-md-6 caption">
+					<header><strong>Practice the lesson</strong></header>
+					<p>Practice mode allows students to apply what they've learned in a quiz format. Feedback is immediate; students receive the help they need, when they need it.</p>
 					<p>Fresh new questions each session assures learning, not memorization, while a mixture of question styles helps students build test-taking skills.</p>
 					<p>Review scores quickly when finished, and try again!</p>
 				</div>
 			</div>
-			<div class="item">
-				<img src="{{ asset('/img/curriculum/test_history.jpg') }}" alt="...">
-				<div class="carousel-caption">
-					<header><strong>Step 4: Take the test</strong></header>
-					<p>Test mode recreates a real testing atmosphere. Students must answer all questions before feedback is given. Any missed answers can be reviewed once the test is complete.</p>
-					<p>Wrong answer? Don't worry! You can take the test again and again.</p>
-					<p>Answers will be switched and new answers added when re-testing.</p>
-					<p>Review your scores and other information with the Progress Report!</p>
+			<div class="item row clearfix">
+				<img src="{{ asset('/img/curriculum/recess_math_sm.jpg') }}" class="col-md-6">
+				<div class="col-md-6 caption">
+					<header><strong>Take A Break</strong></header>
+					<p>Recess mode keeps students learning with interactive games.</p>
 				</div>
 			</div>
-			<div class="item">
-				<img src="{{ asset('/img/curriculum/essay_history.jpg') }}" alt="...">
-				<div class="carousel-caption">
-					<header><strong>Step 5: Get Creative</strong></header>
+			<div class="item row clearfix">
+				<img src="{{ asset('/img/curriculum/essay_history_sm.jpg') }}" alt="..." class="col-md-6">
+				<div class="col-md-6 caption">
+					<header><strong>Get Creative</strong></header>
 					<p>Essay mode encourages students to think more deeply about the material by providing open-ended questions as writing topics.</p>
 					<p>There are no wrong answers in Essay mode. Students can express themselves while building strong writing skills!</p>
 				</div>
 			</div>
-			<div class="item">
-				<img src="{{ asset('/img/curriculum/recess_geography.jpg') }}">
-				<img src="{{ asset('/img/curriculum/recess_math.jpg') }}">
-				<div class="carousel-caption">
-					<p>Take a break! Recess mode keeps students learning with interactive games.</p>
+			<div class="item row clearfix">
+				<img src="{{ asset('/img/curriculum/test_history_sm.jpg') }}" alt="..." class="col-md-6">
+				<div class="col-md-6 caption">
+					<header><strong>Take the test</strong></header>
+					<p>Test mode recreates a real testing atmosphere. Students must answer all questions before feedback is given. Any missed answers can be reviewed once the test is complete.</p>
+					<p>Wrong answer? Don't worry! You can take the test again and again. Answers will be switched and new answers added when re-testing.</p>
+					<p>Review your scores and other information with the Progress Report!</p>
 				</div>
 			</div>
 		</div>
 
-		<!-- Controls -->
-		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		<a class="left carousel-control" href="#curriculum-tour" role="button" data-slide="prev">
+			<span class="glyphicon-chevron-left fa fa-chevron-left" aria-hidden="true"></span>
 			<span class="sr-only">Previous</span>
 		</a>
-		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		<a class="right carousel-control" href="#curriculum-tour" role="button" data-slide="next">
+			<span class="glyphicon-chevron-right fa fa-chevron-right" aria-hidden="true"></span>
 			<span class="sr-only">Next</span>
 		</a>
 	</div>
 
+	<!--
 	<div id="samplepics">
 		<article class="row clearfix">
 			<div class="col-md-3 col-md-offset-3 text-right">
@@ -154,6 +150,6 @@
 			<p>Take a break! Recess mode keeps students learning with interactive games.</p>
 		</article>
 	</div>
-
-	<div class="font-plus text-center">Don't leave your child's education to chance. Build success with <strong>The Interactive Curriculum!</strong></div>
+	<div class="font-plus text-center margin-top-15">Don't leave your child's education to chance. Build success with <strong>The Interactive Curriculum!</strong></div>
+	-->
 @stop

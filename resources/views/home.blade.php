@@ -60,9 +60,9 @@
 					</p>
 					<p>Each level contains more than <em>800 lessons</em> on 6 CDs!</p>
 				</div>
-				<!--
+				{{--
 				<iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PL09vPPCUB2vCqsPuGIBbHwgw8p7OO_mKA" frameborder="0" allowfullscreen></iframe>
-				-->
+				--}}
 			</div>
 		</div>
 	</section>
