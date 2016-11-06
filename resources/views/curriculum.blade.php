@@ -3,7 +3,7 @@
 @section('title', 'The Interactive Curriculum')
 
 @section('page_content')
-	<h2 class="text-center">Take a tour of the Interactive Curriculum!</h2>
+	<header class="header header-xl text-center">Take a tour of the Interactive Curriculum!</header>
 
 	<div id="curriculum-tour" class="carousel slide margin-top-15" data-interval="false">
 		<ol class="carousel-indicators">

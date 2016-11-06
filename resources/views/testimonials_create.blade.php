@@ -19,7 +19,7 @@
 
 @section('page_content')
     <section id="testimonial_creator" class="row">
-        <div class="info-text text-center"><span class="lead">Submit a testimonial to let us know what you think of the Interactive Curriculum. We love to hear your thoughts!</span></div>
+        <div class="lead text-center">Submit a testimonial to let us know what you think of the Interactive Curriculum. We love to hear your thoughts!</div>
 
         {!! Form::model($testimonial, array('route' => 'testimonials.create', 'method' => 'post', 'id' => 'testimonial_form', 'data-validate-on-start' => !empty($errors->all()), 'novalidate' => 'novalidate')) !!}
         <div class="row clearfix">
@@ -66,7 +66,10 @@
             </div>
         </div>
 
-        <button type="submit" class="btn btn-success btn-lg center-block">Submit Testimonial</button>
+        <div class="text-center">
+            <button type="submit" class="btn btn-success btn-lg">Submit Testimonial</button>
+            <a href="{{ route('testimonials') }}" class="btn btn-danger btn-lg">Cancel</a>
+        </div>
         {!! Form::close() !!}
     </section>
 @stop

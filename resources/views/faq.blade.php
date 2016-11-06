@@ -7,7 +7,7 @@
 @stop
 
 @section('page_content')
-	<h1>Frequently Asked Questions</h1>
+	<header class="header header-xl">Frequently Asked Questions</header>
 
 	<div id="faq" class="text-left margin-top-15">
 		<div class="question panel panel-info">

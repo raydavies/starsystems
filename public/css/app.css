@@ -112,6 +112,17 @@ h6 {
   border-bottom: 8px solid;
   border-left: 8px solid transparent;
 }
+/* Headers */
+.header {
+  font-family: 'CooperHewittBold', 'Futura', sans-serif;
+  font-size: 18px;
+}
+.header.header-lrg {
+  font-size: 24px;
+}
+.header.header-xl {
+  font-size: 32px;
+}
 /* Links */
 a.button-link {
   display: inline-block;
@@ -242,7 +253,6 @@ header.navbar {
 }
 .content .billboard .blackboard button {
   font-size: 1.5em;
-  font-weight: bold;
   font-family: 'CooperHewittBold', 'Futura', sans-serif;
 }
 .content .features {
@@ -269,9 +279,7 @@ header.navbar {
 .content .features .feature button {
   border-radius: 4px;
   font-size: 1.5em;
-  font-weight: bold;
-  font-family: 'CooperHewittBold', 'Futura', sans-serif;
-  text-shadow: 1px -1px 1px rgba(0, 0, 0, 0.5);
+  font-family: 'CooperHewittSemibold', sans-serif;
   letter-spacing: 1px;
 }
 .content .features .feature button > i {
@@ -371,7 +379,14 @@ header.navbar {
   margin-top: 20px;
 }
 #testimonial_list .panel-heading .panel-title {
-  font-weight: bold;
+  font-weight: normal;
+}
+.testimonial_create_button {
+  font-family: 'CooperHewittSemibold', sans-serif;
+}
+#testimonial_form .btn {
+  font-family: 'CooperHewittSemibold', sans-serif;
+  font-weight: normal;
 }
 #samplepics {
   position: relative;
@@ -671,6 +686,9 @@ header.navbar {
 }
 .margin-top-15 {
   margin-top: 15px;
+}
+.font-cooper-bold {
+  font-family: 'CooperHewittBold', 'Futura', sans-serif;
 }
 .font-bold {
   font-weight: bold;

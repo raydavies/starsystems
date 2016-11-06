@@ -4,7 +4,7 @@
 
 @section('page_content')
     <section id="testimonial_header" class="row">
-        <h1 class="col-md-6"><strong>Customer Testimonials</strong><br><small>See what people are saying about us!</small></h1>
+        <h1 class="col-md-6"><strong class="header header-xl">Customer Testimonials</strong><br><small>See what people are saying about us!</small></h1>
         <div class="col-md-6 text-right">
             <a href="{{ route('testimonials.create') }}" role="button" class="btn btn-primary btn-lg testimonial_create_button">Create a testimonial</a>
         </div>

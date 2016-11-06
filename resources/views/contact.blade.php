@@ -14,7 +14,8 @@
 
 @section('page_content')
 	<div class="text-center">
-		<h4>For more information, or to leave a comment, please call us or fill out the form below!</h4>
+		<header class="header header-xl">Contact Us</header>
+		<p class="font-plus">For more information, or to leave a comment, please call us or fill out the form below!</p>
 		<address class="contact_address">
 			<strong>Star Learning Systems</strong><br>
 			14007 S Bell Rd &bull; Homer Glen, IL 60491<br>

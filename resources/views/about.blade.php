@@ -8,13 +8,13 @@
 
 @section('page_content')
 	<section id="company_info" class="info-section">
-		<header class="font-lrg font-bold">About Us</header>
+		<header class="header header-lrg">About Us</header>
 		<div class="container">
 			<p class="info-text">Star Learning Systems has been committed to bringing parents and students the highest caliber of learning products for over three decades. Even before computers were commonplace in the classroom or at home, Star was at the forefront of technology in education. While our business has changed over the years, one thing has stayed the same: our dedication to your child's success in school.</p>
 		</div>
 	</section>
 	<section id="product_info" class="info-section">
-		<header class="font-lrg font-bold">About the Interactive Curriculum</header>
+		<header class="header header-lrg">About the Interactive Curriculum</header>
 
 		<div class="container row">
 			<ul class="nav nav-tabs" role="tablist">

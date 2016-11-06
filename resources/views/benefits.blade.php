@@ -3,7 +3,7 @@
 @section('title', 'Benefits')
 
 @section('page_content')
-	<h2>Seven Reasons Why Your Child Will Benefit From This Program</h2>
+	<header class="header header-xl">Seven Reasons Why Your Child Will Benefit From This Program</header>
 
 	<div class="benefit_list">
 		<p>The Interactive Curriculum Software Program is designed to function as the essential centerpiece of your home educational endeavor. The curriculum is comprehensive, clearly presented, highly visual, and appropriately challenging. By bringing the material into your home, you will have taken a big step towards helping your child receive a first-rate education. Here's why:</p>
