@@ -9,8 +9,6 @@ Thumbs.db
 *.swp
 .project
 /public/files
-/public/img
-/public/fonts
 .idea/
 database/migrations/archive/
 npm-debug.log
