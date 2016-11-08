@@ -1,7 +1,7 @@
 <div class="footer text-left">
 	<div class="container">
 		<div class="row clearfix">
-			<div id="footer_col_1" class="footer_col col-md-3">
+			<div id="footer_col_1" class="footer_col col-md-3 col-xs-12">
 				<ul class="footer-nav list-unstyled">
 					<li><a href="{{ route('home') }}">Home</a></li>
 					<li><a href="{{ route('about') }}">About Us</a></li>
@@ -10,7 +10,7 @@
 					<li><a href="{{ route('contact') }}">Contact Us</a></li>
 				</ul>
 			</div>
-			<div id="footer_col_2" class="footer_col col-md-3 text-center">
+			<div id="footer_col_2" class="footer_col col-md-3 hidden-sm hidden-xs text-center">
 				<h3>The Interactive Curriculum</h3>
 				<ul class="list-unstyled">
 					<li>The Know It All Program</li>
@@ -18,7 +18,7 @@
 					<li> Everything they'll need to learn for the future</li>
 				</ul>
 			</div>
-			<div id="footer_col_3" class="footer_col col-md-3 text-center">
+			<div id="footer_col_3" class="footer_col col-md-3 col-xs-12 text-center">
 				<h3>Follow Us</h3>
 				<ul class="list-unstyled">
 					<li id="facebook-btn" class="footer-btn">
@@ -32,8 +32,8 @@
 					</li>
 				</ul>
 			</div>
-			<div id="footer_col_4" class="footer_col col-md-3 text-right">
-				<h3 class="text-right">Star Learning Systems</h3>
+			<div id="footer_col_4" class="footer_col col-md-3 col-xs-12 text-right">
+				<h3>Star Learning Systems</h3>
 				<ul class="list-unstyled footer-address">
 					<li>14007 S Bell Rd</li>
 					<li>Homer Glen, IL 60491</li>

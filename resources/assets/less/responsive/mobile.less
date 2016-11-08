@@ -1,0 +1,106 @@
+@media all and (max-width: @mobileLgWidth) {
+	.navbar {
+		.navbar-header {
+			.navbar-brand {
+				background: none;
+				width: inherit;
+				font-size: 1.5em;
+				line-height: 1em;
+
+				span {
+					font: inherit;
+					color: inherit;
+				}
+			}
+		}
+	}
+
+	.content {
+		.header {
+			text-align: center;
+		}
+
+		.billboard, .slideshow {
+			min-height: initial;
+			padding: 0;
+			background-attachment: scroll;
+			background-position: center;
+		}
+
+		.billboard {
+			.blackboard {
+				margin-top: 0;
+			}
+		}
+
+		.features {
+			padding: 15px;
+
+			.feature a.button-link + a.button-link {
+				margin-top: 10px;
+				margin-left: inherit;
+			}
+		}
+
+		.slideshow {
+			.levels {
+				margin-top: 0;
+			}
+		}
+
+		#faq {
+			.panel-heading {
+				padding: 10px 21px 10px 15px;
+			}
+		}
+
+		#testimonial_header {
+			text-align: center;
+
+			h1 {
+				margin-bottom: 15px;
+			}
+
+			div {
+				text-align: center;
+			}
+		}
+
+		.benefit_list {
+			.intro-text {
+				text-align: center;
+			}
+		}
+
+		#product_info {
+			.nav-tabs {
+				li {
+					max-width: 33%;
+				}
+			}
+		}
+	}
+}
+
+@media all and (max-width: @mobileSmWidth) {
+	.navbar {
+		.navbar-header {
+			.navbar-brand {
+				font-size: 1.1em;
+			}
+		}
+	}
+
+	.content {
+		#product_info {
+			.nav-tabs {
+				li {
+					a {
+						padding: 5px;
+					}
+				}
+			}
+		}
+	}
+}
+

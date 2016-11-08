@@ -48,8 +48,8 @@
 		</div>
 	</section>
 	<section class="slideshow">
-		<div class="container">
-			<div id="slideshow" class="col-md-6 col-md-offset-6">
+		<div class="row">
+			<div id="slideshow" class="col-md-4 col-md-offset-6 col-xs-12 col-xs-offset-0">
 				<div class="levels">
 					<p>Available in 4 levels:</p>
 					<p class="levels-grades">

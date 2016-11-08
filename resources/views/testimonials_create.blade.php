@@ -23,7 +23,7 @@
 
         {!! Form::model($testimonial, array('route' => 'testimonials.create', 'method' => 'post', 'id' => 'testimonial_form', 'data-validate-on-start' => !empty($errors->all()), 'novalidate' => 'novalidate')) !!}
         <div class="row clearfix">
-            <div class="form-group col-md-6 col-md-offset-3 has-feedback">
+            <div class="form-group col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1 has-feedback">
                 {!! Form::label('name', 'Name', array('class' => 'control-label')) !!}
                 {!! Form::text('name', null, array('required', 'id' => 'name', 'class' => 'form-control', 'aria-describedby' => 'name_status')) !!}
                 <i class="fa form-control-feedback hidden" aria-hidden="true"></i>
@@ -35,7 +35,7 @@
         </div>
 
         <div class="row clearfix">
-            <div class="form-group col-md-4 col-md-offset-3 has-feedback">
+            <div class="form-group col-md-4 col-md-offset-3 col-xs-10 col-xs-offset-1 has-feedback">
                 {!! Form::label('city', 'City (optional)', array('class' => 'control-label')) !!}
                 {!! Form::text('city', null, array('required', 'id' => 'city', 'class' => 'form-control', 'aria-describedby' => 'city_status')) !!}
                 <i class="fa form-control-feedback hidden" aria-hidden="true"></i>
@@ -44,7 +44,7 @@
                     <span class="errormsg">{{ $errors->first('city') }}</span>
                 </div>
             </div>
-            <div class="form-group col-md-2 has-feedback">
+            <div class="form-group col-md-2 col-xs-10 col-xs-offset-1 has-feedback">
                 {!! Form::label('state_province', 'State', array('class' => 'control-label')) !!}
                 {!! Form::select('state_province', $stateList, null, array('required', 'id' => 'state_province', 'class' => 'form-control', 'aria-describedby' => 'state_province_status')) !!}
                 <span id="state_province_status" class="sr-only hidden"></span>
@@ -55,7 +55,7 @@
         </div>
 
         <div class="row clearfix">
-            <div class="form-group col-md-6 col-md-offset-3 has-feedback">
+            <div class="form-group col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1 has-feedback">
                 {!! Form::label('comment', 'Comments', array('class' => 'control-label')) !!}
                 {!! Form::textarea('comment', null, array('required', 'id' => 'comment', 'class' => 'form-control', 'aria-describedby' => 'comment_status')) !!}
                 <i class="fa form-control-feedback hidden" aria-hidden="true"></i>

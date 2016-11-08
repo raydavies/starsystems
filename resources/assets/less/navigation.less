@@ -2,7 +2,7 @@
 
 .navbar {
 	margin-bottom: 0;
-	font-family: @font3;
+	font-family: @fontLillyReg;
 
 	header& {
 		flex: 0;
@@ -19,6 +19,18 @@
 		background-repeat: repeat-x;
 		background-attachment: fixed;
 		border-color: #9bc5dd;
+
+		.navbar-toggle {
+			border-color: #999;
+
+			&:hover {
+				background-color: #999;
+			}
+
+			.icon-bar {
+				background-color: #000;
+			}
+		}
 	}
 	&-brand {
 		font-family: @fontLogo;
