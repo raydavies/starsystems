@@ -11,11 +11,19 @@
 
 	<div id="faq" class="text-left margin-top-15">
 		<div class="question panel panel-info">
+			<div class="panel-heading" data-toggle="collapse" data-target="#answer-0">
+				<h3 class="panel-title text-left">What exactly is the Interactive Curriculum Program?</h3>
+				<span class="caret caret-large active"></span>
+			</div>
+			<div id="answer-0" class="answer panel-body panel-collapse in">The Interactive Curriculum is a comprehensive computer program designed especially for home use. The Interactive Curriculum will teach your child the specific topics he or she is expected to learn at each grade level in order to achieve academic success. The program uses interactive teaching and practice lessons on your computer, as well as multimedia and videos lessons along with thousands of printable worksheets which include teaching examples for all subjects. Check out our <a href="https://www.youtube.com/channel/UCy8NQmcfJySLxx2jy2vVTAg" target="_blank">YouTube</a> or <a href="https://www.facebook.com/pages/Star-Learning-Systems/1624841284396161?ref=ts&fref=ts" target="_blank">Facebook</a> page for examples of lessons.</div>
+		</div>
+
+		<div class="question panel panel-info">
 			<div class="panel-heading" data-toggle="collapse" data-target="#answer-1">
 				<h3 class="panel-title text-left">What are the computer requirements?</h3>
 				<span class="caret caret-large active"></span>
 			</div>
-			<div id="answer-1" class="answer panel-body panel-collapse in">The Hippo Interactive Curriculum will work on any version of Windows, including Windows installations running via Boot Camp on a Mac.</div>
+			<div id="answer-1" class="answer panel-body panel-collapse in">The Interactive Curriculum will work on any version of Windows, including Windows installations running via Boot Camp on a Mac.</div>
 		</div>
 
 		<div class="question panel panel-info">
@@ -39,15 +47,23 @@
 				<h3 class="panel-title text-left">How much does the program cost?</h3>
 				<span class="caret caret-large active"></span>
 			</div>
-			<div id="answer-4" class="answer panel-body panel-collapse in">Call (708) 675-7640 for pricing information.</div>
+			<div id="answer-4" class="answer panel-body panel-collapse in">It depends whether you are purchasing a subject, a level, or the entire program (our most popular option). Call (708) 675-7640 for more information.</div>
 		</div>
 
 		<div class="question panel panel-info">
 			<div class="panel-heading" data-toggle="collapse" data-target="#answer-5">
+				<h3 class="panel-title text-left">How do I access the online teaching lessons?</h3>
+				<span class="caret caret-large active"></span>
+			</div>
+			<div id="answer-5" class="answer panel-body panel-collapse in">You can access the online lessons here: <a href="http://www.starlearningsystems.com/wp" target="_blank">www.starlearningsystems.com/wp</a>. Please note the online lessons are under ongoing development; additional content and features will be available over time. To request a login and password, please call our office at (708) 675-7640.</div>
+		</div>
+
+		<div class="question panel panel-info">
+			<div class="panel-heading" data-toggle="collapse" data-target="#answer-6">
 				<h3 class="panel-title text-left">How do I contact the company?</h3>
 				<span class="caret caret-large active"></span>
 			</div>
-			<div id="answer-5" class="answer panel-body panel-collapse in">
+			<div id="answer-6" class="answer panel-body panel-collapse in">
 				<address>
 					<strong>Star Learning Systems</strong><br>
 					14007 S. Bell Road<br>

@@ -164,7 +164,7 @@ header.navbar {
 }
 .navbar-clouds {
   background-color: #9bc5dd;
-  background-image: url('/starsystems/public/img/bg/sky-header.jpg');
+  background-image: url('/img/bg/sky-header.jpg');
   background-position: center top;
   background-repeat: repeat-x;
   background-attachment: fixed;
@@ -176,7 +176,7 @@ header.navbar {
 }
 .navbar .star_logo {
   width: 500px;
-  background-image: url('/starsystems/public/img/starlogo-small.png');
+  background-image: url('/img/starlogo-small.png');
   background-position: 0 10px;
   background-repeat: no-repeat;
 }
@@ -220,7 +220,7 @@ header.navbar {
 .content .billboard {
   min-height: 550px;
   padding: 20px 0;
-  background-image: url('/starsystems/public/img/bg/girl-taking-test.jpg');
+  background-image: url('/img/bg/girl-taking-test.jpg');
   background-attachment: fixed;
   background-position: center top;
   background-repeat: no-repeat;
@@ -295,7 +295,7 @@ header.navbar {
 .content .slideshow {
   min-height: 550px;
   padding: 20px 0;
-  background-image: url('/starsystems/public/img/bg/students-playing-reverse.jpg');
+  background-image: url('/img/bg/students-playing-reverse.jpg');
   background-position: center -50px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -416,7 +416,8 @@ header.navbar {
 .carousel-inner .item {
   max-height: 413px;
 }
-.carousel-inner .item img {
+.carousel-inner .item img,
+.carousel-inner .item iframe {
   width: 570px;
 }
 .carousel-inner .item .caption {
@@ -505,182 +506,188 @@ header.navbar {
   margin-top: 7px;
 }
 #facebook-btn.footer-btn {
-  background: url('/starsystems/public/img/nav/footer_fb.png') 0 -33px no-repeat;
+  background: url('/img/nav/footer_fb.png') 0 -33px no-repeat;
 }
 #facebook-btn.footer-btn:hover {
   background-position: 0 0;
 }
 #google-btn.footer-btn {
-  background: url('/starsystems/public/img/nav/footer_google.png') 0 -33px no-repeat;
+  background: url('/img/nav/footer_google.png') 0 -33px no-repeat;
 }
 #google-btn.footer-btn:hover {
   background-position: 0 0;
 }
 #linkedin-btn.footer-btn {
-  background: url('/starsystems/public/img/nav/footer_linkedin.png') 0 -33px no-repeat;
+  background: url('/img/nav/footer_linkedin.png') 0 -33px no-repeat;
 }
 #linkedin-btn.footer-btn:hover {
+  background-position: 0 0;
+}
+#youtube-btn.footer-btn {
+  background: url('/img/nav/footer_youtube.png') 0 -33px no-repeat;
+}
+#youtube-btn.footer-btn:hover {
   background-position: 0 0;
 }
 /***** ~ FONTFACE STYLES ~ *****/
 @font-face {
   font-family: 'DustismoRegular';
-  src: url('/starsystems/public/fonts/DustismoRegular/dustismo-webfont.eot');
-  src: url('/starsystems/public/fonts/DustismoRegular/dustismo-webfont.eot?#iefix') format('embedded-opentype'), url('/starsystems/public/fonts/DustismoRegular/dustismo-webfont.woff') format('woff'), url('/starsystems/public/fonts/DustismoRegular/dustismo-webfont.ttf') format('truetype'), url('/starsystems/public/fonts/DustismoRegular/dustismo-webfont.svg#dustismoregular') format('svg');
+  src: url('/fonts/DustismoRegular/dustismo-webfont.eot');
+  src: url('/fonts/DustismoRegular/dustismo-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/DustismoRegular/dustismo-webfont.woff') format('woff'), url('/fonts/DustismoRegular/dustismo-webfont.ttf') format('truetype'), url('/fonts/DustismoRegular/dustismo-webfont.svg#dustismoregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'DustismoRomanRegular';
-  src: url('/starsystems/public/fonts/DustismoRomanRegular/Dustismo_Roman-webfont.eot');
-  src: url('/starsystems/public/fonts/DustismoRomanRegular/Dustismo_Roman-webfont.eot?#iefix') format('embedded-opentype'), url('/starsystems/public/fonts/DustismoRomanRegular/Dustismo_Roman-webfont.woff') format('woff'), url('/starsystems/public/fonts/DustismoRomanRegular/Dustismo_Roman-webfont.ttf') format('truetype'), url('/starsystems/public/fonts/DustismoRomanRegular/Dustismo_Roman-webfont.svg#dustismo_romanregular') format('svg');
+  src: url('/fonts/DustismoRomanRegular/Dustismo_Roman-webfont.eot');
+  src: url('/fonts/DustismoRomanRegular/Dustismo_Roman-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/DustismoRomanRegular/Dustismo_Roman-webfont.woff') format('woff'), url('/fonts/DustismoRomanRegular/Dustismo_Roman-webfont.ttf') format('truetype'), url('/fonts/DustismoRomanRegular/Dustismo_Roman-webfont.svg#dustismo_romanregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'DustismoRomanBold';
-  src: url('/starsystems/public/fonts/DustismoRomanBold/Dustismo_Roman_Bold-webfont.eot');
-  src: url('/starsystems/public/fonts/DustismoRomanBold/Dustismo_Roman_Bold-webfont.eot?#iefix') format('embedded-opentype'), url('/starsystems/public/fonts/DustismoRomanBold/Dustismo_Roman_Bold-webfont.woff') format('woff'), url('/starsystems/public/fonts/DustismoRomanBold/Dustismo_Roman_Bold-webfont.ttf') format('truetype'), url('/starsystems/public/fonts/DustismoRomanBold/Dustismo_Roman_Bold-webfont.svg#dustismo_romanbold') format('svg');
+  src: url('/fonts/DustismoRomanBold/Dustismo_Roman_Bold-webfont.eot');
+  src: url('/fonts/DustismoRomanBold/Dustismo_Roman_Bold-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/DustismoRomanBold/Dustismo_Roman_Bold-webfont.woff') format('woff'), url('/fonts/DustismoRomanBold/Dustismo_Roman_Bold-webfont.ttf') format('truetype'), url('/fonts/DustismoRomanBold/Dustismo_Roman_Bold-webfont.svg#dustismo_romanbold') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'HVDBodedo';
-  src: url('/starsystems/public/fonts/HVDBodedo/HVD_Bodedo-webfont.eot');
-  src: url('/starsystems/public/fonts/HVDBodedo/HVD_Bodedo-webfont.eot?#iefix') format('embedded-opentype'), url('/starsystems/public/fonts/HVDBodedo/HVD_Bodedo-webfont.woff') format('woff'), url('/starsystems/public/fonts/HVDBodedo/HVD_Bodedo-webfont.ttf') format('truetype'), url('/starsystems/public/fonts/HVDBodedo/HVD_Bodedo-webfont.svg#hvd_bodedomedium') format('svg');
+  src: url('/fonts/HVDBodedo/HVD_Bodedo-webfont.eot');
+  src: url('/fonts/HVDBodedo/HVD_Bodedo-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/HVDBodedo/HVD_Bodedo-webfont.woff') format('woff'), url('/fonts/HVDBodedo/HVD_Bodedo-webfont.ttf') format('truetype'), url('/fonts/HVDBodedo/HVD_Bodedo-webfont.svg#hvd_bodedomedium') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'LillyRegular';
-  src: url('/starsystems/public/fonts/LillyRegular/Lilly__-webfont.eot');
-  src: url('/starsystems/public/fonts/LillyRegular/Lilly__-webfont.eot?#iefix') format('embedded-opentype'), url('/starsystems/public/fonts/LillyRegular/Lilly__-webfont.woff') format('woff'), url('/starsystems/public/fonts/LillyRegular/Lilly__-webfont.ttf') format('truetype'), url('/starsystems/public/fonts/LillyRegular/Lilly__-webfont.svg#lillyregular') format('svg');
+  src: url('/fonts/LillyRegular/Lilly__-webfont.eot');
+  src: url('/fonts/LillyRegular/Lilly__-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/LillyRegular/Lilly__-webfont.woff') format('woff'), url('/fonts/LillyRegular/Lilly__-webfont.ttf') format('truetype'), url('/fonts/LillyRegular/Lilly__-webfont.svg#lillyregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'NexaRustHandmade';
-  src: url('/starsystems/public/fonts/NexaRustHandmade/NexaRustHandmade-Extended-Free-webfont.eot');
-  src: url('/starsystems/public/fonts/NexaRustHandmade/NexaRustHandmade-Extended-Free-webfont.eot?#iefix') format('embedded-opentype'), url('/starsystems/public/fonts/NexaRustHandmade/NexaRustHandmade-Extended-Free-webfont.woff2') format('woff2'), url('/starsystems/public/fonts/NexaRustHandmade/NexaRustHandmade-Extended-Free-webfont.woff') format('woff'), url('/starsystems/public/fonts/NexaRustHandmade/NexaRustHandmade-Extended-Free-webfont.ttf') format('truetype'), url('/starsystems/public/fonts/NexaRustHandmade/NexaRustHandmade-Extended-Free-webfont.svg#nexa_rust_handmadeextended') format('svg');
+  src: url('/fonts/NexaRustHandmade/NexaRustHandmade-Extended-Free-webfont.eot');
+  src: url('/fonts/NexaRustHandmade/NexaRustHandmade-Extended-Free-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/NexaRustHandmade/NexaRustHandmade-Extended-Free-webfont.woff2') format('woff2'), url('/fonts/NexaRustHandmade/NexaRustHandmade-Extended-Free-webfont.woff') format('woff'), url('/fonts/NexaRustHandmade/NexaRustHandmade-Extended-Free-webfont.ttf') format('truetype'), url('/fonts/NexaRustHandmade/NexaRustHandmade-Extended-Free-webfont.svg#nexa_rust_handmadeextended') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'NexaRustSansBlack';
-  src: url('/starsystems/public/fonts/NexaRustSansBlack/NexaRustSans-Black-Free-webfont.eot');
-  src: url('/starsystems/public/fonts/NexaRustSansBlack/NexaRustSans-Black-Free-webfont.eot?#iefix') format('embedded-opentype'), url('/starsystems/public/fonts/NexaRustSansBlack/NexaRustSans-Black-Free-webfont.woff2') format('woff2'), url('/starsystems/public/fonts/NexaRustSansBlack/NexaRustSans-Black-Free-webfont.woff') format('woff'), url('/starsystems/public/fonts/NexaRustSansBlack/NexaRustSans-Black-Free-webfont.ttf') format('truetype'), url('/starsystems/public/fonts/NexaRustSansBlack/NexaRustSans-Black-Free-webfont.svg#nexa_rust_sansblack') format('svg');
+  src: url('/fonts/NexaRustSansBlack/NexaRustSans-Black-Free-webfont.eot');
+  src: url('/fonts/NexaRustSansBlack/NexaRustSans-Black-Free-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/NexaRustSansBlack/NexaRustSans-Black-Free-webfont.woff2') format('woff2'), url('/fonts/NexaRustSansBlack/NexaRustSans-Black-Free-webfont.woff') format('woff'), url('/fonts/NexaRustSansBlack/NexaRustSans-Black-Free-webfont.ttf') format('truetype'), url('/fonts/NexaRustSansBlack/NexaRustSans-Black-Free-webfont.svg#nexa_rust_sansblack') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'NexaRustScriptLight';
-  src: url('/starsystems/public/fonts/NexaRustScriptLight/NexaRustScriptL-0-Free-webfont.eot');
-  src: url('/starsystems/public/fonts/NexaRustScriptLight/NexaRustScriptL-0-Free-webfont.eot?#iefix') format('embedded-opentype'), url('/starsystems/public/fonts/NexaRustScriptLight/NexaRustScriptL-0-Free-webfont.woff2') format('woff2'), url('/starsystems/public/fonts/NexaRustScriptLight/NexaRustScriptL-0-Free-webfont.woff') format('woff'), url('/starsystems/public/fonts/NexaRustScriptLight/NexaRustScriptL-0-Free-webfont.ttf') format('truetype'), url('/starsystems/public/fonts/NexaRustScriptLight/NexaRustScriptL-0-Free-webfont.svg#nexa_rust_script_l0regular') format('svg');
+  src: url('/fonts/NexaRustScriptLight/NexaRustScriptL-0-Free-webfont.eot');
+  src: url('/fonts/NexaRustScriptLight/NexaRustScriptL-0-Free-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/NexaRustScriptLight/NexaRustScriptL-0-Free-webfont.woff2') format('woff2'), url('/fonts/NexaRustScriptLight/NexaRustScriptL-0-Free-webfont.woff') format('woff'), url('/fonts/NexaRustScriptLight/NexaRustScriptL-0-Free-webfont.ttf') format('truetype'), url('/fonts/NexaRustScriptLight/NexaRustScriptL-0-Free-webfont.svg#nexa_rust_script_l0regular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'NexaRustSlabBlack';
-  src: url('/starsystems/public/fonts/NexaRustSlabBlack/NexaRustSlab-BlackShadow01-Free-webfont.eot');
-  src: url('/starsystems/public/fonts/NexaRustSlabBlack/NexaRustSlab-BlackShadow01-Free-webfont.eot?#iefix') format('embedded-opentype'), url('/starsystems/public/fonts/NexaRustSlabBlack/NexaRustSlab-BlackShadow01-Free-webfont.woff2') format('woff2'), url('/starsystems/public/fonts/NexaRustSlabBlack/NexaRustSlab-BlackShadow01-Free-webfont.woff') format('woff'), url('/starsystems/public/fonts/NexaRustSlabBlack/NexaRustSlab-BlackShadow01-Free-webfont.ttf') format('truetype'), url('/starsystems/public/fonts/NexaRustSlabBlack/NexaRustSlab-BlackShadow01-Free-webfont.svg#nexa_rust_slabblack_shadow_01') format('svg');
+  src: url('/fonts/NexaRustSlabBlack/NexaRustSlab-BlackShadow01-Free-webfont.eot');
+  src: url('/fonts/NexaRustSlabBlack/NexaRustSlab-BlackShadow01-Free-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/NexaRustSlabBlack/NexaRustSlab-BlackShadow01-Free-webfont.woff2') format('woff2'), url('/fonts/NexaRustSlabBlack/NexaRustSlab-BlackShadow01-Free-webfont.woff') format('woff'), url('/fonts/NexaRustSlabBlack/NexaRustSlab-BlackShadow01-Free-webfont.ttf') format('truetype'), url('/fonts/NexaRustSlabBlack/NexaRustSlab-BlackShadow01-Free-webfont.svg#nexa_rust_slabblack_shadow_01') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'NexaRustExtras';
-  src: url('/starsystems/public/fonts/NexaRustExtras/NexaRustExtras-Free-webfont.eot');
-  src: url('/starsystems/public/fonts/NexaRustExtras/NexaRustExtras-Free-webfont.eot?#iefix') format('embedded-opentype'), url('/starsystems/public/fonts/NexaRustExtras/NexaRustExtras-Free-webfont.woff2') format('woff2'), url('/starsystems/public/fonts/NexaRustExtras/NexaRustExtras-Free-webfont.woff') format('woff'), url('/starsystems/public/fonts/NexaRustExtras/NexaRustExtras-Free-webfont.ttf') format('truetype'), url('/starsystems/public/fonts/NexaRustExtras/NexaRustExtras-Free-webfont.svg#nexa_rust_extrasfree') format('svg');
+  src: url('/fonts/NexaRustExtras/NexaRustExtras-Free-webfont.eot');
+  src: url('/fonts/NexaRustExtras/NexaRustExtras-Free-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/NexaRustExtras/NexaRustExtras-Free-webfont.woff2') format('woff2'), url('/fonts/NexaRustExtras/NexaRustExtras-Free-webfont.woff') format('woff'), url('/fonts/NexaRustExtras/NexaRustExtras-Free-webfont.ttf') format('truetype'), url('/fonts/NexaRustExtras/NexaRustExtras-Free-webfont.svg#nexa_rust_extrasfree') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Playtime3D';
-  src: url('/starsystems/public/fonts/Playtime3D/PlaytimeWithHotToddies3D-webfont.eot');
-  src: url('/starsystems/public/fonts/Playtime3D/PlaytimeWithHotToddies3D-webfont.eot?#iefix') format('embedded-opentype'), url('/starsystems/public/fonts/Playtime3D/PlaytimeWithHotToddies3D-webfont.woff') format('woff'), url('/starsystems/public/fonts/Playtime3D/PlaytimeWithHotToddies3D-webfont.ttf') format('truetype'), url('/starsystems/public/fonts/Playtime3D/PlaytimeWithHotToddies3D-webfont.svg#playtimewithhottoddies3dRg') format('svg');
+  src: url('/fonts/Playtime3D/PlaytimeWithHotToddies3D-webfont.eot');
+  src: url('/fonts/Playtime3D/PlaytimeWithHotToddies3D-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/Playtime3D/PlaytimeWithHotToddies3D-webfont.woff') format('woff'), url('/fonts/Playtime3D/PlaytimeWithHotToddies3D-webfont.ttf') format('truetype'), url('/fonts/Playtime3D/PlaytimeWithHotToddies3D-webfont.svg#playtimewithhottoddies3dRg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'PlaytimeRegular';
-  src: url('/starsystems/public/fonts/PlaytimeRegular/PlaytimeOblique-webfont.eot');
-  src: url('/starsystems/public/fonts/PlaytimeRegular/PlaytimeOblique-webfont.eot?#iefix') format('embedded-opentype'), url('/starsystems/public/fonts/PlaytimeRegular/PlaytimeOblique-webfont.woff') format('woff'), url('/starsystems/public/fonts/PlaytimeRegular/PlaytimeOblique-webfont.ttf') format('truetype'), url('/starsystems/public/fonts/PlaytimeRegular/PlaytimeOblique-webfont.svg#playtimewithhottoddiesobliqRg') format('svg');
+  src: url('/fonts/PlaytimeRegular/PlaytimeOblique-webfont.eot');
+  src: url('/fonts/PlaytimeRegular/PlaytimeOblique-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/PlaytimeRegular/PlaytimeOblique-webfont.woff') format('woff'), url('/fonts/PlaytimeRegular/PlaytimeOblique-webfont.ttf') format('truetype'), url('/fonts/PlaytimeRegular/PlaytimeOblique-webfont.svg#playtimewithhottoddiesobliqRg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'PrintClearly';
-  src: url('/starsystems/public/fonts/PrintClearly/PrintClearly-webfont.eot');
-  src: url('/starsystems/public/fonts/PrintClearly/PrintClearly-webfont.eot?#iefix') format('embedded-opentype'), url('/starsystems/public/fonts/PrintClearly/PrintClearly-webfont.woff') format('woff'), url('/starsystems/public/fonts/PrintClearly/PrintClearly-webfont.ttf') format('truetype'), url('/starsystems/public/fonts/PrintClearly/PrintClearly-webfont.svg#print_clearlyregular') format('svg');
+  src: url('/fonts/PrintClearly/PrintClearly-webfont.eot');
+  src: url('/fonts/PrintClearly/PrintClearly-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/PrintClearly/PrintClearly-webfont.woff') format('woff'), url('/fonts/PrintClearly/PrintClearly-webfont.ttf') format('truetype'), url('/fonts/PrintClearly/PrintClearly-webfont.svg#print_clearlyregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'PrintBold';
-  src: url('/starsystems/public/fonts/PrintBold/PrintBold-webfont.eot');
-  src: url('/starsystems/public/fonts/PrintBold/PrintBold-webfont.eot?#iefix') format('embedded-opentype'), url('/starsystems/public/fonts/PrintBold/PrintBold-webfont.woff') format('woff'), url('/starsystems/public/fonts/PrintBold/PrintBold-webfont.ttf') format('truetype'), url('/starsystems/public/fonts/PrintBold/PrintBold-webfont.svg#print_boldregular') format('svg');
+  src: url('/fonts/PrintBold/PrintBold-webfont.eot');
+  src: url('/fonts/PrintBold/PrintBold-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/PrintBold/PrintBold-webfont.woff') format('woff'), url('/fonts/PrintBold/PrintBold-webfont.ttf') format('truetype'), url('/fonts/PrintBold/PrintBold-webfont.svg#print_boldregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'TizaRegular';
-  src: url('/starsystems/public/fonts/TizaRegular/tiza-webfont.eot');
-  src: url('/starsystems/public/fonts/TizaRegular/tiza-webfont.eot?#iefix') format('embedded-opentype'), url('/starsystems/public/fonts/TizaRegular/tiza-webfont.woff') format('woff'), url('/starsystems/public/fonts/TizaRegular/tiza-webfont.ttf') format('truetype'), url('/starsystems/public/fonts/TizaRegular/tiza-webfont.svg#tizaregular') format('svg');
+  src: url('/fonts/TizaRegular/tiza-webfont.eot');
+  src: url('/fonts/TizaRegular/tiza-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/TizaRegular/tiza-webfont.woff') format('woff'), url('/fonts/TizaRegular/tiza-webfont.ttf') format('truetype'), url('/fonts/TizaRegular/tiza-webfont.svg#tizaregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'TuffyRegular';
-  src: url('/starsystems/public/fonts/TuffyRegular/Tuffy-webfont.eot');
-  src: url('/starsystems/public/fonts/TuffyRegular/Tuffy-webfont.eot?#iefix') format('embedded-opentype'), url('/starsystems/public/fonts/TuffyRegular/Tuffy-webfont.woff') format('woff'), url('/starsystems/public/fonts/TuffyRegular/Tuffy-webfont.ttf') format('truetype'), url('/starsystems/public/fonts/TuffyRegular/Tuffy-webfont.svg#tuffyregular') format('svg');
+  src: url('/fonts/TuffyRegular/Tuffy-webfont.eot');
+  src: url('/fonts/TuffyRegular/Tuffy-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/TuffyRegular/Tuffy-webfont.woff') format('woff'), url('/fonts/TuffyRegular/Tuffy-webfont.ttf') format('truetype'), url('/fonts/TuffyRegular/Tuffy-webfont.svg#tuffyregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'YellowtailRegular';
-  src: url('/starsystems/public/fonts/YellowtailRegular/Yellowtail-Regular-webfont.eot');
-  src: url('/starsystems/public/fonts/YellowtailRegular/Yellowtail-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('/starsystems/public/fonts/YellowtailRegular/Yellowtail-Regular-webfont.woff') format('woff'), url('/starsystems/public/fonts/YellowtailRegular/Yellowtail-Regular-webfont.ttf') format('truetype'), url('/starsystems/public/fonts/YellowtailRegular/Yellowtail-Regular-webfont.svg#yellowtailregular') format('svg');
+  src: url('/fonts/YellowtailRegular/Yellowtail-Regular-webfont.eot');
+  src: url('/fonts/YellowtailRegular/Yellowtail-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/YellowtailRegular/Yellowtail-Regular-webfont.woff') format('woff'), url('/fonts/YellowtailRegular/Yellowtail-Regular-webfont.ttf') format('truetype'), url('/fonts/YellowtailRegular/Yellowtail-Regular-webfont.svg#yellowtailregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'CooperHewittBold';
-  src: url('/starsystems/public/fonts/CooperHewitt/CooperHewitt-Bold.otf') format("opentype");
+  src: url('/fonts/CooperHewitt/CooperHewitt-Bold.otf') format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'CooperHewittBook';
-  src: url('/starsystems/public/fonts/CooperHewitt/CooperHewitt-Book.otf') format("opentype");
+  src: url('/fonts/CooperHewitt/CooperHewitt-Book.otf') format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'CooperHewittHeavy';
-  src: url('/starsystems/public/fonts/CooperHewitt/CooperHewitt-Heavy.otf') format("opentype");
+  src: url('/fonts/CooperHewitt/CooperHewitt-Heavy.otf') format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'CooperHewittLight';
-  src: url('/starsystems/public/fonts/CooperHewitt/CooperHewitt-Light.otf') format("opentype");
+  src: url('/fonts/CooperHewitt/CooperHewitt-Light.otf') format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'CooperHewittMedium';
-  src: url('/starsystems/public/fonts/CooperHewitt/CooperHewitt-Medium.otf') format("opentype");
+  src: url('/fonts/CooperHewitt/CooperHewitt-Medium.otf') format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'CooperHewittSemibold';
-  src: url('/starsystems/public/fonts/CooperHewitt/CooperHewitt-Semibold.otf') format("opentype");
+  src: url('/fonts/CooperHewitt/CooperHewitt-Semibold.otf') format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'CooperHewittThin';
-  src: url('/starsystems/public/fonts/CooperHewitt/CooperHewitt-Thin.otf') format("opentype");
+  src: url('/fonts/CooperHewitt/CooperHewitt-Thin.otf') format("opentype");
   font-weight: normal;
   font-style: normal;
 }

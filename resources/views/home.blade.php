@@ -42,7 +42,7 @@
 					<button class="btn btn-info btn-lg" type="button">Learn More</button>
 				</a>
 				<a class="button-link" href="{{ route('lessons') }}">
-					<button class="btn btn-primary btn-lg" type="button">View Sample Lessons</button>
+					<button class="btn btn-primary btn-lg" type="button">View Lesson Topics</button>
 				</a>
 			</div>
 		</div>
@@ -58,7 +58,7 @@
 						7<sup>th</sup> - 9<sup>th</sup> grade<br>
 						10<sup>th</sup> - 12<sup>th</sup> grade<br>
 					</p>
-					<p>Each level contains more than <em>800 lessons</em> on 6 CDs!</p>
+					<p class="font-lrg">Each level contains hundreds of teaching tutorials and thousands of test questions!</p>
 				</div>
 				{{--
 				<iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PL09vPPCUB2vCqsPuGIBbHwgw8p7OO_mKA" frameborder="0" allowfullscreen></iframe>

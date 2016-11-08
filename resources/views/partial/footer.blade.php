@@ -22,13 +22,13 @@
 				<h3>Follow Us</h3>
 				<ul class="list-unstyled">
 					<li id="facebook-btn" class="footer-btn">
-						<a href="https://www.facebook.com/pages/Star-Learning-Systems/412104522208607?ref=ts&fref=ts" target="_blank"></a>
+						<a href="https://www.facebook.com/pages/Star-Learning-Systems/1624841284396161?ref=ts&fref=ts" target="_blank"></a>
 					</li>
 					<li id="google-btn" class="footer-btn">
 						<a href="https://plus.google.com/110787110884089656450/about?hl=en" target="_blank"></a>
 					</li>
-					<li id="linkedin-btn" class="footer-btn">
-						<a href="#" target="_blank"></a>
+					<li id="youtube-btn" class="footer-btn">
+						<a href="https://www.youtube.com/channel/UCy8NQmcfJySLxx2jy2vVTAg" target="_blank"></a>
 					</li>
 				</ul>
 			</div>

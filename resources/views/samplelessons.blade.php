@@ -10,7 +10,7 @@
 	<div class="row clearfix">
         <div class="lesson_picker_container col-md-8">
             <p class="lesson_text font-plus"><span class="font-bold font-lrg">The Interactive Curriculum</span> has over 2700 Teaching and Study Lessons designed to help students excel. Take a peek at what your child will be learning!</p>
-            <img id="blackboard_child" class="img-responsive center-block" src="{{ asset('/img/blackboard.jpg') }}" alt="Child at blackboard" title="">
+            <img id="blackboard_child" class="img-responsive center-block" src="{{ asset('/img/content/girl-at-blackboard.jpg') }}" alt="Girl at blackboard" title="Girl at blackboard">
 
             <div class="lesson_picker bg-info">
                 <header class="text-info font-plus font-bold">Curious about the curriculum?</header>
