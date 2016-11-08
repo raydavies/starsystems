@@ -22,7 +22,7 @@
 <header class="navbar navbar-clouds navbar-fixed-top">
 	<nav class="container" role="navigation">
 		<div class="navbar-header">
-			<a href="/" class="star_logo navbar-brand">
+			<a href="{{ route('home') }}" class="star_logo navbar-brand">
 				<span class="text-hide">Star Learning Systems</span>
 				{{-- <img style="max-height: 50px;" src="{{ asset('/img/hippo-logo-transparent.png') }}"> --}}
 			</a>
