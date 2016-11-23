@@ -105,7 +105,7 @@ var FormManager = function(form, validationMap) {
 
 	this.validAlphaNum = function(inputName, value)
 	{
-		var alphaDash = /^[a-zA-Z0-9\-\_]+$/;
+		var alphaDash = /^[a-zA-Z0-9\-\_ ]+$/;
 
 		if (self.validInput(inputName, value)) {
 			if (value.match(alphaDash)) {
