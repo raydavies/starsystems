@@ -21,8 +21,13 @@ elixir(function(mix) {
        'faq.js',
        'form-validator.js',
        'lesson-picker.js',
-       'scroll.js'
+       'scroll.js',
+       'swipe.js'
    ], 'public/js/app.js');
+});
+
+elixir(function(mix) {
+	mix.copy('node_modules/jquery-touchswipe/jquery.touchSwipe.min.js', 'public/js/vendor/jquery.touchSwipe.min.js');
 });
 
 elixir(function(mix) {

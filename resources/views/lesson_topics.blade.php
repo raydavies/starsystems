@@ -10,7 +10,7 @@
 	<div class="row clearfix">
         <div class="lesson_picker_container col-md-8">
             <p class="lesson_text font-plus"><span class="font-bold font-lrg">The Interactive Curriculum</span> has over 2700 Teaching and Study Lessons designed to help students excel. Take a peek at what your child will be learning!</p>
-            <img id="blackboard_child" class="img-responsive center-block" src="{{ asset('/img/content/girl-at-blackboard.jpg') }}" alt="Girl at blackboard" title="Girl at blackboard">
+            <img id="blackboard_child" class="img-responsive center-block hidden-xs" src="{{ asset('/img/content/girl-at-blackboard.jpg') }}" alt="Girl at blackboard" title="Girl at blackboard">
 
             <div class="lesson_picker bg-info">
                 <header class="text-info font-plus font-bold">Curious about the curriculum?</header>
@@ -31,7 +31,7 @@
             </div>
         </div>
 
-        <div class="lesson_catalog text-center col-md-4 bg-info">
+        <div class="lesson_catalog text-center col-md-4">
             @if (isset($current_level, $current_subject))
                 <h2>{{ $current_level->name }}: {{ $current_subject->name }}</h2>
                 @if (count($lessons))

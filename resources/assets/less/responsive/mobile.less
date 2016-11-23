@@ -15,11 +15,19 @@
 		}
 	}
 
+	//mixin
+	.header {
+		&.header-xs-x1 {
+			font-size: 24px;
+		}
+	}
+
 	.content {
 		.header {
 			text-align: center;
 		}
 
+		//Homepage
 		.billboard, .slideshow {
 			min-height: initial;
 			padding: 0;
@@ -57,12 +65,14 @@
 			}
 		}
 
+		//FAQ
 		#faq {
 			.panel-heading {
 				padding: 10px 21px 10px 15px;
 			}
 		}
 
+		//Testimonials
 		#testimonial_header {
 			text-align: center;
 
@@ -75,6 +85,7 @@
 			}
 		}
 
+		//Benefits
 		.benefit_list {
 			text-align: center;
 
@@ -88,10 +99,74 @@
 			}
 		}
 
+		//Lesson Topics
+		.lesson_picker_container {
+			text-align: center;
+
+			.lesson_picker {
+				position: inherit;
+				left: inherit;
+				bottom: inherit;
+				max-width: 100%;
+
+				#lesson_select_form {
+					select {
+						width: 100%;
+					}
+				}
+			}
+		}
+
+		.lesson_catalog {
+			border-radius: 0;
+		}
+
+		//About Us
 		#product_info {
 			.nav-tabs {
 				li {
 					max-width: 33%;
+				}
+			}
+		}
+
+		//Tour
+		#curriculum-tour {
+			.carousel-indicators {
+				width: 100%;
+				bottom: 0;
+			}
+
+			.carousel-control {
+				width: 15%;
+				background-image: none;
+				background-repeat: no-repeat;
+				top: inherit;
+				bottom: 30px;
+				z-index: 30;
+
+				&.left {
+					left: 0;
+				}
+			}
+
+			.carousel-inner {
+				.item {
+					max-height: inherit;
+
+					img, iframe {
+						width: 100%;
+					}
+
+					.caption {
+						display: block;
+						flex-direction: inherit;
+						align-items: inherit;
+						justify-content: inherit;
+						height: auto;
+						padding: 20px 30px;
+						margin-bottom: 25px;
+					}
 				}
 			}
 		}
@@ -107,7 +182,16 @@
 		}
 	}
 
+	//mixin
+	.header {
+		&.header-xs-x1 {
+			font-size: 20px;
+		}
+	}
+
 	.content {
+
+		//About Us
 		#product_info {
 			.nav-tabs {
 				li {

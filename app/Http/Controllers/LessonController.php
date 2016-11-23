@@ -33,7 +33,7 @@ class LessonController extends Controller
             $subjectOptions[$subject->subject_id] = $subject->name;
         }
         
-		return view('samplelessons', [
+		return view('lesson_topics', [
 			'levelOptions' => $levelOptions,
 			'subjectOptions' => $subjectOptions,
 			'lessons' => $lessons,
