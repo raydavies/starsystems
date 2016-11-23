@@ -1,7 +1,8 @@
 <html>
 <body>
-<p>Lead Source: Star Learning Systems - Customer Testimonial</p>
-<p>Customer: {{ $name or 'Anonymous' }} in ({{ $city }}, {{ $state }})</p>
-<p>Comments: {{ $comment }}</p>
+    <p><strong>Lead Source: Star Learning Systems - Customer Testimonial</strong></p>
+    <p>Customer Name: {{ $testimonial->name or 'Anonymous' }}</p>
+    <p>Location: (@if ($testimonial->city){{ $testimonial->city }}, @endif{{ $testimonial->state_province }})</p>
+    <p>Comments: {{ $testimonial->comment }}</p>
 </body>
 </html>
