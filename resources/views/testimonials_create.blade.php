@@ -44,7 +44,7 @@
                     <span class="errormsg">{{ $errors->first('city') }}</span>
                 </div>
             </div>
-            <div class="form-group col-md-2 col-xs-10 col-xs-offset-1 has-feedback">
+            <div class="form-group col-md-2 col-md-offset-0 col-xs-10 col-xs-offset-1 has-feedback">
                 {!! Form::label('state_province', 'State', array('class' => 'control-label')) !!}
                 {!! Form::select('state_province', $stateList, null, array('required', 'id' => 'state_province', 'class' => 'form-control', 'aria-describedby' => 'state_province_status')) !!}
                 <span id="state_province_status" class="sr-only hidden"></span>

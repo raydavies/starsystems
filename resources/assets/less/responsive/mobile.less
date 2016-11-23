@@ -30,21 +30,30 @@
 		.billboard {
 			.blackboard {
 				margin-top: 0;
+				border-radius: 0;
 			}
 		}
 
 		.features {
 			padding: 15px;
 
-			.feature a.button-link + a.button-link {
-				margin-top: 10px;
-				margin-left: inherit;
+			.feature {
+
+				& + .feature {
+					margin-top: 7px;
+				}
+
+				a.button-link + a.button-link {
+					margin-top: 10px;
+					margin-left: inherit;
+				}
 			}
 		}
 
 		.slideshow {
-			.levels {
+			#slideshow {
 				margin-top: 0;
+				border-radius: 0;
 			}
 		}
 
@@ -67,8 +76,15 @@
 		}
 
 		.benefit_list {
-			.intro-text {
-				text-align: center;
+			text-align: center;
+
+			ol {
+				list-style-position: inside;
+				padding-left: 0;
+
+				li > header {
+					font-size: @fontSizeMd;
+				}
 			}
 		}
 

@@ -48,21 +48,23 @@
 		</div>
 	</section>
 	<section class="slideshow">
-		<div class="row">
-			<div id="slideshow" class="col-md-4 col-md-offset-6 col-xs-12 col-xs-offset-0">
-				<div class="levels">
-					<p>Available in 4 levels:</p>
-					<p class="levels-grades">
-						K - 3<sup>rd</sup> grade<br>
-						4<sup>th</sup> - 6<sup>th</sup> grade<br>
-						7<sup>th</sup> - 9<sup>th</sup> grade<br>
-						10<sup>th</sup> - 12<sup>th</sup> grade<br>
-					</p>
-					<p class="font-lrg">Each level contains hundreds of teaching tutorials and thousands of test questions!</p>
+		<div class="container">
+			<div class="row">
+				<div id="slideshow" class="col-md-6 col-md-offset-6 col-xs-12 col-xs-offset-0">
+					<div class="levels">
+						<p>Available in 4 levels:</p>
+						<p class="levels-grades">
+							K - 3<sup>rd</sup> grade<br>
+							4<sup>th</sup> - 6<sup>th</sup> grade<br>
+							7<sup>th</sup> - 9<sup>th</sup> grade<br>
+							10<sup>th</sup> - 12<sup>th</sup> grade<br>
+						</p>
+						<p class="font-lrg">Each level contains hundreds of teaching tutorials and thousands of test questions!</p>
+					</div>
+					{{--
+					<iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PL09vPPCUB2vCqsPuGIBbHwgw8p7OO_mKA" frameborder="0" allowfullscreen></iframe>
+					--}}
 				</div>
-				{{--
-				<iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PL09vPPCUB2vCqsPuGIBbHwgw8p7OO_mKA" frameborder="0" allowfullscreen></iframe>
-				--}}
 			</div>
 		</div>
 	</section>
