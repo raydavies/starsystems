@@ -4,11 +4,10 @@
 
 @section('headscripts')
 	@parent
-	<script src="{{ asset('/js/vendor/jquery.touchSwipe.min.js') }}"></script>
 @stop
 
 @section('page_content')
-	<header class="header header-xl header-xs-x1 text-center">Take a tour of the Interactive Curriculum!</header>
+	<header class="header header-xl text-center">Take a tour of the Interactive Curriculum!</header>
 
 	<div id="curriculum-tour" class="carousel slide margin-top-15" data-interval="false">
 		<ol class="carousel-indicators">

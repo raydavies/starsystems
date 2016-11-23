@@ -101,6 +101,24 @@ ol.list-item-bold, ul.list-item-bold {
 	}
 }
 
+ol > li > :first-child {
+	/* Make Firefox put the list marker inside */
+	/* https://bugzilla.mozilla.org/show_bug.cgi?id=36854 "if list-style-position is inside, bullet takes own line" */
+	display: inline;
+}
+ol > l
+i > :first-child:after {
+	/* Add the margin that was lost w/ display: inline */
+	/* Firefox 10 displays this as block */
+	/* Safari 5.1.2 and Chrome 17.0.963.56 don't */
+	/*
+	Commenting out for now
+	content: "";
+	display: block;
+	margin-bottom: 1em;
+	*/
+}
+
 /* Forms */
 .form-horizontal .control-message {
 	text-align: left;

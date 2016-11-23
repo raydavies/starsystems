@@ -6,7 +6,7 @@
 
 @section('content')
 	<section class="billboard">
-		<div class="container">
+		<div class="container container-sm-full">
 			<div class="row">
 				<div class="blackboard col-md-7 text-center">
 					<h1 class="tagline">The Most Comprehensive Educational System Available <small>See how The Interactive Curriculum can help your child</small></h1>
@@ -48,7 +48,7 @@
 		</div>
 	</section>
 	<section class="slideshow">
-		<div class="container">
+		<div class="container container-sm-full">
 			<div class="row">
 				<div id="slideshow" class="col-md-6 col-md-offset-6 col-xs-12 col-xs-offset-0">
 					<div class="levels">
