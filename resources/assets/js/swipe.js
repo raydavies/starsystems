@@ -1,11 +1,11 @@
 $(document).ready(function() {
 	$(".carousel-inner").swipe( {
 		swipeLeft: function(event, direction, distance, duration, fingerCount) {
-			$(this).parent().carousel('prev');
-		},
-		swipeRight: function() {
 			$(this).parent().carousel('next');
 		},
-		threshold: 75
+		swipeRight: function() {
+			$(this).parent().carousel('prev');
+		},
+		threshold: 50
 	});
 });
