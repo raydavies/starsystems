@@ -24,7 +24,9 @@ class TestimonialController extends Controller
 	 */
 	public function get()
 	{
-		$testimonials = Testimonial::where('flag_active', 1)->get();
+		$testimonials = Testimonial::where('flag_active', 1)
+            ->orderBy('created_at', 'desc')
+            ->get();
 
 		return view('testimonials', [
 			'testimonials' => $testimonials
