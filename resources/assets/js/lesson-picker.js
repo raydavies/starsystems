@@ -15,7 +15,7 @@ function LessonPicker() {
 
 	this.loadSubjects = function(level_id) {
 		$.ajax({
-			url: '/sample-lessons/' + level_id,
+			url: '/lesson-topics/' + level_id,
 			dataType: 'json',
 			success: function(response) {
 				var i, option;
