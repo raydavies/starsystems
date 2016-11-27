@@ -10,8 +10,11 @@
         </div>
     </section>
 
-    <section id="testimonial_list" class="row text-left">
-        @foreach ($testimonials as $testimonial)
+    <section id="testimonial_list" class="text-left">
+        @foreach ($testimonials as $index => $testimonial)
+            @if ($index % 2 == 0)
+                <div class="row clearfix">
+            @endif
             <article class="col-md-6">
                 <div class="testimonial panel panel-info">
                     <div class="panel-heading">
@@ -20,6 +23,9 @@
                     <div id="answer-{{ $testimonial->id  }}" class="comment panel-body">{{ $testimonial->comment }}</div>
                 </div>
             </article>
+            @if (($index % 2 !== 0) || ($index == count($testimonials) + 1))
+                </div>
+            @endif
         @endforeach
     </section>
 @stop

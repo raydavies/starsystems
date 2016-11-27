@@ -16,6 +16,7 @@ $factory->define(App\Models\Testimonial::class, function (Faker\Generator $faker
 		'name' => $faker->name,
 		'city' => $faker->city,
 		'state_province' => $faker->stateAbbr,
-		'comment' => $faker->realText
+		'comment' => $faker->realText,
+        'flag_active' => 1
 	];
 });
