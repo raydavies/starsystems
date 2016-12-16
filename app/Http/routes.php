@@ -45,12 +45,13 @@ Route::get('/faq', ['as' => 'faq', function() {
 Route::get('contact', ['as' => 'contact', 'uses' => 'ContactController@create']);
 Route::post('contact', ['as' => 'contact', 'uses' => 'ContactController@store']);
 
+//Authentication Routes
+Route::get('/login', ['as' => 'login', 'uses' => 'Auth\AuthController@getLogin']);
+Route::post('/login', ['as' => 'login', 'uses' => 'Auth\AuthController@postLogin']);
+Route::get('/logout', ['as' => 'logout', 'uses' => 'Auth\AuthController@getLogout']);
+
 //Admin Dashboard
-Route::group(['prefix' => 'admin'], function() {
-   //Route::get('/dashboard', ['as' => 'admin.dashboard', 'uses' => '']);
-   
-   //Authentication Routes
-    Route::get('/login', ['as' => 'admin.login', 'uses' => 'Auth\AuthController@getLogin']);
-    Route::post('/login', ['as' => 'admin.login', 'uses' => 'Auth\AuthController@postLogin']);
-    Route::get('/logout', ['as' => 'admin.logout', 'uses' => 'Auth\AuthController@getLogout']);
+Route::group(['prefix' => 'admin', 'middleware' => 'auth', 'namespace' => 'Admin'], function() {
+    Route::get('/dashboard', ['as' => 'admin.dashboard', 'uses' => 'DashboardController@index']);
+    Route::get('/testimonials', ['as' => 'admin.testimonials', 'uses' => 'TestimonialsController@index']);
 });
