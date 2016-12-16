@@ -44,3 +44,13 @@ Route::get('/faq', ['as' => 'faq', function() {
 
 Route::get('contact', ['as' => 'contact', 'uses' => 'ContactController@create']);
 Route::post('contact', ['as' => 'contact', 'uses' => 'ContactController@store']);
+
+//Admin Dashboard
+Route::group(['prefix' => 'admin'], function() {
+   //Route::get('/dashboard', ['as' => 'admin.dashboard', 'uses' => '']);
+   
+   //Authentication Routes
+    Route::get('/login', ['as' => 'admin.login', 'uses' => 'Auth\AuthController@getLogin']);
+    Route::post('/login', ['as' => 'admin.login', 'uses' => 'Auth\AuthController@postLogin']);
+    Route::get('/logout', ['as' => 'admin.logout', 'uses' => 'Auth\AuthController@getLogout']);
+});
