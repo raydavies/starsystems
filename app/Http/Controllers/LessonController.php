@@ -27,10 +27,10 @@ class LessonController extends Controller
 
         $levelOptions = $subjectOptions = [];
         foreach ($levels as $level) {
-            $levelOptions[$level->level_id] = $level->name . ' (' . $level->grade_range . ')';
+            $levelOptions[$level->id] = $level->name . ' (' . $level->grade_range . ')';
         }
         foreach ($currentLevel->subjects as $subject) {
-            $subjectOptions[$subject->subject_id] = $subject->name;
+            $subjectOptions[$subject->id] = $subject->name;
         }
         
 		return view('lesson_topics', [

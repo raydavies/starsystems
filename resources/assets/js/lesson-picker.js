@@ -23,7 +23,7 @@ function LessonPicker() {
 					$('#subject_select').empty();
 
 					for (i in response.subjects) {
-						option = $('<option/>').text(response.subjects[i].name).val(response.subjects[i].subject_id);
+						option = $('<option/>').text(response.subjects[i].name).val(response.subjects[i].id);
 						$('#subject_select').append(option);
 					}
 				}

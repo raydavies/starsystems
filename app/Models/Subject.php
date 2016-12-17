@@ -7,11 +7,9 @@ class Subject extends Model
 {
 	protected $table = 'subjects';
 
-	protected $primaryKey = 'subject_id';
-
 	public function lessons()
 	{
-		return $this->hasMany('App\Models\Lesson', 'lesson_id', 'subject_id');
+		return $this->hasMany('App\Models\Lesson');
 	}
 
 	public function levels()

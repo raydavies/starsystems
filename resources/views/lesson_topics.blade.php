@@ -17,13 +17,13 @@
                 {!! Form::open(array('route' => 'lessons', 'method' => 'get', 'id' => 'lesson_select_form')) !!}
                     <div class="form-group">
                         {!! Form::label('level_select', 'Choose a level', array('class' => 'control-label')) !!}
-                        {!! Form::select('level', $levelOptions, $current_level->level_id, array('required', 'id' => 'level_select', 'class' => 'form-control', 'aria-describedby' => 'level_select_status')) !!}
+                        {!! Form::select('level', $levelOptions, $current_level->id, array('required', 'id' => 'level_select', 'class' => 'form-control', 'aria-describedby' => 'level_select_status')) !!}
                         <span id="level_select_status" class="sr-only hidden"></span>
                     </div>
 
                     <div class="form-group">
                         {!! Form::label('subject_select', 'Choose a subject', array('class' => 'control-label')) !!}
-                        {!! Form::select('subject', $subjectOptions, $current_subject->subject_id, array('required', 'id' => 'subject_select', 'class' => 'form-control', 'aria-describedby' => 'subject_select_status')) !!}
+                        {!! Form::select('subject', $subjectOptions, $current_subject->id, array('required', 'id' => 'subject_select', 'class' => 'form-control', 'aria-describedby' => 'subject_select_status')) !!}
                         <span id="subject_select_status" class="sr-only hidden"></span>
                     </div>
                     <button class="btn btn-primary btn-lg" type="submit">View Lessons</button>

@@ -20,7 +20,7 @@
                     <div class="panel-heading">
                         <h3 class="panel-title text-left">{{ $testimonial->name or 'Anonymous' }} in @if ($testimonial->city){{ $testimonial->city }}, @endif{{ $testimonial->state_province }}</h3>
                     </div>
-                    <div id="answer-{{ $testimonial->id  }}" class="comment panel-body">{{ $testimonial->comment }}</div>
+                    <div id="testimonial-{{ $testimonial->id }}" class="comment panel-body">{{ $testimonial->comment }}</div>
                 </div>
             </article>
             @if (($index % 2 !== 0) || ($index == count($testimonials) + 1))

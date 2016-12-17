@@ -7,8 +7,6 @@ class Testimonial extends Model
 {
 	protected $table = 'testimonials';
 
-	protected $primaryKey = 'testimonial_id';
-
 	protected $fillable = [
 		'name',
 		'city',

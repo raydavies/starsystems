@@ -7,6 +7,7 @@
     <meta name="author" content="Star Learning Systems">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
 
     <title>Dashboard | @yield('title', 'Home')</title>
 
@@ -19,7 +20,7 @@
 </head>
 <body>
 <a name="top"></a>
-<header class="navbar navbar-clouds navbar-fixed-top">
+<header class="navbar navbar-gold navbar-fixed-top">
     <nav class="container" role="navigation">
         <div class="navbar-header">
             <a href="{{ route('admin.dashboard') }}" class="navbar-brand">
@@ -45,7 +46,9 @@
             </div>
         </div>
     @endif
-    <div id="primary-content" class="content center-block">@yield('content')</div>
+    <div id="primary-content" class="content center-block">
+        <div class="page_start container">@yield('content')</div>
+    </div>
     <a href="#top" class="text-center hidden-sm hidden-xs">
         <img class="scroll-btn hidden" alt="scroll to top button" title="Back to Top" src="{{ asset('/img/nav/scrollbutton-small.png') }}">
     </a>

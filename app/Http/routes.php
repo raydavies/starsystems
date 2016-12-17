@@ -51,7 +51,12 @@ Route::post('/login', ['as' => 'login', 'uses' => 'Auth\AuthController@postLogin
 Route::get('/logout', ['as' => 'logout', 'uses' => 'Auth\AuthController@getLogout']);
 
 //Admin Dashboard
-Route::group(['prefix' => 'admin', 'middleware' => 'auth', 'namespace' => 'Admin'], function() {
-    Route::get('/dashboard', ['as' => 'admin.dashboard', 'uses' => 'DashboardController@index']);
-    Route::get('/testimonials', ['as' => 'admin.testimonials', 'uses' => 'TestimonialsController@index']);
+Route::group(['as' => 'admin.', 'prefix' => 'admin', 'middleware' => 'auth', 'namespace' => 'Admin'], function() {
+    Route::get('/', function() {
+        return redirect()->route('admin.dashboard');
+    });
+    Route::get('/dashboard', ['as' => 'dashboard', 'uses' => 'DashboardController@index']);
+    
+    Route::get('/testimonials', ['as' => 'testimonials', 'uses' => 'TestimonialsController@index']);
+    Route::post('/testimonials/{id}/toggle-status', ['as' => 'testimonials.toggle', 'uses' => 'TestimonialsController@toggleStatus']);
 });

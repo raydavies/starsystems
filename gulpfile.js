@@ -16,6 +16,10 @@ elixir(function(mix) {
 });
 
 elixir(function(mix) {
+	mix.less('admin.less');
+});
+
+elixir(function(mix) {
    mix.scripts([
        'analytics-tracking.js',
        'faq.js',
@@ -24,6 +28,12 @@ elixir(function(mix) {
        'scroll.js',
        'swipe.js'
    ], 'public/js/app.js');
+   
+   mix.scripts([
+       'admin/testimonials-manager.js',
+       'form-validator.js',
+       'scroll.js'
+   ], 'public/js/admin.js');
 });
 
 elixir(function(mix) {

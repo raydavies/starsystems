@@ -45,7 +45,7 @@
 				</div>
 				<div class="form-group has-feedback col-md-3 col-xs-12">
 					{!! Form::label('lastname', 'Last Name', array('class' => 'control-label')) !!}
-					<div class="">
+					<div class="control-input">
 						{!! Form::text('last_name', null, array('required', 'id' => 'lastname', 'class' => 'form-control', 'aria-describedby' => 'lastname_status')) !!}
 						<i class="fa form-control-feedback hidden" aria-hidden="true"></i>
 						<span id="lastname_status" class="sr-only hidden"></span>
@@ -59,7 +59,7 @@
 			<div class="row clearfix">
 				<div class="form-group col-md-6 col-md-offset-3 col-xs-12 has-feedback">
 					{!! Form::label('email', 'Email', array('class' => 'control-label')) !!}
-					<div class="">
+					<div class="control-input">
 						{!! Form::email('email', null, array('required', 'id' => 'email', 'class' => 'form-control', 'placeholder' => 'e.g. john.smith@example.com', 'aria-describedby' => 'email_status')) !!}
 						<i class="fa form-control-feedback hidden" aria-hidden="true"></i>
 						<span id="email_status" class="sr-only hidden"></span>
@@ -73,7 +73,7 @@
 			<div class="row clearfix">
 				<div class="form-group col-md-6 col-md-offset-3 col-xs-12 has-feedback">
 					{!! Form::label('subject', 'Subject', array('class' => 'control-label')) !!}
-					<div class="">
+					<div class="control-input">
 						{!! Form::text('subject', null, array('required', 'id' => 'subject', 'class' => 'form-control', 'aria-describedby' => 'subject_status')) !!}
 						<i class="fa form-control-feedback hidden" aria-hidden="true"></i>
 						<span id="subject_status" class="sr-only hidden"></span>
@@ -87,7 +87,7 @@
 			<div class="row clearfix">
 				<div class="form-group col-md-6 col-md-offset-3 col-xs-12 has-feedback">
 					{!! Form::label('message', 'Message', array('class' => 'control-label')) !!}
-					<div class="">
+					<div class="control-input">
 						{!! Form::textarea('message', null, array('required', 'id' => 'message', 'class' => 'form-control', 'aria-describedby' => 'message_status')) !!}
 						<i class="fa form-control-feedback hidden" aria-hidden="true"></i>
 						<span id="message_status" class="sr-only hidden"></span>

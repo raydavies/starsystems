@@ -5,11 +5,13 @@
     <link rel="stylesheet" href="{{ asset('/css/vendor/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/vendor/normalize.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/vendor/font-awesome-4.7.0/css/font-awesome.min.css') }}">
-    <link rel="stylesheet" href="{{ elixir('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/admin.css') }}">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Corben:bold">
 @show
 
 @section('headscripts')
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="{{ asset('/js/vendor/bootstrap.min.js') }}" async></script>
+    <script src="{{ asset('/js/ajax-setup.js') }}"></script>
+    <script src="{{ asset('/js/admin.js') }}" async></script>
 @show
