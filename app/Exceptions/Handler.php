@@ -2,6 +2,7 @@
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Support\Facades\App;
 
 class Handler extends ExceptionHandler {
 
@@ -36,7 +37,11 @@ class Handler extends ExceptionHandler {
 	 */
 	public function render($request, Exception $e)
 	{
-		return parent::render($request, $e);
+	    if (App::environment('local')) {
+            return parent::render($request, $e);
+        } else {
+	        return response()->view('errors.500');
+        }
 	}
 
 }
