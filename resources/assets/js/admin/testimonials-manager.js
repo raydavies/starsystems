@@ -11,7 +11,7 @@ function TestimonialsManager(context) {
 	this.init = function () {
 		filters.on('click.filter', 'a[role="tab"]', self.filterTestimonials);
 		
-		list.on('click.toggle', '.activation-toggle', function () {
+		list.on('click.toggle', '.activation-toggle-switch input', function () {
 			var id = $(this).closest('.testimonial').attr('id');
 			var testimonial_id = parseInt(id.substring(12), 10);
 			self.toggleActiveStatus(testimonial_id);
@@ -31,16 +31,12 @@ function TestimonialsManager(context) {
 			success: function (response) {
 				if (response.data) {
 					testimonial = $('#testimonial-' + testimonial_id);
-					toggle = testimonial.find('.activation-toggle');
+					toggle = testimonial.find('.activation-toggle-switch');
 					
 					if (response.data.flag_active) {
 						testimonial.removeClass('panel-danger').addClass('panel-success');
-						toggle.find('i').removeClass('fa-check').addClass('fa-times');
-						toggle.find('strong').text('Deactivate');
 					} else {
 						testimonial.removeClass('panel-success').addClass('panel-danger');
-						toggle.find('i').removeClass('fa-times').addClass('fa-check');
-						toggle.find('strong').text('Activate');
 					}
 					
 					//hide any testimonials that no longer match active filter status
@@ -57,9 +53,10 @@ function TestimonialsManager(context) {
 		if (filter === 1) {
 			testimonials.each(function(id, testimonial) {
 				var testimonialObj = $(testimonial),
-					wrapper = testimonialObj.closest('.testimonial-wrapper');
+					wrapper = testimonialObj.closest('.testimonial-wrapper'),
+					input = testimonialObj.find('input[name="flag_active"]');
 				
-				if (testimonialObj.hasClass('panel-success')) {
+				if (input.prop('checked')) {
 					wrapper.removeClass('hidden');
 				} else {
 					wrapper.addClass('hidden');
@@ -68,9 +65,10 @@ function TestimonialsManager(context) {
 		} else if (filter === 0) {
 			testimonials.each(function(id, testimonial) {
 				var testimonialObj = $(testimonial),
-					wrapper = testimonialObj.closest('.testimonial-wrapper');
+					wrapper = testimonialObj.closest('.testimonial-wrapper'),
+					input = testimonialObj.find('input[name="flag_active"]');
 				
-				if (testimonialObj.hasClass('panel-danger')) {
+				if (!input.prop('checked')) {
 					wrapper.removeClass('hidden');
 				} else {
 					wrapper.addClass('hidden');
