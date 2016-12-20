@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="{{ asset('/css/vendor/bootstrap.min.css') }}">
 	<link rel="stylesheet" href="{{ asset('/css/vendor/normalize.css') }}">
 	<link rel="stylesheet" href="{{ asset('/css/vendor/font-awesome-4.7.0/css/font-awesome.min.css') }}">
-	<link rel="stylesheet" href="{{ elixir('css/app.css') }}">
+	<link rel="stylesheet" href="{{ asset('css/app.css') }}">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Corben:bold">
 @show
 

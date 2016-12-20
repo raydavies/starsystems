@@ -11,6 +11,13 @@ function devPrint($output)
 	}
 }
 
+function devDump($output)
+{
+    if (env('APP_DEBUG')) {
+        echo '<pre>' . var_dump($output, true) . '</pre>';
+    }
+}
+
 function devDie($output)
 {
 	if (env('APP_DEBUG')) {

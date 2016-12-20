@@ -16,6 +16,12 @@ function TestimonialsManager(context) {
 			var testimonial_id = parseInt(id.substring(12), 10);
 			self.toggleActiveStatus(testimonial_id);
 		});
+		
+		list.on('click.delete', '.delete-button', function() {
+			var id = $(this).closest('.testimonial').attr('id');
+			var testimonial_id = parseInt(id.substring(12), 10);
+			self.deleteTestimonial(testimonial_id);
+		});
 	};
 	
 	this.toggleActiveStatus = function (testimonial_id) {
@@ -79,5 +85,25 @@ function TestimonialsManager(context) {
 				$(testimonial).closest('.testimonial-wrapper').removeClass('hidden');
 			});
 		}
+	};
+	
+	this.deleteTestimonial = function(testimonial_id) {
+		var testimonial, wrapper;
+		
+		$.ajax({
+			url: '/admin/testimonials/' + testimonial_id + '/delete',
+			dataType: 'json',
+			type: 'post',
+			error: function(err, obj, msg) {
+				console.log(msg);
+			},
+			success: function (response) {
+				if (response.data && response.data.deleted === testimonial_id) {
+					testimonial = $('#testimonial-' + testimonial_id);
+					wrapper = testimonial.closest('.testimonial-wrapper');
+					wrapper.remove();
+				}
+			}
+		});
 	};
 }

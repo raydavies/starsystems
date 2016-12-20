@@ -46,4 +46,29 @@ class TestimonialsController extends Controller
         
         return response()->json($response);
     }
+    
+    public function delete($testimonial_id)
+    {
+        if (!$this->request->ajax()) {
+            abort(404);
+        }
+    
+        $response = ['success' => false];
+        
+        if (is_array($testimonial_id)) {
+            $response['message'] = 'Unable to determine which testimonial to delete.';
+        } else {
+            $testimonial_id = (int) $testimonial_id;
+            $deleteCount = Testimonial::destroy($testimonial_id);
+    
+            if ($deleteCount === 1) {
+                $response['success'] = true;
+                $response['data'] = ['deleted' => $testimonial_id];
+            } else {
+                $response['message'] = 'Unable to delete testimonial. Please try again later.';
+            }
+        }
+    
+        return response()->json($response);
+    }
 }

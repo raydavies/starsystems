@@ -6,4 +6,10 @@
             @endforeach
         </div>
     </div>
+@elseif (Session::get('status'))
+    <div class="alert-box">
+        <div class="alert alert-info">
+            <div class="msg">{{ Session::get('status') }}</div>
+        </div>
+    </div>
 @endif

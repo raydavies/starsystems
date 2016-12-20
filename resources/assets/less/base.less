@@ -31,6 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 	border-left: 0 none;
 	border-right: 0 none;
 	font-weight: bold;
+	font-family: @fontLillyReg;
 }
 .errormsg {
 	color: #a94442;
@@ -123,4 +124,11 @@ i > :first-child:after {
 /* Forms */
 .form-horizontal .control-message {
 	text-align: left;
+}
+.form-group {
+	.control-label {
+		&.label-with-link {
+			display: block;
+		}
+	}
 }

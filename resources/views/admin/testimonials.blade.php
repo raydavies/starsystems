@@ -19,7 +19,7 @@
                     <article class="testimonial-wrapper col-md-6">
                         <div id="testimonial-{{ $testimonial->id }}" class="testimonial panel @if ($testimonial->flag_active) panel-success @else panel-danger @endif">
                             <div class="panel-heading clearfix">
-                                <span class="panel-title text-left pull-left font-default"><span class="font-bold">{{ $testimonial->name or 'Anonymous' }}</span> | @if ($testimonial->city){{ $testimonial->city }}, @endif{{ $testimonial->state_province }} | {!! $testimonial->created_at->format('M j, Y @ g:ia') !!}</span>
+                                <span class="panel-title text-left pull-left font-default"><span class="font-bold">{{ $testimonial->name or 'Anonymous' }}</span> | @if ($testimonial->city){{ $testimonial->city }}, @endif{{ $testimonial->state_province }} | {!! $testimonial->created_at->format('M j, Y g:ia') !!}</span>
                                 <label class="activation-toggle-switch pull-right">
                                     <input name="flag_active" type="checkbox" @if ($testimonial->flag_active) checked @endif>
                                     <div class="slider round"></div>

@@ -3,11 +3,16 @@ namespace App\Models;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Testimonial extends Model
 {
+    use SoftDeletes;
+    
 	protected $table = 'testimonials';
 
+	protected $dates = ['created_at', 'deleted_at', 'updated_at'];
+	
 	protected $fillable = [
 		'name',
 		'city',
@@ -19,6 +24,13 @@ class Testimonial extends Model
     {
         $value = $this->attributes['created_at'];
     
+        return $this->setLocalTimezone($value);
+    }
+    
+    public function getDeletedAtAttribute()
+    {
+        $value = $this->attributes['deleted_at'];
+        
         return $this->setLocalTimezone($value);
     }
     
