@@ -39,7 +39,7 @@ function TestimonialsManager(context) {
 					testimonial = $('#testimonial-' + testimonial_id);
 					toggle = testimonial.find('.activation-toggle-switch');
 					
-					if (response.data.flag_active) {
+					if (parseInt(response.data.flag_active, 10)) {
 						testimonial.removeClass('panel-danger').addClass('panel-success');
 					} else {
 						testimonial.removeClass('panel-success').addClass('panel-danger');
