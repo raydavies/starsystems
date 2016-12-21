@@ -42,6 +42,7 @@ class Testimonial extends Model
     }
     
     /**
+     * @TODO: figure out how to prevent 0000-00-00 00:00:00 from breaking json
      * @param mixed $date
      * @return null|Carbon
      */

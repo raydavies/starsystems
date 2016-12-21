@@ -31,7 +31,7 @@ function TestimonialsManager(context) {
 			url: '/admin/testimonials/' + testimonial_id + '/toggle-status',
 			dataType: 'json',
 			type: 'post',
-			error: function(err, obj, msg) {
+			error: function(obj, error, msg) {
 				console.log(msg);
 			},
 			success: function (response) {
