@@ -25,21 +25,21 @@
 
 			<div class="tab-content clearfix">
 				<article role="tabpanel" id="coverage" class="tab-pane fade in active">
-					<img class="img-responsive col-md-6" src="{{ asset('/img/content/girl-students.jpg') }}" alt="Children looking at globe">
+					<img class="img-responsive col-md-6" src="{{ asset('/img/content/students-writing-essay-small.jpg') }}" alt="Children looking at globe">
 					<div class="col-md-6">
 						<header class="info-header">Comprehensive Coverage</header>
 						<p class="info-text">The Interactive Curriculum Software Program covers everything your child needs to know for success in school: <strong><em>Reading, Vocabulary, Grammar and Writing, Math, Science, and Social Studies</em></strong>. Lessons, examples, and exercises build a solid foundation for students and allow them to develop at an accelerated pace.</p>
 					</div>
 				</article>
 				<article role="tabpanel" id="interaction" class="tab-pane fade">
-					<img class="img-responsive col-md-6" src="{{ asset('/img/content/one-on-one-interaction.jpg') }}" alt="Children looking at globe">
+					<img class="img-responsive col-md-6" src="{{ asset('/img/content/teacher-in-front-of-chalkboard-small.jpg') }}" alt="Children looking at globe">
 					<div class="col-md-6">
 						<header class="info-header">One-On-One Interaction</header>
 						<p class="info-text">Owning the Interactive Curriculum Program is like having a full-time teacher working with your child! The program uses a combination of graphics, audio, and animation to <strong>make schoolwork fun and easy</strong>. The interactive lessons engage and guide your child while dynamic quizzes and a variety of writing exercises reinforce what she is learning.</p>
 					</div>
 				</article>
 				<article role="tabpanel" id="success" class="tab-pane fade">
-					<img class="img-responsive col-md-6" src="{{ asset('/img/content/parent-helping-child.jpg') }}" alt="Children looking at globe">
+					<img class="img-responsive col-md-6" src="{{ asset('/img/content/father-helping-with-homework-small.jpg') }}" alt="Children looking at globe">
 					<div class="col-md-6">
 						<header class="info-header">Success At Home</header>
 						<p class="info-text">Studies show that children succeed in school when learning takes place at home. <strong>The Home makes a difference</strong>. The Interactive Curriculum was designed by educators to teach and review everything students are learning in the classroom. Your child will find the tools he needs to master the school curriculum, improve test scores, develop strong study skills, and help with homework!</p>

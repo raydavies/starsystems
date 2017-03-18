@@ -12,15 +12,6 @@ $(document).ready(function() {
 });
 
 /**
- * Sets the position of the title logo based on scroll position.
- */
-function parallaxScroll()
-{
-	var scrolled = $(window).scrollTop();
-	$('.star_logo').css('top', (0 - (scrolled * 0.75)) + 'px');
-}
-
-/**
  * Determines whether or not to display the scroll to top
  * button based on the window position.
  */
