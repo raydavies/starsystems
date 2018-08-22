@@ -15,3 +15,4 @@ database/migrations/archive/
 npm-debug.log
 public/phpmyadmin/
 _ide_helper.php
+.vagrant
