@@ -25,7 +25,7 @@
 				<img src="{{ asset('/img/curriculum/screen_math_sm.jpg') }}" alt="..." class="col-lg-6 col-xs-12 img-responsive">
 				<div class="col-lg-6 col-xs-12 caption">
 					<header><strong>Choose your lesson</strong></header>
-					<p>Log in, then select a grade level and general topic to begin.</p>
+					<p>Select a grade level and general topic to begin.</p>
 					<p>Each topic is divided into several in-depth lessons, making it easy to find exactly what you need.</p>
 					<p>Clicking on a lesson allows you to choose from four modes: Study, Practice, Essay, and Test. Let's take a look at each.</p>
 				</div>
